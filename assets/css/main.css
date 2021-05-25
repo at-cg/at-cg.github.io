@@ -93,11 +93,19 @@ background-colour: #34343C;
   font-size: larger;
 
 }
-i:hover, .nice:hover{
+.nice{
+  color: black; 
+  font-weight: bold; 
+  padding-left: 3px;
+}
+.nice:hover{
+  color: blue;
+}
+i:hover{
   cursor: pointer;
-  font-size: 25px;
+  color: blue;
   transition: transform .5s;
-  transform: scale(1.2);
+  transform: scale(1);
 }
 ::-webkit-scrollbar {
   width: 10px;
