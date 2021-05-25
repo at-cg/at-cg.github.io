@@ -15,7 +15,7 @@ description: >- # used by seo meta and the atom feed
   Chirag Jain
 
 # Replace with the website url, e.g. 'https://username.github.io'
-url: "https://cjain7.github.io"
+url: "https://at-cg.github.io"
 
 author: Chirag Jain # change to your full name
 
@@ -44,7 +44,7 @@ google_site_verification: google_meta_tag_verification # change to your verifica
 
 # Only if your site type is GitHub Project sites and doesn't have a custom domain,
 # change below value to '/projectname'.
-baseurl: "/gc"
+baseurl: "/at-cg.github.io"
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
 timezone: Asia/Kolkata
