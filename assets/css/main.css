@@ -100,6 +100,7 @@ background-colour: #34343C;
 }
 .nice:hover{
   color: blue;
+  text-decoration: none;
 }
 i:hover{
   cursor: pointer;
