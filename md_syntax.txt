@@ -1,0 +1,72 @@
+NOTE: Indentation and Spacing (inline spacing) plays a major role make sure you are using it correctly.
+
+1. Headers:
+# This is an <h1> tag
+## This is an <h2> tag
+###### This is an <h6> tag
+
+2. Emphasis:
+*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+
+_You **can** combine them_
+
+3. Lists:
+Unordered
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
+Ordered
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+
+4. Images:
+	<img src="./../assets/img/{imgName.jpg}">
+	<img class="image" style="float: right;" src="./../assets/img/{imgName.jpg}"> [To float on right]
+
+
+[IMPORTANT NOTE: For adding images please use this syntax ONLY as it is 
+		 an exceptional requirement of this jekyll theme]
+
+5.Links:
+[Text for which link is to be given](http://github.com)
+
+6.Blockquotes (Used in News page):
+> Signle line
+>> Double
+>>> triple
+
+7. Inline code
+
+```javascript
+console.log(Hello, World!)
+``` 
+
+element here instead.
+
+
+SOME EXTRAS:
+
+1. Task Lists
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+
+2. Tables
+You can create tables by assembling a list of words and dividing them with hyphens - (for the first row), and then separating each column with a pipe |:
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+
+Please follow for deeper understanding of markdown https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
