@@ -2,6 +2,7 @@
 title: My Team
 type: teams
 ---
+
 <head>
   <link
     href="https://fonts.googleapis.com/css?family=Montserrat"
@@ -29,12 +30,12 @@ type: teams
                                 <div class="user-picture">
                                 <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
                                 url code will be like: ./../assets/img/xyz.jpg -->
-                                    <img src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="shadow-sm rounded-circle" height="130" width="130" />
+                                    <img src="./../assets/img/Bhavay.jpeg" class="shadow-sm rounded-circle" height="130" width="130" />
                                 </div>
                                 <div class="user-content">
                                 <!-- Replace # with hyperlink of the user website or any link -->
-                                    <h5 class="text-capitalize user-name"><a href="#"> Carry Johnshon </a></h5>
-                                    <p class=" text-capitalize text-muted small blockquote-footer">Web developer</p>
+                                    <h5 class="text-capitalize user-name"><a href="#"> Bhavay Aggarwal </a></h5>
+                                    <p class=" text-capitalize text-muted small blockquote-footer">Student at IIIT-D</p>
                                     <div class="small">
                                     </div>
                                     <p class="small text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo harum repellendus aut itaque. Temporibus quaerat dolores ut, cupiditate molestiae commodi! Distinctio praesentium, debitis aut minima doloribus earum
@@ -49,16 +50,15 @@ type: teams
                                 <div class="user-picture">
                                 <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
                                 url code will be like: ./../assets/img/xyz.jpg -->
-                                    <img src="https://images.unsplash.com/photo-1582003457856-20898dd7e1ea?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="shadow-sm rounded-circle" height="130" width="130" />
+                                    <img src="./../assets/img/Kushagra.jpeg" class="shadow-sm rounded-circle" height="130" width="130" />
                                 </div>
                                 <div class="user-content">
                                     <!-- Replace # with hyperlink down below -->
-                                    <h5 class="text-capitalize user-name"><a href="#">Alex Carry</a></h5>
-                                    <p class=" text-capitalize text-muted small blockquote-footer">Web developer</p>
+                                    <h5 class="text-capitalize user-name"><a href="#">Kushagra Agarwal</a></h5>
+                                    <p class=" text-capitalize text-muted small blockquote-footer">Research Intern</p>
                                     <div class="small">
                                     </div>
-                                    <p class="small text-muted mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nemo harum repellendus aut itaque. Temporibus quaerat dolores ut, cupiditate molestiae commodi! Distinctio praesentium, debitis aut minima doloribus earum
-                                        quia commodi.</p>
+                                    <p class="small text-muted mb-0">Research Intern at IISc Bangalore | Research Intern at Monash University, Australia | UG Researcher at CCNSB@IIITH</p>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@ type: teams
                                 <div class="user-picture">
                                 <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
                                 url code will be like: ./../assets/img/xyz.jpg -->
-                                    <img src="https://images.unsplash.com/photo-1492447166138-50c3889fccb1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="shadow-sm rounded-circle" height="130" width="130" />
+                                    <img src="https://images.unsplash.com/photo-1495603889488-42d1d66e5523?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=130&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=130" class="shadow-sm rounded-circle" height="130" width="130" />
                                 </div>
                                 <div class="user-content">
                                     <!-- Replace # with hyperlink down below -->
