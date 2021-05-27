@@ -100,13 +100,7 @@ background-colour: #34343C;
 }
 .nice:hover{
   color: blue;
-  text-decoration: none;
-}
-i:hover{
-  cursor: pointer;
-  color: blue;
-  transition: transform .5s;
-  transform: scale(1);
+  text-decoration:none
 }
 ::-webkit-scrollbar {
   width: 10px;
