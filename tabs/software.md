@@ -22,17 +22,17 @@ Here is the list of open-source documented software hosted on GitHub that my lab
 - [Winnowmap](https://github.com/marbl/Winnowmap) - Long read (ONT/PacBio) mapper using weighted minimizer sampling technique <br>
 [![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/marbl/Winnowmap)
 
-- [VF](https://github.com/at-cg/VF) - Provably-good algorithms for variant filtering in genome graphs <br>
-[![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/at-cg/VF)
-
-- [ChainX](https://github.com/AT-CG/ChainX) - Optimal co-linear anchor chaining algorithm <br>
-[![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/AT-CG/ChainX)
-
 - [Mashmap](https://github.com/marbl/MashMap) - fast approximate mapper for long DNA sequences (e.g., reads, contigs) using LSH <br>
 [![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/marbl/MashMap)
 
 - [FastANI](https://github.com/ParBLiSS/FastANI) - fast whole-genome similarity (ANI) estimator <br>
 [![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/ParBLiSS/FastANI)
+
+- [VF](https://github.com/at-cg/VF) - Provably-good algorithms for variant filtering in genome graphs <br>
+[![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/at-cg/VF)
+
+- [ChainX](https://github.com/AT-CG/ChainX) - Optimal co-linear anchor chaining algorithm <br>
+[![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/AT-CG/ChainX)
 
 - [Metamaps](https://github.com/DiltheyLab/MetaMaps) - strain-level metagenomics analysis for long reads <br>
 [![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/DiltheyLab/MetaMaps)
