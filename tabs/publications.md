@@ -138,6 +138,7 @@ A Dilthey, <u>C Jain</u>, S Koren, A Phillippy. _Nature Comm. 2019_
 <button type="button" class="btn btn-outline-info btn-sm"><a href="https://drive.google.com/file/d/1IzXwgbpzIVsJ3v0T2EjfIwTZQraeVvSw/view?usp=sharing" style="all: unset; color: inherit">Paper</a></button> 
 <button type="button" class="btn btn-outline-secondary btn-sm"><a href="https://github.com/ParBLiSS/parconnect" style="all: unset; color: inherit">Code</a></button> 
 <button type="button" class="btn btn-outline-info btn-sm"><a href="https://drive.google.com/file/d/1_fzz9losNp8SF_dXTnfOGm0l6XuDcekK/view?usp=sharing" style="all: unset; color: inherit">Slides</a></button>
+<button type="button" class="btn btn-outline-success btn-sm"><a href="https://cacm.acm.org/blogs/blog-cacm/200433-sc16-adds-computational-reproducibility-to-student-competition/fulltext" style="all: unset; color: inherit">News</a></button> 
 
 * **Efficient detection of viral transmissions with next-generation sequencing data** <br>
 Rytsareva et al. _BMC Genomics 2017_
