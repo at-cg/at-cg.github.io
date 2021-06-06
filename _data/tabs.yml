@@ -6,30 +6,30 @@
 
 - name: Home
   icon: "fas fa-home"
+- name: "News"
+  icon: "fas fa-info"
+  path: tabs
+  url: new
 - name: "Projects"
   icon: "fas fa-tags"
   path: tabs
   url: projects
 - name: "Publications"
+  icon: "fas fa-archive"
   path: tabs
   url: publications
-  icon: "fas fa-archive"
 - name: "Software"
   icon: "fa fa-desktop"
   path: tabs
   url: software
-- name: "News"
-  icon: "fas fa-info"
-  path: tabs
-  url: new
 #- name: "Blog"
 #  icon: "fas fa-blog"
 #  path: tabs
 #  url: blog
-#- name: "My Team"
-#  icon: "fas fa-users"
-#  path: tabs
-#  url: teams
+- name: "Team"
+  icon: "fas fa-users"
+  path: tabs
+  url: teams
 - name: "Join Us"
   icon: "fas fa-user-plus"
   path: tabs
