@@ -30,7 +30,7 @@ type: teams
                 <div class="row">
 
                     <!-- BEGIN CARD -->
-                    <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                    <div class="col-lg-4 col-md-6">
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="user-picture">
@@ -47,7 +47,7 @@ type: teams
                     <!-- END CARD -->
 
                     <!-- BEGIN CARD -->
-                    <div class="col-lg-4 col-md-6 mb-4 pt-5">
+                    <div class="col-lg-4 col-md-6">
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
                                 <div class="user-picture">
@@ -64,8 +64,10 @@ type: teams
                     </div>
                     <!-- END CARD -->
 
-
                 </div>
+                <!-- ------------------- -->
+
+
             </div>
             <!-- /cards -->
         </section>
