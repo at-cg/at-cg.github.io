@@ -20,7 +20,7 @@ type: tags
 # **Active Projects**
 
 <br/>
-**Research overview.** We work in the area of computational biology to accelerate scientific discovery by developing new scalable and rigorous algorithms. Forty years ago, it would have taken two years to determine just 24 bases of a DNA molecule. Fast forward to today, a single instrument produces more than a [trillion bases per day](https://www.nature.com/articles/nature24286). Genome sequencing, which used to be a centralised process, is now ubiquitous. For instance, the [GenomeIndia](https://indianexpress.com/article/opinion/editorials/genome-india-project-india-genetic-diversity-6259645/) project alone, plans to generate petabytes of sequencing data. Interpreting DNA molecules from the raw sequencing data is key to understanding genetic mutations associated with diseases such as cancer.
+**Research overview.** We work in the area of computational biology to accelerate scientific discovery by developing new scalable and rigorous algorithms. Forty years ago, it would have taken two years to determine just 24 characters of a DNA molecule. Fast forward to today, a single instrument produces more than a [trillion characters per day](https://www.nature.com/articles/nature24286). Genome sequencing, which used to be a centralised process, is now ubiquitous. For instance, the [GenomeIndia](https://indianexpress.com/article/opinion/editorials/genome-india-project-india-genetic-diversity-6259645/) project alone, plans to generate petabytes of sequencing data. Interpreting DNA molecules from the raw sequencing data is key to understanding genetic mutations associated with diseases such as cancer.
 
    <img class="image" style="float: right;" src="./../assets/img/goals.jpg">
 
