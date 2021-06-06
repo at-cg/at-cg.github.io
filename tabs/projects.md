@@ -20,14 +20,15 @@ type: tags
 # **Active Projects**
 
 <br/>
-**Research overview.** We work in the area of computational biology to accelerate scientific discovery by developing new scalable and rigorous algorithms. Forty years ago, it would have taken two years to determine just 24 bases of a DNA molecule. Fast forward to today, a single instrument produces more than a [trillion bases per day](https://www.nature.com/articles/nature24286). Genome sequencing, which used to be a centralised process, is now ubiquitous. For instance, the [GenomeIndia](https://indianexpress.com/article/opinion/editorials/genome-india-project-india-genetic-diversity-6259645/) project alone, plans to generate petabytes of sequencing data. Interpreting DNA molecules from the raw sequencing data is key to understanding genetic mutations associated with diseases such as cancer. 
+**Research overview.** We work in the area of computational biology to accelerate scientific discovery by developing new scalable and rigorous algorithms. Forty years ago, it would have taken two years to determine just 24 bases of a DNA molecule. Fast forward to today, a single instrument produces more than a [trillion bases per day](https://www.nature.com/articles/nature24286). Genome sequencing, which used to be a centralised process, is now ubiquitous. For instance, the [GenomeIndia](https://indianexpress.com/article/opinion/editorials/genome-india-project-india-genetic-diversity-6259645/) project alone, plans to generate petabytes of sequencing data. Interpreting DNA molecules from the raw sequencing data is key to understanding genetic mutations associated with diseases such as cancer.
 
    <img class="image" style="float: right;" src="./../assets/img/goals.jpg">
 
 As a result, scalable algorithms and software are indispensable components of computational biology. Our research within this area builds on and extends approximate similarity search, string, geometric and graph algorithms, along with their parallelisation on modern multicore computing platforms. Through interdisciplinary collaborations, we have developed new algorithms and widely-used bioinformatics [software](/software) to accelerate sequence analysis. Our active projects and their corresponding papers from our lab are listed below.
 <br>
+<br>
    <hr>
-1. Algorithmic techniques for genome resequencing.
+1. **Algorithmic techniques for genome resequencing.**
    Mapping sequences to a reference genome is often the first computational step in deriving biological insights from genomic data. Accurate mapping of sequences is key to predict genetic or epigenetic variation. Doing this precisely has been challenging as human and other mammalian genomes are [riddled with near-identical repetitive sequences](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1002384). Such repeats often confuse existing sequence mappers, resulting in false-positive alignments and poor confidence scores. Desirable characteristics of a mapper include: (i) efficiency of the algorithm, (ii) high sensitivity and specificity, and (iii) scalability to large data sets and human genomes. In this project, we aim to develop provably-good and practical 'repeat-aware' mapping algorithms that meet these expectations.
 
    <img class="" style="float: right;" src="./../assets/img/resequencing.jpg">
@@ -38,7 +39,7 @@ As a result, scalable algorithms and software are indispensable components of co
 
    <hr>
 
-2. Algorithms and data structures for population genomics. Recent surveys predict availability of >100 million human genomes by 2025. Until recently, algorithms for mapping reads have assumed a single reference genome. To account for the extensive genomic variation present across multiple individuals, read mapping and genotyping efforts must shift to a collection of reference genomes compactly represented using a ‘pan-genome’ graph data structure. This transition requires urgent development of new formats, data structures, algorithms and well-engineered implementations. This project aims to address several related open problems. 
+2. **Algorithms and data structures for population genomics.** Recent surveys predict availability of >100 million human genomes by 2025. Until recently, algorithms for mapping reads have assumed a single reference genome. To account for the extensive genomic variation present across multiple individuals, read mapping and genotyping efforts must shift to a collection of reference genomes compactly represented using a 'pan-genome' graph data structure. This transition requires urgent development of new formats, data structures, algorithms and well-engineered implementations. This project aims to address several related open problems.
 
    <img class="" style="float: right;" src="./../assets/img/genomegraph.jpg">
 
@@ -49,7 +50,7 @@ As a result, scalable algorithms and software are indispensable components of co
 
    <hr>
 
-3. Approximate techniques to scale genome-to-genome comparisons. Bacterial and viral genomic databases continue to grow exponentially as microbiologists are increasingly turning to whole-genome sequencing driven approaches to address fundamental questions associated with ecology and diversity. Whether it is a disease outbreak or a metagenomics survey of agriculture soil, these investigations typically involve comparing newly sequenced DNA samples against a catalogue of all available annotated genomes. In this project, we seek to develop fast approximation algorithms that enable rapid genome-to-genome comparisons. In other domains such as world-wide-web, approximation algorithms such as locality sensitivity hashing have been key to scale nearest-neighbour document search for web queries. 
+3. **Approximate techniques to scale genome-to-genome comparisons.** Bacterial and viral genomic databases continue to grow exponentially as microbiologists are increasingly turning to whole-genome sequencing driven approaches to address fundamental questions associated with ecology and diversity. Whether it is a disease outbreak or a metagenomics survey of agriculture soil, these investigations typically involve comparing newly sequenced DNA samples against a catalogue of all available annotated genomes. In this project, we seek to develop fast approximation algorithms that enable rapid genome-to-genome comparisons. In other domains such as world-wide-web, approximation algorithms such as locality sensitivity hashing have been key to scale nearest-neighbour document search for web queries.
 
    <img class="" style="float: right;" src="./../assets/img/ANI.jpg">
 
@@ -59,7 +60,7 @@ As a result, scalable algorithms and software are indispensable components of co
    - [A fast adaptive algorithm for computing whole-genome homology maps](http://cds.iisc.ac.in/faculty/chirag/pubs/2018_jain_fast_a.pdf) ECCB 2018
    <hr>
 
-4. Parallel computing to accelerate bioinformatics. In recent years, portable and real-time DNA/RNA sequencing devices have become a reality. For time-critical applications in healthcare, it is important to achieve real-time computing ability to offer point-of-care diagnostics. Given the ongoing trends in hardware design of CPUs and GPUs, a sequential algorithm can achieve at most a tiny fraction of the available performance. The goal of this project to resolve computational bottlenecks in genomics by designing parallel architecture-aware algorithms. 
+4. **Parallel computing to accelerate bioinformatics.** In recent years, portable and real-time DNA/RNA sequencing devices have become a reality. For time-critical applications in healthcare, it is important to achieve real-time computing ability to offer point-of-care diagnostics. Given the ongoing trends in hardware design of CPUs and GPUs, a sequential algorithm can achieve at most a tiny fraction of the available performance. The goal of this project to resolve computational bottlenecks in genomics by designing parallel architecture-aware algorithms.
 
       <img class="d-flex" style="float: right;" src="./../assets/img/scaling.jpg">
 

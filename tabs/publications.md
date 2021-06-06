@@ -202,5 +202,7 @@ C Jain, S Kumar. _IEEE HiPC 2014_
 <button type="button" class="btn btn-outline-info btn-sm"><a href="http://cds.iisc.ac.in/faculty/chirag/pubs/2014_jain_fine.pdf" style="all: unset; color: inherit">Paper</a></button> 
 <button type="button" class="btn btn-outline-info btn-sm"><a href="https://1aaaa1f6-a-62cb3a1a-s-sites.googlegroups.com/site/chirgjain/GPU_alignment_HiPC14.pdf?attachauth=ANoY7crP8W1ziTqw0Wg536jnD0T14-42S9TVSqdg0s3vgYi3-XaRP3n0C2ONAX1WclkmATpdptKqmm0LLxm9J1JW3MJVAF3A3f6yHbiHQJcvVcQ6meE09HKg9qDcZj5yRYfQBkRb4Joemqxz7sv0Czr9-GNiJBFytOfuOXkTw_gxAy-pI3Usf3SPaM2DzXHzuKsSIFOd8KajXDwZFhS090CUm1ztq4frukdkh-2ZLstipQr96wstE_U%3D&attredirects=0" style="all: unset; color: inherit">Slides</a></button>
 
+<!--
 Other Publications
 Chirag's PhD dissertation titled, "[Long read mapping at scale: algorithms and applications". Here](https://smartech.gatech.edu/bitstream/handle/1853/61258/JAIN-DISSERTATION-2019.pdf?sequence=1&isAllowed=y) are the presentation slides.
+-->
