@@ -10,14 +10,20 @@ type: {filename}
 
 # **Hop On**
 
-We are actively on the lookout for motivated students and post-docs to join our group and always have open positions!
+We are actively on the lookout for bright students and post-docs to join our group and always have open positions! For joining the lab, pre-requisites are (i) strong background in computer science algorithms, data structures, and (ii) programming experience. Prior experience in multi-disciplinary research is a plus. 
 
-### **Prospective students:**
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+### **Prospective graduate students**
+Masters and PhD admissions happen based on the [procedures setup by IISc](https://iisc.ac.in/admissions/). This process also involves interview with the [Computational and Data Sciences department](https://cds.iisc.ac.in/admissions/). If you have any questions about the admission process, or our lab in general, you can [email the PI](mailto:chirag@iisc.ac.in).  
 
+### **Prospective research staff or post-doctoral researchers**
+Please write to the [PI](mailto:chirag@iisc.ac.in) to discuss possibilities. In your email, please specify your background, specific papers or projects that interest you, and a timeline (e.g., ideal start date, intended period of stay). We typically expect commitment of at least an year.
 
-### **Prospective Post-doctoral researchers:**
-Please write to the [PI](mailto:chirag@iisc.ac.in) to discuss possibilities. Listed below are some of the fellowship opportunities that post-docs joining IISc typically avail.
+### **Fellowship opportunities**
+A number of fellowship opportunities regularly open up for students and postdocs. See a few examples below:
+- [SERB National Post Doctoral Fellowship](http://www.serb.gov.in/npdf.php)
+- [Raman Post Doctoral Program](https://iisc.ac.in/post-docs/)
+- [UGC D.S. Kothari Post Doctoral Fellowships](http://ugcdskpdf.unipune.ac.in)
+- [Prime Minister's Research Fellowship for PhD students](https://pmrf.in)
+- [Prime Minister's Fellowship for Doctoral Research](https://www.primeministerfellowshipscheme.in)
+- [Industry-sponsored fellowships for CDS students](http://cds.iisc.ac.in/resources/fellowships/)
 
-- [Lorem ipsum dolor sit amet consectetur adipisicing elit.]()
-- [Lorem ipsum dolor sit amet consectetur adipisicing elit.]()
