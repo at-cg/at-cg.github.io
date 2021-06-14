@@ -21,6 +21,9 @@ type: news
 
 ## **2021**
 
+> Jun
+>> - A [complete human genome](https://doi.org/10.1101/2021.05.26.445798) reconstruction by the T2T consortium and our software contribution were highlighted in a [TOI news article](https://timesofindia.indiatimes.com/india/first-truly-complete-human-genome-sequenced-india-software-plays-key-role/articleshow/83364939.cms)
+
 > May
 >> - [Bhavay Aggarwal](https://www.linkedin.com/in/bhavay-aggarwal/?originalSubdomain=in) (CSE, IIITD) joins us as a project intern. Welcome!
 
