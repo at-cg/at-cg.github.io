@@ -50,7 +50,7 @@ type: news
   >> - Chirag gives an invited seminar at IMSc Chennai. Thanks [Prof. Samal](https://www.imsc.res.in/~asamal/welcome) for hosting <br>
 
 > Nov
-  >> - Chirag presents Winnowmap2 at [CSHL Biological Data Science](https://meetings.cshl.edu/meetings.aspx?meet=DATA&year=20) meeting. Slides here <br>
+  >> - Chirag presents Winnowmap2 at [CSHL Biological Data Science](https://meetings.cshl.edu/meetings.aspx?meet=DATA&year=20) meeting. Slides [here](https://drive.google.com/file/d/1CwZ2RfgYGr2o8qXvfyXmpADf1he_xD9j/view?usp=sharing) <br>
   >> - Our new [preprint](https://doi.org/10.1101/2020.11.01.363887) improves long read mapping to repetitive genome reference sequences <br>
 
 > Oct
