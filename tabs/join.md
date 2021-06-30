@@ -24,6 +24,7 @@ A number of fellowship opportunities regularly open up for students and postdocs
 - [Raman Post Doctoral Program](https://iisc.ac.in/post-docs/)
 - [UGC D.S. Kothari Post Doctoral Fellowships](http://ugcdskpdf.unipune.ac.in)
 - [IndiaAlliance Early Career Fellowship for postdoctoral scientists](https://www.indiaalliance.org/fellowshiptype/basic-biomedical-research-fellowships)
+- [Intel India Research Fellowship](https://www.intel.sg/content/dam/www/central-libraries/xa/en/documents/intelindia-research-fellowship-2021-22-brochure.pdf)
 - [Prime Minister's Research Fellowship for PhD students](https://pmrf.in)
 - [Prime Minister's Fellowship for Doctoral Research](https://www.primeministerfellowshipscheme.in)
 - [Industry-sponsored fellowships for CDS students](http://cds.iisc.ac.in/resources/fellowships/)
