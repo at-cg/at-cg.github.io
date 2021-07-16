@@ -46,19 +46,18 @@ type: archives
 #### **2021**
 
 * **A variant selection framework for genome graphs** <br>
-<u>C Jain</u>, N Tavakoli, S Aluru. _Bioinformatics 2021 (ISMB/ECCB proceedings, in press)_
+<u>C Jain</u>, N Tavakoli, S Aluru. _Bioinformatics 2021 (ISMB/ECCB proceedings)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm"><a href="https://drive.google.com/file/d/1wyI06sKQin0XQzzI7iPjbHl3_lpOLyi6/view?usp=sharing" style="all: unset; color: inherit">Paper</a></button>
 <button type="button" class="btn btn-outline-secondary btn-sm"><a href="https://github.com/at-cg/VF" style="all: unset; color: inherit">Code</a></button>
-<button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://drive.google.com/file/d/1s12icpPBFCj2X9umZpRU2-4pij9kqZet/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
-</button>
+<button type="button" class="btn btn-outline-info btn-sm"><a href="https://drive.google.com/file/d/1s12icpPBFCj2X9umZpRU2-4pij9kqZet/view?usp=sharing" style="all: unset; color: inherit">Slides</a></button>
 
 * **Real-time mapping of nanopore raw signals** <br>
-H Zhang, H Li, <u>C Jain</u> et al. _Bioinformatics 2021 (ISMB/ECCB proceedings, in press)_
+H Zhang, H Li, <u>C Jain</u> et al. _Bioinformatics 2021 (ISMB/ECCB proceedings)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm"><a href="https://drive.google.com/file/d/1XCwfX-eoSWk2shd9ke14UyEF-UnZISGZ/view?usp=sharing" style="all: unset; color: inherit">Paper</a></button>
 <button type="button" class="btn btn-outline-secondary btn-sm"><a href="https://github.com/haowenz/sigmap" style="all: unset; color: inherit">Code</a></button>
+<button type="button" class="btn btn-outline-info btn-sm"><a href="https://drive.google.com/file/d/1yJu6qw7tLLorQxvfbsEpMzN7NlWlpSKp/view?usp=sharing" style="all: unset; color: inherit">Slides</a></button>
 
 * **The structure, function, and evolution of a complete human chromosome 8** <br>
 Logsdon et al. _Nature 2021_
