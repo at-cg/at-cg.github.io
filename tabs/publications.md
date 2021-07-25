@@ -20,7 +20,7 @@ type: archives
 
 #### **Preprints**
 
- **Accelerating long-read analysis on modern CPUs** <br>
+* **Accelerating long-read analysis on modern CPUs** <br>
 S Kalikar, <u>C Jain</u>, V Md, S Misra. _BioRxiv_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
