@@ -20,6 +20,16 @@ type: archives
 
 #### **Preprints**
 
+ **Accelerating long-read analysis on modern CPUs** <br>
+S Kalikar, <u>C Jain</u>, V Md, S Misra. _BioRxiv_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://www.biorxiv.org/content/10.1101/2021.07.21.453294v1" style="all: unset; color: inherit">Preprint</a>
+</button> 
+<button type="button" class="btn btn-outline-secondary btn-sm">
+<a href="https://github.com/lh3/minimap2/tree/fast-contrib" style="all: unset; color: inherit">Code</a>
+</button> 
+
 * **Co-linear chaining with overlaps and gap costs** <br>
 <u>C Jain</u>, D Gibney, SV Thankachan. _BioRxiv_
 <br>
