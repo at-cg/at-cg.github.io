@@ -22,7 +22,9 @@ type: news
 ## **2021**
 
 > Jul
->> - Oral presentations at ISMB'21 in [HitSeq](https://www.iscb.org/cms_addon/conferences/ismbeccb2021/tracks/hitseq) and [VarI](https://www.iscb.org/cms_addon/conferences/ismbeccb2021/tracks/vari) conference tracks. 
+>> - Check out our [new preprint](https://www.biorxiv.org/content/10.1101/2021.07.21.453294v1) on accelerating long-read mapping. This is collaborative work with Parallel Computing Lab at Intel.
+
+>> - Oral presentations scheduled in [HitSeq](https://www.iscb.org/cms_addon/conferences/ismbeccb2021/tracks/hitseq) and [VarI](https://www.iscb.org/cms_addon/conferences/ismbeccb2021/tracks/vari) ISMB'21 conference tracks. 
 
 > Jun
 >> - A [complete human genome](https://doi.org/10.1101/2021.05.26.445798) reconstruction by the T2T consortium and our software contribution were highlighted in a [TOI news article](https://timesofindia.indiatimes.com/india/first-truly-complete-human-genome-sequenced-india-software-plays-key-role/articleshow/83364939.cms)
