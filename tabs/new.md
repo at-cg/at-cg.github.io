@@ -23,7 +23,6 @@ type: news
 
 > Jul
 >> - Check out our [new preprint](https://www.biorxiv.org/content/10.1101/2021.07.21.453294v1) on accelerating long-read mapping. This is collaborative work with Parallel Computing Lab at Intel.
-
 >> - Oral presentations scheduled in [HitSeq](https://www.iscb.org/cms_addon/conferences/ismbeccb2021/tracks/hitseq) and [VarI](https://www.iscb.org/cms_addon/conferences/ismbeccb2021/tracks/vari) ISMB'21 conference tracks. 
 
 > Jun
