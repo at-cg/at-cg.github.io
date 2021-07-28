@@ -39,6 +39,9 @@ S Kalikar, <u>C Jain</u>, V Md, S Misra. _BioRxiv_
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/AT-CG/ChainX" style="all: unset; color: inherit">Code</a>
 </button> 
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://drive.google.com/file/d/1CWtaCIFn33strERXJF4qkNq9i-rTF9t1/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
+</button>
 
 * **A long read mapping method for highly repetitive reference sequences** <br>
 <u>C Jain</u>, A Rhie, N Hansen, S Koren, A Phillippy. _BioRxiv_
