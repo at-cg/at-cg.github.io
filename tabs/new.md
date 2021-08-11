@@ -22,7 +22,7 @@ type: news
 ## **2021**
 
 > Aug
->> - Sudhanva Kamath and Jyotshna Rajput join us as PhD and MTech-thesis students respectively. Welcome!
+>> - Ghanshyam Chandra, Sudhanva Kamath and Jyotshna Rajput begin their research program in ATCG group. Welcome!
 
 > Jul
 >> - Check out our [new preprint](https://www.biorxiv.org/content/10.1101/2021.07.21.453294v1) on accelerating long-read mapping. This is collaborative work with Parallel Computing Lab at Intel.
