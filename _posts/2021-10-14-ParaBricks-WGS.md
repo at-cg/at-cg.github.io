@@ -42,13 +42,14 @@ Nvidia Ampere 100 GPU's exploits wide SIMD architecture to accelerate worlds mos
 
 >                     Figure 2: SpeedUp as compared with single A100 GPU 
 
-### Dataset:
-1. **Refrence Data:** [GRCh38.p12](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.38/)
-2. **Sequencing Data:** SRR534301
-
+**Scaling:** From Figure 2, we can clearly observe that with increase in number of GPUs, we are getting almost linear speedup, hence we can conclude that PARABRICKS DNA* pipeline is strong scalable upto 8 GPUs.
 
 ## PARABRICKS RNA(rna_fq2bam) pipeline
-### Datasets used
+
+### Dataset:
+1. **Refrence Data:** [GRCh38.p12](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.38/)
+2. **Sequencing Data:** [SRR534301](https://www.ncbi.nlm.nih.gov/sra/?term=SRR534301)
+
 
 
 ### Results
@@ -79,8 +80,7 @@ Nvidia Ampere 100 GPU's exploits wide SIMD architecture to accelerate worlds mos
 
 ### Discussion
 
-1. **Weak Scaling:**
-2. **Strong Scaling:**
+**Scaling:** From Figure 4, we can clearly observe that while keeping data set fixed and with increase in number of GPUs, we are getting almost linear scaling upto 4 GPUs and then speedup reduces, hence, PARABRICKS RNA pipeline is showing significant strong scaling upto 4 GPUs.
 
 ## Experimental Configurations
 
