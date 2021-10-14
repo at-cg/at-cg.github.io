@@ -73,3 +73,8 @@ href="#" is where you add your link by replacing # with your link
 To add CSS [ Will not be required :) ]
 	Go to:
 	assets/css/main.css   and add you css file there
+
+To update website locally on Mac OS, read details on following webpages
+  (A) Install Jekyll: https://jekyllrb.com/docs/installation/macos/
+  (B) Update website locally: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll
+  (C) To push the commited changes to remote, git push origin gh-pages
