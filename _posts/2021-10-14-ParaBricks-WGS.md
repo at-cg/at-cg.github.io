@@ -1,7 +1,7 @@
 ---
 title: ParaBricks-WGS
 author: Ghanshyam Chandra, Chirag Jain
-date: 2021-10-14 20:00:00 +0530
+date: 2021-10-15 02:00:00 +0530
 tags: [WGS,Sequence Alignment]
 math: true
 image: /htb/ParaBricks-WGS/DNA.png
