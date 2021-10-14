@@ -10,23 +10,10 @@ type: blog
   <link rel="stylesheet" href="../../assets/css/main.css" />
 </head>
 
-# Blog works!
+# Blogs
 <hr>
 
-### **This is a heading**
+### **Whole Genome Sequecing(WGS) of Human Genome with 50X coverage on Nvidia Ampere 100 GPU's**
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-
-<hr>
-
-### **This is a heading**
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-
-<hr>
-
-### **This is a heading**
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-
-<hr>
+Nvidia Ampere 100 GPU's exploits wide SIMD architecture to accelerate worlds most demanding HPC and AI workloads, and one of the key apllication in HPC is Whole Genome Sequencing of Human Genome. This blog aims to benchmark runtime comparison of WGS of Human Genome with 50X coverage with multiple GPU's to help understand how quickly we can sequence Human Genome with one of the fastest compute architecture in the world.
+[Continue reading...]({% link _posts/2021-10-14-ParaBricks-WGS.md %})
