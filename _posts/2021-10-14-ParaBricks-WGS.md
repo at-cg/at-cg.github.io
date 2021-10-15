@@ -60,6 +60,7 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 
 ### Results
 #### Table
+
 > Execution Time
 
 | Number of GPU's     | Execution Time(s) (alignment-phase) | Execution Time(s) (Overall) |
@@ -80,6 +81,7 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 >                     Figure 3: Execution time for sequence alignment using STAR algorithm.
 
 > Speed Up
+
 ![Speed Up](/assets/img/blogs/ParaBricks-WGS/STAR_SpeedUp.png)
 
 >                     Figure 4: Speedup relative to single A100 GPU 
@@ -96,5 +98,14 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
  CPU: 8X Dual AMD EPYC 7742 64-Core Processor \
  RAM: 1 TB \
 Storage: 8 PB (lustre fs)
-- **PARABRICKS:** Nvidia Clara ParaBricks: 3.6.0-1
+- **PARABRICKS:** Nvidia Clara Parabricks: 3.6.0-1
 
+## References
+<b id="my_anchor">[1].</b> Nvidia Clara Parabricks 3.6.0-1 
+[Documantation](https://docs.nvidia.com/clara/parabricks/v3.6/text/software_overview.html)
+
+<b id="my_anchor">[2].</b> PARAM-SIDDHI AI
+[DST](https://dst.gov.in/indias-ai-supercomputer-param-siddhi-63rd-among-top-500-most-powerful-non-distributed-computer)
+
+<b id="my_anchor">[3].</b> Nvidia Ampere 100 GPU
+[Nvidia](https://www.nvidia.com/en-in/data-center/a100/)
