@@ -1,5 +1,5 @@
 ---
-title: Genome analysis using ParaBricks
+title: Genome analysis using Parabricks
 author: Ghanshyam Chandra, Chirag Jain
 date: 2021-10-15 02:00:00 +0530
 tags: [WGS,Sequence Alignment]
