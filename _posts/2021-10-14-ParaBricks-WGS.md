@@ -4,7 +4,7 @@ author: Ghanshyam Chandra, Chirag Jain
 date: 2021-10-15 02:00:00 +0530
 tags: [WGS,Sequence Alignment]
 math: true
-image: /htb/ParaBricks-WGS/DNA.png
+image: /assets/img/blogs/ParaBricks-WGS/DNA.png
 ---
 Image source: Design Cells/iStock/Getty Images
 ### **Whole Genome Sequecing(WGS) of Human Genome with 50X coverage on Nvidia Ampere 100 GPU's**
@@ -33,12 +33,12 @@ Nvidia Ampere 100 GPU's exploits wide SIMD architecture to accelerate worlds mos
 
 > Execution Time
 
-![Execution Time](/htb/ParaBricks-WGS/BWA_Exec.png)
+![Execution Time](/assets/img/blogs/ParaBricks-WGS/BWA_Exec.png)
 >                     Figure 1: Execution Time for Sequence Alignment (BWA).
 
 > Speed Up
 
-![Speed Up](/htb/ParaBricks-WGS/BWA_SpeedUp.png)
+![Speed Up](/assets/img/blogs/ParaBricks-WGS/BWA_SpeedUp.png)
 
 >                     Figure 2: SpeedUp as compared with single A100 GPU 
 
@@ -69,12 +69,12 @@ Nvidia Ampere 100 GPU's exploits wide SIMD architecture to accelerate worlds mos
 
 > Execution Time
 
-![Execution Time](/htb/ParaBricks-WGS/STAR_Exec.png)
+![Execution Time](/assets/img/blogs/ParaBricks-WGS/STAR_Exec.png)
 
 >                     Figure 3: Execution Time for Sequence Alignment (STAR).
 
 > Speed Up
-![Speed Up](/htb/ParaBricks-WGS/STAR_SpeedUp.png)
+![Speed Up](/assets/img/blogs/ParaBricks-WGS/STAR_SpeedUp.png)
 
 >                     Figure 4: SpeedUp as compared with single A100 GPU 
 
