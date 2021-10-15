@@ -118,7 +118,7 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 
 **Scaling:** In Figure 8, we observe that while keeping data set fixed and with increase in number of GPUs, we are getting almost linear scaling up to 4 GPUs and then speedup reduces. Hence, PARABRICKS RNA pipeline is showing good strong scaling up to 4 GPUs.
 
-## Experimental Configurations
+## Experimental Configuration
 
 - **Compute Cluster:** PARAM-SIDDHI AI
 - **Compute Node:** Single compute node \
