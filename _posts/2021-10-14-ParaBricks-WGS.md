@@ -93,7 +93,7 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 - **Compute Cluster:** PARAM-SIDDHI AI
 - **Compute Node:** Single compute node \
  GPU: 8X A100-SXM4-40GB \
- CPU: Dual AMD EPYC 7742 64-Core Processor \
+ CPU: 8X Dual AMD EPYC 7742 64-Core Processor \
  RAM: 1 TB \
 Storage: 8 PB (lustre fs)
 - **PARABRICKS:** Nvidia Clara ParaBricks: 3.6.0-1
