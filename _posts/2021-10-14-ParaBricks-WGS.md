@@ -6,6 +6,12 @@ tags: [WGS,Sequence Alignment]
 math: true
 image: /assets/img/blogs/ParaBricks-WGS/DNA.png
 ---
+<head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+</head>
+
 Image source: Design Cells/iStock/Getty Images
 ### **Benchmarking human whole genome and RNA sequencing using Nvidia Ampere A100 GPUs**
 Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's most demanding HPC and AI workloads, and one of the key application in HPC is sequencing of human genome and transcriptome. This blog aims to measure runtime required for genome and transcriptome sequencing using multiple GPUs to help understand how quickly sequence analysis can be done with one of the fastest compute architecture in the world.
