@@ -107,5 +107,5 @@ Storage: 8 PB (lustre fs)
 <b id="my_anchor">[2].</b> PARAM-SIDDHI AI
 [[DST]](https://dst.gov.in/indias-ai-supercomputer-param-siddhi-63rd-among-top-500-most-powerful-non-distributed-computer)
 
-<b id="my_anchor">[3].</b> Nvidia Ampere 100 GPU
+<b id="my_anchor">[3].</b> Nvidia Ampere A100 GPU
 [[Nvidia]](https://www.nvidia.com/en-in/data-center/a100/)
