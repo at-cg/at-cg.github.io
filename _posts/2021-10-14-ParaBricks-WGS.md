@@ -86,7 +86,7 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 
 >                     Table 2: Execution Time
 
-#### Plot
+#### Plot (Sequence alignment)
 
 > Execution Time
 
