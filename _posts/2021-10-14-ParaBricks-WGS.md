@@ -9,7 +9,8 @@ image: /assets/img/blogs/ParaBricks-WGS/DNA.png
 <head>
   <link
     href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"/>
-  <link rel="stylesheet" href="../assets/css/main.css" />
+  <link rel="stylesheet" href="../../assets/css/main.css" />
+  <link rel="stylesheet" href="../../assets/css/project.css" />
 </head>
 
 Image source: Design Cells/iStock/Getty Images
@@ -18,8 +19,8 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 ## PARABRICKS DNA FQ2BAM pipeline
 
 ### Dataset:
-1. **Reference genome:** [GRCh38](https://github.com/broadinstitute/gatk/blob/master/src/test/resources/large/Homo_sapiens_assembly38.fasta.gz?raw=true)
-2. **Whole-genome sequencing run:** [ERR194147](https://www.ebi.ac.uk/ena/browser/view/ERR194147?show=reads) (Illumina HiSeq 2000 paired end sequencing, ~50x coverage)
+- **Reference genome:** [GRCh38](https://github.com/broadinstitute/gatk/blob/master/src/test/resources/large/Homo_sapiens_assembly38.fasta.gz?raw=true)
+- **Whole-genome sequencing run:** [ERR194147](https://www.ebi.ac.uk/ena/browser/view/ERR194147?show=reads) (Illumina HiSeq 2000 paired end sequencing, ~50x coverage)
 
 ### Results:
 
@@ -53,8 +54,8 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 ## PARABRICKS RNA FQ2BAM pipeline
 
 ### Dataset:
-1. **Reference genome:** [GRCh38](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.38/)
-2. **RNA-seq sample:** [SRR534301](https://www.ncbi.nlm.nih.gov/sra/?term=SRR534301) (Illumina HiSeq 2000 paired end sequencing)
+- **Reference genome:** [GRCh38](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.38/)
+- **RNA-seq sample:** [SRR534301](https://www.ncbi.nlm.nih.gov/sra/?term=SRR534301) (Illumina HiSeq 2000 paired end sequencing)
 
 
 ### Results
@@ -89,11 +90,11 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 
 ## Experimental Configurations
 
-1. **Compute Cluster:** PARAM-SIDDHI AI
-2. **Compute Node:** Single compute node \
+- **Compute Cluster:** PARAM-SIDDHI AI
+- **Compute Node:** Single compute node \
  GPU: 8X A100-SXM4-40GB \
  CPU: Dual AMD EPYC 7742 64-Core Processor \
  RAM: 1 TB \
 Storage: 8 PB (lustre fs)
-3. **PARABRICKS:** Nvidia Clara ParaBricks: 3.6.0-1
+- **PARABRICKS:** Nvidia Clara ParaBricks: 3.6.0-1
 
