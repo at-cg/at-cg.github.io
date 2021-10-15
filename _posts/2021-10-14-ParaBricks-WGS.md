@@ -7,20 +7,20 @@ math: true
 image: /assets/img/blogs/ParaBricks-WGS/DNA.png
 ---
 Image source: Design Cells/iStock/Getty Images
-### **Whole Genome Sequecing(WGS) of Human Genome with 50X coverage on Nvidia Ampere 100 GPU's**
-Nvidia Ampere 100 GPU's exploits wide SIMD architecture to accelerate worlds most demanding HPC and AI workloads, and one of the key apllication in HPC is Whole Genome Sequencing of Human Genome. This blog aims to benchmark runtime comparison of WGS of Human Genome with 50X coverage with multiple GPU's to help understand how quickly we can sequence Human Genome with one of the fastest compute architecture in the world.
-## PARABRICKS DNA*(fq2bam) pipeline
+### **Benchmarking human whole genome and RNA sequencing using Nvidia Ampere A100 GPUs**
+Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's most demanding HPC and AI workloads, and one of the key application in HPC is sequencing of human genome and transcriptome. This blog aims to measure runtime required for genome and transcriptome sequencing using multiple GPUs to help understand how quickly sequence analysis can be done with one of the fastest compute architecture in the world.
+## PARABRICKS DNA FQ2BAM pipeline
 
 ### Dataset:
-1. **Refrence Data:** [HG38](https://github.com/broadinstitute/gatk/blob/master/src/test/resources/large/Homo_sapiens_assembly38.fasta.gz?raw=true)
-2. **Sequencing Data:** [ERR194147](https://www.ebi.ac.uk/ena/browser/view/ERR194147?show=reads)
+1. **Reference genome:** [GRCh38](https://github.com/broadinstitute/gatk/blob/master/src/test/resources/large/Homo_sapiens_assembly38.fasta.gz?raw=true)
+2. **Whole-genome sequencing run:** [ERR194147](https://www.ebi.ac.uk/ena/browser/view/ERR194147?show=reads) (Illumina HiSeq 2000 paired end sequencing, ~50x coverage)
 
 ### Results:
 
 #### Table
 > Execution Time
 
-| Number of GPU's     | Execution Time(s) (Alignment) | Execution Time(s) (WGS) |
+| Number of GPU's     | Execution Time(s) (alignment-phase) | Execution Time(s) (Overall) |
 | ----------- | ----------- | ----------- |
 | 1      | 9657      |             11053      |
 | 2   | 4924         |             5903       |
@@ -34,29 +34,28 @@ Nvidia Ampere 100 GPU's exploits wide SIMD architecture to accelerate worlds mos
 > Execution Time
 
 ![Execution Time](/assets/img/blogs/ParaBricks-WGS/BWA_Exec.png)
->                     Figure 1: Execution Time for Sequence Alignment (BWA).
+>                     Figure 1: Execution time for sequence alignment (BWA).
 
 > Speed Up
 
 ![Speed Up](/assets/img/blogs/ParaBricks-WGS/BWA_SpeedUp.png)
 
->                     Figure 2: SpeedUp as compared with single A100 GPU 
+>                     Figure 2: Speedup relative to single A100 GPU 
 
-**Scaling:** From Figure 2, we can clearly observe that with increase in number of GPUs, we are getting almost linear speedup, hence we can conclude that PARABRICKS DNA* pipeline is strong scalable upto 8 GPUs.
+**Scaling:** From Figure 2, we can clearly observe that with increase in number of GPUs, we are getting almost linear speedup, hence we can conclude that PARABRICKS DNA pipeline is strong scalable upto 8 GPUs.
 
-## PARABRICKS RNA(rna_fq2bam) pipeline
+## PARABRICKS RNA FQ2BAM pipeline
 
 ### Dataset:
-1. **Refrence Data:** [GRCh38.p12](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.38/)
-2. **Sequencing Data:** [SRR534301](https://www.ncbi.nlm.nih.gov/sra/?term=SRR534301)
-
+1. **Reference genome:** [GRCh38](https://www.ncbi.nlm.nih.gov/assembly/GCF_000001405.38/)
+2. **RNA-seq sample:** [SRR534301](https://www.ncbi.nlm.nih.gov/sra/?term=SRR534301) (Illumina HiSeq 2000 paired end sequencing)
 
 
 ### Results
 #### Table
 > Execution Time
 
-| Number of GPU's     | Execution Time(s) (Alignment) | Execution Time(s) (WGS) |
+| Number of GPU's     | Execution Time(s) (alignment-phase) | Execution Time(s) (Overall) |
 | ----------- | ----------- | ----------- |
 | 1      | 1488      |             1529     |
 | 2   | 987         |             1037       |
@@ -71,23 +70,23 @@ Nvidia Ampere 100 GPU's exploits wide SIMD architecture to accelerate worlds mos
 
 ![Execution Time](/assets/img/blogs/ParaBricks-WGS/STAR_Exec.png)
 
->                     Figure 3: Execution Time for Sequence Alignment (STAR).
+>                     Figure 3: Execution time for sequence alignment using STAR algorithm.
 
 > Speed Up
 ![Speed Up](/assets/img/blogs/ParaBricks-WGS/STAR_SpeedUp.png)
 
->                     Figure 4: SpeedUp as compared with single A100 GPU 
+>                     Figure 4: Speedup relative to single A100 GPU 
 
 ### Discussion
 
-**Scaling:** From Figure 4, we can clearly observe that while keeping data set fixed and with increase in number of GPUs, we are getting almost linear scaling upto 4 GPUs and then speedup reduces, hence, PARABRICKS RNA pipeline is showing significant strong scaling upto 4 GPUs.
+**Scaling:** In Figure 4, we observe that while keeping data set fixed and with increase in number of GPUs, we are getting almost linear scaling up to 4 GPUs and then speedup reduces. Hence, PARABRICKS RNA pipeline is showing good strong scaling up to 4 GPUs.
 
 ## Experimental Configurations
 
 1. **Compute Cluster:** PARAM-SIDDHI AI
-2. **Compute Node:** Single Compute Node \
+2. **Compute Node:** Single compute node \
  GPU: 8X A100-SXM4-40GB \
- CPU: 8X AMD EPYC 7742 64-Core Processor \
+ CPU: Dual AMD EPYC 7742 64-Core Processor \
  RAM: 1 TB \
 Storage: 8 PB (lustre fs)
 3. **PARABRICKS:** Nvidia Clara ParaBricks: 3.6.0-1
