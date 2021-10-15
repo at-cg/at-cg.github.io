@@ -36,7 +36,7 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 
 >                     Table 1: Execution Time
 
-#### Plot
+#### Plot (Sequence alignment)
 
 > Execution Time
 
@@ -49,7 +49,21 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 
 >                     Figure 2: Speedup relative to single A100 GPU 
 
-**Scaling:** From Figure 2, we can clearly observe that with increase in number of GPUs, we are getting almost linear speedup, hence we can conclude that PARABRICKS DNA pipeline is strong scalable upto 8 GPUs.
+#### Plot (Overall)
+
+> Execution Time
+
+![Execution Time](/assets/img/blogs/ParaBricks-WGS/BWA_Exec_over.png)
+>                     Figure 3: Execution time for DNA FQ2BAM pipeline.
+
+> Speed Up
+
+![Speed Up](/assets/img/blogs/ParaBricks-WGS/BWA_SpeedUp_over.png)
+
+>                     Figure 4: Speedup relative to single A100 GPU 
+
+
+**Scaling:** From Figure 4, we can clearly observe that with increase in number of GPUs, we are getting almost linear speedup, hence we can conclude that PARABRICKS DNA pipeline is strong scalable upto 8 GPUs.
 
 ## PARABRICKS RNA FQ2BAM pipeline
 
@@ -78,17 +92,31 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 
 ![Execution Time](/assets/img/blogs/ParaBricks-WGS/STAR_Exec.png)
 
->                     Figure 3: Execution time for sequence alignment using STAR algorithm.
+>                     Figure 5: Execution time for sequence alignment using STAR algorithm.
 
 > Speed Up
 
 ![Speed Up](/assets/img/blogs/ParaBricks-WGS/STAR_SpeedUp.png)
 
->                     Figure 4: Speedup relative to single A100 GPU 
+>                     Figure 6: Speedup relative to single A100 GPU 
 
-### Discussion
 
-**Scaling:** In Figure 4, we observe that while keeping data set fixed and with increase in number of GPUs, we are getting almost linear scaling up to 4 GPUs and then speedup reduces. Hence, PARABRICKS RNA pipeline is showing good strong scaling up to 4 GPUs.
+> #### Plot (Overall)
+
+> Execution Time
+
+![Execution Time](/assets/img/blogs/ParaBricks-WGS/STAR_Exec_over.png)
+
+>                     Figure 7: Execution time for  RNA FQ2BAM pipeline.
+
+> Speed Up
+
+![Speed Up](/assets/img/blogs/ParaBricks-WGS/STAR_SpeedUp_over.png)
+
+>                     Figure 8: Speedup relative to single A100 GPU 
+
+
+**Scaling:** In Figure 8, we observe that while keeping data set fixed and with increase in number of GPUs, we are getting almost linear scaling up to 4 GPUs and then speedup reduces. Hence, PARABRICKS RNA pipeline is showing good strong scaling up to 4 GPUs.
 
 ## Experimental Configurations
 
