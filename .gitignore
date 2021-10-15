@@ -1,0 +1,5 @@
+# never push auxiliary files into repository
+_site
+Gemfile.lock
+.DS_Store
+.jekyll-cache

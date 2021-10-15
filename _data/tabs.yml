@@ -22,7 +22,7 @@
   icon: "fa fa-desktop"
   path: tabs
   url: software
-- name: "Blog"
+- name: "Blogs"
   icon: "fas fa-blog"
   path: tabs
   url: blog
