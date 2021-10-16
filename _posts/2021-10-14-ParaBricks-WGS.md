@@ -15,7 +15,7 @@ image: /assets/img/blogs/ParaBricks-WGS/DNA.png
 
 Image source: Design Cells/iStock/Getty Images
 ### **Benchmarking human whole genome and RNA sequencing using Nvidia Ampere A100 GPUs**
-Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's most demanding HPC and AI workloads, and one of the key application in HPC is sequencing of human genome and transcriptome. This blog aims to measure runtime required for genome and transcriptome sequencing using multiple GPUs to help understand how quickly sequence analysis can be done with one of the fastest compute architecture in the world.
+Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's most demanding HPC and AI workloads, and one of the key application in HPC is sequencing of human genome and transcriptome. This blog aims to measure runtime required for genome and transcriptome sequencing using GPUs to help understand how quickly sequence analysis can be done.
 ## PARABRICKS DNA FQ2BAM pipeline
 
 ### Dataset:
@@ -116,7 +116,7 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 >                     Figure 8: Speedup relative to single A100 GPU 
 
 
-**Scaling:** In Figure 8, we observe that while keeping data set fixed and with increase in number of GPUs, we are getting almost linear scaling up to 4 GPUs and then speedup reduces. Hence, PARABRICKS RNA pipeline is showing good strong scaling up to 4 GPUs.
+**Scaling:** In Figure 8, we observe that while keeping data set fixed and with increase in number of GPUs, we are getting almost linear scaling up to 4 GPUs and then the speedup growth reduces. Hence, PARABRICKS RNA pipeline is showing good strong scaling up to 4 GPUs.
 
 ## Experimental Configuration
 
@@ -130,9 +130,9 @@ Storage: 8 PB (lustre fs)
 
 ## References
 <b id="my_anchor">[1].</b> Nvidia Clara Parabricks 3.6.0-1 
-[[Documantation]](https://docs.nvidia.com/clara/parabricks/v3.6/text/software_overview.html)
+[[Documentation]](https://docs.nvidia.com/clara/parabricks/v3.6/text/software_overview.html)
 
-<b id="my_anchor">[2].</b> PARAM-SIDDHI AI
+<b id="my_anchor">[2].</b> Param Siddhi supercomputer 
 [[DST]](https://dst.gov.in/indias-ai-supercomputer-param-siddhi-63rd-among-top-500-most-powerful-non-distributed-computer)
 
 <b id="my_anchor">[3].</b> Nvidia Ampere A100 GPU
