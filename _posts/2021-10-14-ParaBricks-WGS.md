@@ -27,7 +27,7 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 #### Table
 > Execution Time
 
-| Number of GPUs     | Execution Time(s) (alignment-phase) | Execution Time(s) (Overall) |
+| Number of GPUs     | Execution Time(s) (alignment-phase BWA) | Execution Time(s) (Overall) |
 | ----------- | ----------- | ----------- |
 | 1      | 9657      |             11053      |
 | 2   | 4924         |             5903       |
@@ -77,7 +77,7 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 
 > Execution Time
 
-| Number of GPUs     | Execution Time(s) (alignment-phase) | Execution Time(s) (Overall) |
+| Number of GPUs     | Execution Time(s) (alignment-phase STAR) | Execution Time(s) (Overall) |
 | ----------- | ----------- | ----------- |
 | 1      | 1488      |             1529     |
 | 2   | 987         |             1037       |
@@ -121,7 +121,7 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 ## Experimental Configuration
 
 - **Compute Cluster:** PARAM-SIDDHI AI
-- **Compute Node:** Single compute node \
+- **Compute Node:** Single compute node (Nvidia DGX A100 320GB) \
  GPU: 8X A100-SXM4-40GB \
  CPU: 4X Dual AMD EPYC 7742 64-Core Processor \
  RAM: 1 TB \
