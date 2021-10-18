@@ -27,7 +27,7 @@ Nvidia Ampere A100 GPUs exploit wide SIMT architecture to accelerate world's mos
 #### Table
 > Execution Time
 
-| Number of GPUs     | Execution Time(s) (alignment-phase BWA) | Execution Time(s) (Overall) |
+| Number of GPUs     | Execution Time(s) (alignment-phase BWA-mem) | Execution Time(s) (Overall) |
 | ----------- | ----------- | ----------- |
 | 1      | 9657      |             11053      |
 | 2   | 4924         |             5903       |
