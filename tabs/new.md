@@ -22,7 +22,7 @@ type: news
 ## **2021**
 
 > Dec
->> - ChainX, our co-linear chaining algorithm is accepted at [RECOMB 2022](https://recomb2022.net/accepted-papers/).
+>> - [ChainX](https://doi.org/10.1101/2021.02.03.429492), our co-linear chaining algorithm was accepted at [RECOMB 2022](https://recomb2022.net/accepted-papers/).
 >> - Two lab members Ghanshyam Chandra, Sai Manasa were part of winning team at the [National-HPC Hackathon](https://nationalhpc-hackathon.hackerearth.com). 
 
 > Aug
