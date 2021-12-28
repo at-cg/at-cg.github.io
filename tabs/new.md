@@ -21,6 +21,10 @@ type: news
 
 ## **2021**
 
+> Dec
+>> - ChainX, our co-linear chaining algorithm is accepted at [RECOMB 2022](https://recomb2022.net/accepted-papers/).
+>> - Two lab members Ghanshyam Chandra, Sai Manasa were part of winning team at the [National-HPC Hackathon](https://nationalhpc-hackathon.hackerearth.com). 
+
 > Aug
 >> - Ghanshyam Chandra, Sudhanva Kamath and Jyotshna Rajput begin their research program in ATCG group. Welcome!
 
@@ -29,7 +33,7 @@ type: news
 >> - Oral presentations scheduled in [HitSeq](https://www.iscb.org/cms_addon/conferences/ismbeccb2021/tracks/hitseq) and [VarI](https://www.iscb.org/cms_addon/conferences/ismbeccb2021/tracks/vari) ISMB'21 conference tracks. 
 
 > Jun
->> - A [complete human genome](https://doi.org/10.1101/2021.05.26.445798) reconstruction by the T2T consortium and our software contribution were highlighted in a [TOI news article](https://timesofindia.indiatimes.com/india/first-truly-complete-human-genome-sequenced-india-software-plays-key-role/articleshow/83364939.cms)
+>> - A [complete human genome](https://doi.org/10.1101/2021.05.26.445798) reconstruction by the T2T consortium and our software contribution were highlighted in a [TOI news article](https://timesofindia.indiatimes.com/india/first-truly-complete-human-genome-sequenced-india-software-plays-key-role/articleshow/83364939.cms).
 
 > May
 >> - [Bhavay Aggarwal](https://www.linkedin.com/in/bhavay-aggarwal/?originalSubdomain=in) (CSE, IIITD) joins us as a project intern. Welcome!
