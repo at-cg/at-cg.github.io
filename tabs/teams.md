@@ -24,8 +24,9 @@ type: teams
                 </div>
 
 
+                <!-- ---Sort names lexicographically by first name----------- -->
                 <!-- ------------------- -->
-                <H2> Project interns </H2>
+                <H2> PhD students </H2>
                 <!-- cards -->
                 <div class="row">
 
@@ -36,15 +37,43 @@ type: teams
                                 <div class="user-picture">
                                 <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
                                 url code will be like: ./../assets/img/xyz.jpg -->
-                                    <img src="./../assets/img/Bhavay.jpeg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                    <img src="./../assets/img/Ghanshyam.jpeg" class="shadow-sm rounded-circle" height="130" width="130" />
                                 </div>
                                 <div class="user-content">
-                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/bhavay-aggarwal">Bhavay Aggarwal</a></h5>
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://gsc74.github.io">Ghanshyam Chandra</a></h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- END CARD -->
+
+                    <!-- BEGIN CARD -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="user-picture">
+                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
+                                url code will be like: ./../assets/img/xyz.jpg -->
+                                    <img src="./../assets/img/Sudhanva.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                </div>
+                                <div class="user-content">
+                                <!-- Replace # with hyperlink of the user website or any link -->
+                                    <h5 class="text-capitalize user-name">Sudhanva S Kamath</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD -->
+
+                </div>
+                <!-- ------------------- -->
+
+
+
+                <!-- ------------------- -->
+                <H2> Project interns </H2>
+                <!-- cards -->
+                <div class="row">
 
                     <!-- BEGIN CARD -->
                     <div class="col-lg-4 col-md-6">
@@ -64,9 +93,25 @@ type: teams
                     </div>
                     <!-- END CARD -->
 
+                    <!-- BEGIN CARD -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="user-picture">
+                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
+                                url code will be like: ./../assets/img/xyz.jpg -->
+                                    <img src="./../assets/img/Manasa.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                </div>
+                                <div class="user-content">
+                                    <h5 class="text-capitalize user-name">Sai Manasa C</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD -->
+
                 </div>
                 <!-- ------------------- -->
-
 
 
 
@@ -96,6 +141,12 @@ type: teams
                 </div>
                 <!-- ------------------- -->
 
+                <!-- ------------------- -->
+                <H2>Group Alumni</H2>
+                <!-- cards -->
+                <ul style="list-style-type:none;">
+                <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/bhavay-aggarwal">Bhavay Aggarwal</a> (Project Intern, 2021)</h5></li>
+                </ul>
 
 
             </div>
@@ -103,5 +154,4 @@ type: teams
         </section>
         <!-- /Ui cards -->
     </main>
-
 </body>
