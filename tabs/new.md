@@ -19,10 +19,17 @@ type: news
 
 # **News**
 
+## **2022**
+
+> Jan
+>> - Chirag is invited to speak at [HPC for AI & Biology](https://ge.iitm.ac.in/events/RBCDSAI-IBSE-HPC-Symposium/) symposium.
+>> - Our collaborative [work](https://www.biorxiv.org/content/10.1101/2021.07.21.453294v1) with Intel Labs on accelerating long read mapping is accepted at Nature Computational Science.
+>> - Chirag serves as a PC member for [ISMB'22](https://www.iscb.org/ismb2022), [RECOMB-seq'22](https://docs.google.com/document/d/e/2PACX-1vQhopvVMrJoxBD83KViy0OeRL-_HkrfOVtZYEp_6Dc_IEbPl5Bjsaln7p9UB_kX998CTiGN88J4XqOA/pub)
+
 ## **2021**
 
 > Dec
->> - [ChainX](https://doi.org/10.1101/2021.02.03.429492), our co-linear chaining algorithm was accepted at [RECOMB 2022](https://recomb2022.net/accepted-papers/).
+>> - [ChainX](https://doi.org/10.1101/2021.02.03.429492), our co-linear chaining algorithm is accepted at [RECOMB 2022](https://recomb2022.net/accepted-papers/).
 >> - Two lab members Ghanshyam Chandra, Sai Manasa were part of winning team at the [National-HPC Hackathon](https://nationalhpc-hackathon.hackerearth.com). 
 
 > Aug
@@ -33,7 +40,7 @@ type: news
 >> - Oral presentations scheduled in [HitSeq](https://www.iscb.org/cms_addon/conferences/ismbeccb2021/tracks/hitseq) and [VarI](https://www.iscb.org/cms_addon/conferences/ismbeccb2021/tracks/vari) ISMB'21 conference tracks. 
 
 > Jun
->> - A [complete human genome](https://doi.org/10.1101/2021.05.26.445798) reconstruction by the T2T consortium and our software contribution were highlighted in a [TOI news article](https://timesofindia.indiatimes.com/india/first-truly-complete-human-genome-sequenced-india-software-plays-key-role/articleshow/83364939.cms).
+>> - A [complete human genome](https://doi.org/10.1101/2021.05.26.445798) reconstruction by the T2T consortium and our software contribution are highlighted in a [TOI news article](https://timesofindia.indiatimes.com/india/first-truly-complete-human-genome-sequenced-india-software-plays-key-role/articleshow/83364939.cms).
 
 > May
 >> - [Bhavay Aggarwal](https://www.linkedin.com/in/bhavay-aggarwal/?originalSubdomain=in) (CSE, IIITD) joins us as a project intern. Welcome!
@@ -43,7 +50,7 @@ type: news
   >> - Two papers [(variant selection in genome graphs](https://doi.org/10.1101/2021.02.02.429378) and [Nanopore raw signal mapper)](https://github.com/haowenz/sigmap) accepted at ISMB'21.
 
 > Mar
-  >> - [NSM](https://nsmindia.in/) announced funding for our project titled "Parallel algorithmic building blocks for real-time DNA and RNA sequencing"
+  >> - [NSM](https://nsmindia.in/) announce funding for our project titled "Parallel algorithmic building blocks for real-time DNA and RNA sequencing"
   >> - Two preprints that propose [a variant selection framework for genome-graphs](https://doi.org/10.1101/2021.02.02.429378) and [faster algorithm for anchor chaining](https://www.biorxiv.org/content/10.1101/2021.02.03.429492v1) are posted on bioRxiv 
 
 > Feb
