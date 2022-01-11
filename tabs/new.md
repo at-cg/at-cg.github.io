@@ -22,7 +22,7 @@ type: news
 ## **2022**
 
 > Jan
->> - Chirag is invited to speak at [HPC for AI & Biology](https://ge.iitm.ac.in/events/RBCDSAI-IBSE-HPC-Symposium/) symposium.
+>> - Chirag is invited to speak at [HPC for AI & Biology](https://ge.iitm.ac.in/events/RBCDSAI-IBSE-HPC-Symposium/) symposium
 >> - Our collaborative [work](https://www.biorxiv.org/content/10.1101/2021.07.21.453294v1) with Intel Labs on accelerating long read mapping is accepted at Nature Computational Science.
 >> - Chirag serves as a PC member for [ISMB'22](https://www.iscb.org/ismb2022), [RECOMB-seq'22](https://docs.google.com/document/d/e/2PACX-1vQhopvVMrJoxBD83KViy0OeRL-_HkrfOVtZYEp_6Dc_IEbPl5Bjsaln7p9UB_kX998CTiGN88J4XqOA/pub)
 
