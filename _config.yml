@@ -17,6 +17,9 @@ description: >- # used by seo meta and the atom feed
 # Replace with the website url, e.g. 'https://username.github.io'
 url: "https://at-cg.github.io"
 
+plugins:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+
 author: Chirag Jain # change to your full name
 
 avatar: /headshot.jpg # support internet resources
