@@ -42,7 +42,7 @@ S Kalikar, <u>C Jain</u>, V Md, S Misra. _Nature Computational Science 2022 (in 
 <a href="https://www.biorxiv.org/content/10.1101/2021.07.21.453294v1" style="all: unset; color: inherit">Preprint</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
-<a href="https://github.com/lh3/minimap2/tree/fast-contrib" style="all: unset; color: inherit">Code</a>
+<a href="https://github.com/bwa-mem2/mm2-fast" style="all: unset; color: inherit">Code</a>
 </button>
 
 * **Co-linear chaining with overlaps and gap costs** <br>
