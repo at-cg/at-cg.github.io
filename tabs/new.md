@@ -21,6 +21,9 @@ type: news
 
 ## **2022**
 
+> Feb
+>> - SERB SRG research funding is awarded to our group for the project titled *Algorithmic techniques for compression of population-scale sequencing data*
+
 > Jan
 >> - Chirag is invited to speak at [HPC for AI & Biology](https://ge.iitm.ac.in/events/RBCDSAI-IBSE-HPC-Symposium/) symposium
 >> - Our collaborative [work](https://www.biorxiv.org/content/10.1101/2021.07.21.453294v1) with Intel Labs on accelerating long read mapping is accepted at Nature Computational Science
