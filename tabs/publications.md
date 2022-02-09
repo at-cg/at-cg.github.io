@@ -39,7 +39,7 @@ type: archives
 S Kalikar, <u>C Jain</u>, V Md, S Misra. _Nature Computational Science 2022 (in press)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://www.biorxiv.org/content/10.1101/2021.07.21.453294v1" style="all: unset; color: inherit">Preprint</a>
+<a href="https://www.biorxiv.org/content/10.1101/2021.07.21.453294v2" style="all: unset; color: inherit">Preprint</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/bwa-mem2/mm2-fast" style="all: unset; color: inherit">Code</a>
