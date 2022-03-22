@@ -20,8 +20,20 @@ type: archives
 
 #### **Preprints**
 
+* **Coverage-preserving sparsification of overlap graphs for long-read assembly** <br>
+<u>C Jain</u>. _BioRxiv_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://doi.org/10.1101/2022.03.17.484715" style="all: unset; color: inherit">Preprint</a>
+</button> 
+<button type="button" class="btn btn-outline-secondary btn-sm">
+<a href="https://github.com/at-cg/containX" style="all: unset; color: inherit">Code</a>
+</button>
+
+#### **2022**
+
 * **A long read mapping method for highly repetitive reference sequences** <br>
-<u>C Jain</u>, A Rhie, N Hansen, S Koren, A Phillippy. _BioRxiv_
+<u>C Jain</u>, A Rhie, N Hansen, S Koren, A Phillippy. _Nature Methods (in press)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://www.biorxiv.org/content/10.1101/2020.11.01.363887v1" style="all: unset; color: inherit">Preprint</a>
@@ -33,13 +45,11 @@ type: archives
 <a href="https://drive.google.com/file/d/1CwZ2RfgYGr2o8qXvfyXmpADf1he_xD9j/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
 </button>
 
-#### **2022**
-
 * **Accelerating minimap2 for long-read sequencing applications on modern CPUs** <br>
-S Kalikar, <u>C Jain</u>, V Md, S Misra. _Nature Computational Science 2022 (in press)_
+S Kalikar, <u>C Jain</u>, V Md, S Misra. _Nature Computational Science_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://www.biorxiv.org/content/10.1101/2021.07.21.453294v2" style="all: unset; color: inherit">Preprint</a>
+<a href="https://drive.google.com/file/d/1Xl3m6CX7lOdhEj1pq6VAhsJC-BeqTwDI/view?usp=sharing" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/bwa-mem2/mm2-fast" style="all: unset; color: inherit">Code</a>
