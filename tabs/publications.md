@@ -45,14 +45,6 @@ type: archives
 <a href="https://drive.google.com/file/d/1CwZ2RfgYGr2o8qXvfyXmpADf1he_xD9j/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
 </button>
 
-
-* **The complete sequence of a human genome** <br>
-Nurk et al. _Science_
-<br>
-<button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://doi.org/10.1126/science.abj6987" style="all: unset; color: inherit">Paper</a>
-</button>
-
 * **Accelerating minimap2 for long-read sequencing applications on modern CPUs** <br>
 S Kalikar, <u>C Jain</u>, V Md, S Misra. _Nature Computational Science_
 <br>
@@ -74,6 +66,20 @@ S Kalikar, <u>C Jain</u>, V Md, S Misra. _Nature Computational Science_
 </button> 
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/1CWtaCIFn33strERXJF4qkNq9i-rTF9t1/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
+</button>
+
+* **The complete sequence of a human genome** <br>
+Nurk et al. _Science_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://doi.org/10.1126/science.abj6987" style="all: unset; color: inherit">Paper</a>
+</button>
+
+* **Chasing perfection: validation and polishing strategies for telomere-to-telomere genome assemblies** <br>
+Mc Cartney et al. _Nature Methods_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://doi.org/10.1038/s41592-022-01440-3" style="all: unset; color: inherit">Paper</a>
 </button>
 
 #### **2021**
