@@ -44,6 +44,7 @@ type: archives
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/1CwZ2RfgYGr2o8qXvfyXmpADf1he_xD9j/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
 </button>
+<button type="button" class="btn btn-outline-success btn-sm"><a href="https://timesofindia.indiatimes.com/india/first-truly-complete-human-genome-sequenced-india-software-plays-key-role/articleshow/83364939.cms" style="all: unset; color: inherit">News</a></button> 
 
 * **Accelerating minimap2 for long-read sequencing applications on modern CPUs** <br>
 S Kalikar, <u>C Jain</u>, V Md, S Misra. _Nature Computational Science_
