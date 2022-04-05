@@ -33,16 +33,24 @@ type: archives
 #### **2022**
 
 * **A long read mapping method for highly repetitive reference sequences** <br>
-<u>C Jain</u>, A Rhie, N Hansen, S Koren, A Phillippy. _Nature Methods (in press)_
+<u>C Jain</u>, A Rhie, N Hansen, S Koren, A Phillippy. _Nature Methods_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://www.biorxiv.org/content/10.1101/2020.11.01.363887v1" style="all: unset; color: inherit">Preprint</a>
+<a href="https://drive.google.com/file/d/1YxLym5_TfTRphj139xkIvI5Xw_o5P67s/view?usp=sharing" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/marbl/Winnowmap" style="all: unset; color: inherit">Code</a>
 </button> 
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/1CwZ2RfgYGr2o8qXvfyXmpADf1he_xD9j/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
+</button>
+
+
+* **The complete sequence of a human genome** <br>
+Nurk et al. _Science_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://doi.org/10.1126/science.abj6987" style="all: unset; color: inherit">Paper</a>
 </button>
 
 * **Accelerating minimap2 for long-read sequencing applications on modern CPUs** <br>
