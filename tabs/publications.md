@@ -32,7 +32,7 @@ type: archives
 
 #### **2022**
 
-* **A long read mapping method for highly repetitive reference sequences** <br>
+* **Long-read mapping to repetitive reference sequences using Winnowmap2** <br>
 <u>C Jain</u>, A Rhie, N Hansen, S Koren, A Phillippy. _Nature Methods_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
