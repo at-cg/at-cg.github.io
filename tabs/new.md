@@ -21,6 +21,9 @@ type: news
 
 ## **2022**
 
+> July
+>> - Chirag gives a keynote talk at [ISMB Microbiome](https://www.iscb.org/ismb2022-program/abstracts/microbiome) conference. Slides [here](https://drive.google.com/file/d/1CJb3H5E0dfSQMyDjrzzth5TG2M_IEO2R/view?usp=sharing).
+
 > Feb
 >> - SERB SRG research funding is awarded to our group for the project titled *Algorithmic techniques for compression of population-scale sequencing data*
 
