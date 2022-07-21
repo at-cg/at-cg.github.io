@@ -30,7 +30,7 @@ type: archives
 <a href="https://github.com/at-cg/containX" style="all: unset; color: inherit">Code</a>
 </button>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://drive.google.com/file/d/1CJb3H5E0dfSQMyDjrzzth5TG2M_IEO2R/view?usp=sharing">Slides</a>
+<a href="https://drive.google.com/file/d/1CJb3H5E0dfSQMyDjrzzth5TG2M_IEO2R/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
 </button>
 
 #### **2022**
