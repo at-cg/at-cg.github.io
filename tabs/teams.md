@@ -218,11 +218,11 @@ type: teams
 
  
                 <!-- ------------------- -->
-                <H2> UG students </H2>
+                <!-- H2 > UG students </H2 -->
                 <!-- cards -->
-                <div class="row">
+                <!-- div class="row">
                   
-                </div>
+                </div -->
                 <!-- ------------------- -->
 
                 <!-- ------------------- -->
