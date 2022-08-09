@@ -230,7 +230,6 @@ type: teams
                 <!-- cards -->
                 <ul style="list-style-type:none;">
                 <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/souvadrahati">Souvadra Hati</a> (UG Thesis, 2021-22)</h5></li>
-                </ul>
                 <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/bhavay-aggarwal">Bhavay Aggarwal</a> (Project Intern, 2021)</h5></li>
                 </ul>
 
