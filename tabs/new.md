@@ -21,6 +21,9 @@ type: news
 
 ## **2022**
 
+> Sept
+>> - New [preprint](https://doi.org/10.1101/2022.08.29.505691) on long-read alignment algorithm to pangenome graphs.
+
 > July
 >> - Chirag gives a keynote talk at [ISMB](https://www.iscb.org/ismb2022-program/abstracts/microbiome). Slides [here](https://drive.google.com/file/d/1CJb3H5E0dfSQMyDjrzzth5TG2M_IEO2R/view?usp=sharing).
 
