@@ -25,6 +25,10 @@ type: news
 >> - New [preprint](https://doi.org/10.1101/2022.08.29.505691) on long-read alignment algorithm to pangenome graphs
 >> - Chirag is invited speaker at [Genome Informatics 2022](https://coursesandconferences.wellcomeconnectingscience.org/event/genome-informatics-20220921/)
 
+> Aug
+>> - [Mehak Bindra](https://www.linkedin.com/in/mehak-bindra-3b85a0110/) joins us as Project Associate.
+>> - [Daanish Mahajan](https://www.linkedin.com/in/daanish-mahajan-644619144/) begins his [IMI](http://msci.iisc.ac.in) PhD program with us. He will be co-advised with [Prof. Navin Kashyap](https://ece.iisc.ac.in/~nkashyap/).
+
 > July
 >> - Chirag gives a keynote talk at [ISMB](https://www.iscb.org/ismb2022-program/abstracts/microbiome). Slides [here](https://drive.google.com/file/d/1CJb3H5E0dfSQMyDjrzzth5TG2M_IEO2R/view?usp=sharing)
 
