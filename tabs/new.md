@@ -22,10 +22,11 @@ type: news
 ## **2022**
 
 > Sept
->> - New [preprint](https://doi.org/10.1101/2022.08.29.505691) on long-read alignment algorithm to pangenome graphs.
+>> - New [preprint](https://doi.org/10.1101/2022.08.29.505691) on long-read alignment algorithm to pangenome graphs
+>> - Chirag is invited speaker at [Genome Informatics 2022](https://coursesandconferences.wellcomeconnectingscience.org/event/genome-informatics-20220921/)
 
 > July
->> - Chirag gives a keynote talk at [ISMB](https://www.iscb.org/ismb2022-program/abstracts/microbiome). Slides [here](https://drive.google.com/file/d/1CJb3H5E0dfSQMyDjrzzth5TG2M_IEO2R/view?usp=sharing).
+>> - Chirag gives a keynote talk at [ISMB](https://www.iscb.org/ismb2022-program/abstracts/microbiome). Slides [here](https://drive.google.com/file/d/1CJb3H5E0dfSQMyDjrzzth5TG2M_IEO2R/view?usp=sharing)
 
 > Feb
 >> - SERB SRG research funding is awarded to our group for the project titled *Algorithmic techniques for compression of population-scale sequencing data*
@@ -38,8 +39,8 @@ type: news
 ## **2021**
 
 > Dec
->> - [ChainX](https://doi.org/10.1101/2021.02.03.429492), our co-linear chaining algorithm is accepted at [RECOMB 2022](https://recomb2022.net/accepted-papers/).
->> - Two lab members Ghanshyam Chandra, Sai Manasa were part of winning team at the [National-HPC Hackathon](https://nationalhpc-hackathon.hackerearth.com). 
+>> - [ChainX](https://doi.org/10.1101/2021.02.03.429492), our co-linear chaining algorithm is accepted at [RECOMB 2022](https://recomb2022.net/accepted-papers/)
+>> - Two lab members Ghanshyam Chandra, Sai Manasa were part of winning team at the [National-HPC Hackathon](https://nationalhpc-hackathon.hackerearth.com)
 
 > Aug
 >> - Ghanshyam Chandra, Sudhanva Kamath and Jyotshna Rajput begin their research program in ATCG group. Welcome!
