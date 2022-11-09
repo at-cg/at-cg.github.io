@@ -25,7 +25,7 @@ type: news
 
 >> - Extended abstracts submitted by Ghanshyam and Kushagra are accepted at [HiPC SRS](https://hipc.org/srs/)
 >> - Daanish is awarded [Prime Minister Research Fellowship](https://www.pmrf.in)
->> - Chirag receives [NERSC High Impact Scientific Achievement](https://www.hpcwire.com/off-the-wire/nersc-honors-early-career-researchers-with-2022-achievement-awards/) 
+>> - Chirag receives [NERSC High Performance Computing Achievement Award](https://www.hpcwire.com/off-the-wire/nersc-honors-early-career-researchers-with-2022-achievement-awards/) 
 
 > Sept
 >> - New [preprint](https://doi.org/10.1101/2022.08.29.505691) on long-read alignment algorithm to pangenome graphs
