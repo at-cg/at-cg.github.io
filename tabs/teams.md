@@ -41,7 +41,7 @@ type: teams
                                 </div>
                                 <div class="user-content">
                                     <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/daanish-mahajan-644619144/">Daanish Mahajan</a></h5>
-                                    <h5 class="text-capitalize user-name">(co-supervised with <a target="_blank" href="https://ece.iisc.ac.in/~nkashyap/">Navin Kashyap</a>)</h5>
+                                    <h6>(jointly supervised with <a target="_blank" href="https://ece.iisc.ac.in/~nkashyap/">Navin Kashyap</a>)</h6>
                                 </div>
                             </div>
                         </div>
