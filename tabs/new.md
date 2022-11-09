@@ -93,4 +93,4 @@ type: news
 
 > Oct
   >> - Chirag receives Pratiksha Trust [Young Investigator Award](http://www.math.iisc.ac.in/InfosysYI.html) <br>
-  >> - Chirag starts ATCG (Algorithmic Techniques in Computational Genomics) lab in CDS, IISc <br>
+  >> - Chirag starts ATCG (Algorithmic Techniques for Computational Genomics) lab in CDS, IISc <br>
