@@ -20,16 +20,6 @@ type: archives
 
 #### **Preprints**
 
-* **Sequence to graph alignment using gap-sensitive co-linear chaining** <br>
-G Chandra, <u>C Jain</u>. _BioRxiv_
-<br>
-<button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://doi.org/10.1101/2022.08.29.505691" style="all: unset; color: inherit">Preprint</a>
-</button> 
-<button type="button" class="btn btn-outline-secondary btn-sm">
-<a href="https://github.com/at-cg/minichain" style="all: unset; color: inherit">Code</a>
-</button>
-
 * **Coverage-preserving sparsification of overlap graphs for long-read assembly** <br>
 <u>C Jain</u>. _BioRxiv_
 <br>
@@ -41,6 +31,18 @@ G Chandra, <u>C Jain</u>. _BioRxiv_
 </button>
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/1CJb3H5E0dfSQMyDjrzzth5TG2M_IEO2R/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
+</button>
+
+#### **2023**
+
+* **Sequence to graph alignment using gap-sensitive co-linear chaining** <br>
+G Chandra, <u>C Jain</u>. _RECOMB (accepted)_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://doi.org/10.1101/2022.08.29.505691" style="all: unset; color: inherit">Preprint</a>
+</button> 
+<button type="button" class="btn btn-outline-secondary btn-sm">
+<a href="https://github.com/at-cg/minichain" style="all: unset; color: inherit">Code</a>
 </button>
 
 #### **2022**
