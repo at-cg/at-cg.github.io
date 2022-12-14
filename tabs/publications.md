@@ -72,10 +72,10 @@ S Kalikar, <u>C Jain</u>, V Md, S Misra. _Nature Computational Science_
 </button>
 
 * **Co-linear chaining with overlaps and gap costs** <br>
-<u>C Jain</u>, D Gibney, SV Thankachan. _RECOMB_
+<u>C Jain</u>, D Gibney, SV Thankachan. _JCB (extended abstract appeared in RECOMB'22)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://drive.google.com/file/d/1ZCPiFiqQHrBAaQLFRzhn5MV4Wrp13tAp/view?usp=sharing" style="all: unset; color: inherit">Paper</a>
+<a href="https://drive.google.com/file/d/10B0WIXyIawZTpcLDTAo3fo0Q35_8IKBI/view?usp=sharing" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/AT-CG/ChainX" style="all: unset; color: inherit">Code</a>
