@@ -40,7 +40,7 @@ type: news
 >> - [Daanish Mahajan](https://www.linkedin.com/in/daanish-mahajan-644619144/) begins his [IMI](http://msci.iisc.ac.in) PhD program with us. He will be co-advised with [Prof. Navin Kashyap](https://ece.iisc.ac.in/~nkashyap/). Welcome!
 
 > July
->> - Chirag gives a keynote talk at [ISMB](https://www.iscb.org/ismb2022-program/abstracts/microbiome). Slides [here](https://drive.google.com/file/d/1CJb3H5E0dfSQMyDjrzzth5TG2M_IEO2R/view?usp=sharing)
+>> - Chirag gives a keynote talk at [ISMB Microbiome COSI](https://www.iscb.org/ismb2022-program/abstracts/microbiome). Slides [here](https://drive.google.com/file/d/1CJb3H5E0dfSQMyDjrzzth5TG2M_IEO2R/view?usp=sharing)
 
 > Feb
 >> - SERB SRG research funding is awarded to our group for the project titled *Algorithmic techniques for compression of population-scale sequencing data*
