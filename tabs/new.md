@@ -21,6 +21,10 @@ type: news
 
 ## **2022**
 
+> Dec
+>> - Kushagra wins 2nd place Best Poster Award at [HiPC Student Research Symposium](https://hipc.org/srs/)
+>> - NERSC awards allocation on [Perlmutter](https://en.wikipedia.org/wiki/Perlmutter_(supercomputer)) supercomputer to support our research
+
 > Nov
 >> - Ghanshyam's first [paper](https://doi.org/10.1101/2022.08.29.505691) from PhD is accepted at [RECOMB](http://recomb2023.bilkent.edu.tr/program.html) (acceptance rate <20%)
 >> - Extended abstracts submitted by Ghanshyam and Kushagra are accepted at [HiPC SRS](https://hipc.org/srs/)
