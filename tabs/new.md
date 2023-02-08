@@ -26,7 +26,7 @@ type: news
 >> - NERSC awards allocation on [Perlmutter](https://en.wikipedia.org/wiki/Perlmutter_(supercomputer)) supercomputer to our group
 
 > Nov
->> - Ghanshyam's first [paper](https://doi.org/10.1101/2022.08.29.505691) from PhD is accepted at [RECOMB](http://recomb2023.bilkent.edu.tr/program.html) (acceptance rate <20%)
+>> - Ghanshyam's first [paper](https://doi.org/10.1101/2022.08.29.505691) from PhD is accepted at [RECOMB](http://recomb2023.bilkent.edu.tr/program.html) (acceptance rate =20%)
 >> - Extended abstracts submitted by Ghanshyam and Kushagra are accepted at [HiPC SRS](https://hipc.org/srs/)
 >> - Daanish is awarded [Prime Minister Research Fellowship](https://www.pmrf.in)
 >> - Chirag receives [NERSC High Performance Computing Achievement Award](https://www.hpcwire.com/off-the-wire/nersc-honors-early-career-researchers-with-2022-achievement-awards/) 
