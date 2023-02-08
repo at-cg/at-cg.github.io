@@ -94,6 +94,24 @@ type: teams
                 <H2> MTech students </H2>
                 <!-- cards -->
                 <div class="row">
+                  
+                  
+                    <!-- BEGIN CARD -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="user-picture">
+                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
+                                url code will be like: ./../assets/img/xyz.jpg -->
+                                    <img src="./../assets/img/Ajeya.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                </div>
+                                <div class="user-content">
+                                    <h5 class="text-capitalize user-name">Ajeya B S</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD -->
 
                     <!-- BEGIN CARD -->
                     <div class="col-lg-4 col-md-6">
@@ -123,23 +141,6 @@ type: teams
                                 </div>
                                 <div class="user-content">
                                     <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/jyotshna-rajput-b5928b1b2">Jyotshna Rajput</a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END CARD -->
-
-                    <!-- BEGIN CARD -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body">
-                                <div class="user-picture">
-                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
-                                url code will be like: ./../assets/img/xyz.jpg -->
-                                    <img src="./../assets/img/Roshan.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
-                                </div>
-                                <div class="user-content">
-                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/rrauniyar238">Roshan Rauniyar</a></h5>
                                 </div>
                             </div>
                         </div>
