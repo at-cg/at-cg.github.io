@@ -83,6 +83,6 @@ Multidisciplinary cooperation is critical in bioinformatics. We enjoy working wi
 
 - [Parallel Computing Lab](https://sites.google.com/view/bharat-kaul-intel-labs-pcl/home), Intel, India
 - [Environmental Microbial Genomics Lab](http://enve-omics.gatech.edu/), Georgia Tech, USA
-- [Laboratory of AI in Genomics](https://sikic-lab.github.io), Genome Institute of Singapore (GIS)
+- [Laboratory of AI in Genomics](https://sikic-lab.github.io), Genome Institute of Singapore
 - [University Hospital of Dusseldorf](https://alexanderdilthey.github.io/), Germany
 - [Genome Informatics Section](https://genomeinformatics.github.io/), National Institutes of Health, USA
