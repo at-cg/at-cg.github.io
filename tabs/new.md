@@ -19,6 +19,13 @@ type: news
 
 # **News**
 
+## **2023**
+
+> Mar
+>> - Ghanshyam receives research funding through EMPOWER program from [Kotak IISc AI-ML Centre (KIAC)](https://kiac.iisc.ac.in)
+>> - We look forward to presentating our recent works at [RECOMB](http://recomb2023.bilkent.edu.tr/program.html) and [RECOMB-seq](https://recomb-seq.github.io/program/) in Istanbul.
+>> - Chirag gives a talk on "Graph representation of human genomes" at the NTU-IISc Symposium on Health and Life Sciences. Slides [here](https://drive.google.com/file/d/1wbGa03oCTV4FVv_N43khkywZkUCzqHx-/view?usp=sharing).
+
 ## **2022**
 
 > Dec
@@ -26,7 +33,7 @@ type: news
 >> - NERSC awards allocation on [Perlmutter](https://en.wikipedia.org/wiki/Perlmutter_(supercomputer)) supercomputer to our group
 
 > Nov
->> - Ghanshyam's first [paper](https://doi.org/10.1101/2022.08.29.505691) from PhD is accepted at [RECOMB](http://recomb2023.bilkent.edu.tr/program.html) (acceptance rate =20%)
+>> - Ghanshyam's first [paper](https://doi.org/10.1101/2022.08.29.505691) from PhD is accepted at [RECOMB](http://recomb2023.bilkent.edu.tr/program.html) (acceptance rate = 20%)
 >> - Extended abstracts submitted by Ghanshyam and Kushagra are accepted at [HiPC SRS](https://hipc.org/srs/)
 >> - Daanish is awarded [Prime Minister Research Fellowship](https://www.pmrf.in)
 >> - Chirag receives [NERSC High Performance Computing Achievement Award](https://www.hpcwire.com/off-the-wire/nersc-honors-early-career-researchers-with-2022-achievement-awards/) 
