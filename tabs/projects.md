@@ -45,6 +45,7 @@ As a result, scalable algorithms and software are indispensable components of co
 
    These include (i) development of theoretically well-founded sequence mapping algorithms and heuristics for genome-graphs, (ii) quantification of the benefit of adopting pan-genome approaches, and (iii) designing algorithms to build pan-genome graphs using millions of genomes as input. In each of the three aims, synergy is desired with downstream biological and clinical applications.
 
+   - [Sequence to graph alignment using gap-sensitive co-linear chaining](https://www.biorxiv.org/content/10.1101/2022.08.29.505691v2.full.pdf) RECOMB 2023
    - [On the complexity of sequence to graph alignment](http://cds.iisc.ac.in/faculty/chirag/pubs/2020_jain_complexity.pdf) RECOMB 2019
    - [Validating paired-end read alignments in sequence graphs](http://cds.iisc.ac.in/faculty/chirag/pubs/2019_jain_validating.pdf) WABI 2019
 
@@ -67,6 +68,7 @@ As a result, scalable algorithms and software are indispensable components of co
    As such, this project entails inventing new parallel algorithms with guarantees of work-optimality (whenever possible) for a variety of string and graph-based methods that are prevalent in bioinformatics. In the near term, we are looking at accelerating long-read mapping and genome assembly algorithms, both of which require significant computing time and resources.
 
 
+   - [Accelerating minimap2 for long-read sequencing applications on modern CPUs](http://cds.iisc.ac.in/faculty/chirag/pubs/2022_kalikar_mm2fast.pdf) Nature Comp. Sci. 2022
    - [Accelerating sequence alignment to graphs](http://cds.iisc.ac.in/faculty/chirag/pubs/2019_jain_accelerating.pdf) IPDPS 2019
    - [A parallel connectivity algorithm for de Bruijn graphs in metagenomic applications](http://cds.iisc.ac.in/faculty/chirag/pubs/2015_flick_parallel.pdf) ACM SC 2015
    - [Fine-grained GPU parallelization of pairwise local sequence alignment](http://cds.iisc.ac.in/faculty/chirag/pubs/2014_jain_fine.pdf) IEEE HiPC 2014
@@ -81,5 +83,6 @@ Multidisciplinary cooperation is critical in bioinformatics. We enjoy working wi
 
 - [Parallel Computing Lab](https://sites.google.com/view/bharat-kaul-intel-labs-pcl/home), Intel, India
 - [Environmental Microbial Genomics Lab](http://enve-omics.gatech.edu/), Georgia Tech, USA
+- [Laboratory of AI in Genomics](https://sikic-lab.github.io), Genome Institute of Singapore (GIS)
 - [University Hospital of Dusseldorf](https://alexanderdilthey.github.io/), Germany
 - [Genome Informatics Section](https://genomeinformatics.github.io/), National Institutes of Health, USA
