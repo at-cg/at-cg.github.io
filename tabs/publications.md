@@ -18,10 +18,13 @@ type: archives
 
 ### Citation statistics can be accessed using [Google Scholar](https://scholar.google.com/citations?user=Y2UmkF0AAAAJ&hl=en)
 
-#### **Preprints**
+<!--- #### **Preprints** --->
+
+
+#### **2023**
 
 * **Coverage-preserving sparsification of overlap graphs for long-read assembly** <br>
-<u>C Jain</u>. _BioRxiv_
+<u>C Jain</u>. _Bioinformatics (in press)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://doi.org/10.1101/2022.03.17.484715" style="all: unset; color: inherit">Preprint</a>
@@ -32,8 +35,6 @@ type: archives
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/1CJb3H5E0dfSQMyDjrzzth5TG2M_IEO2R/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
 </button>
-
-#### **2023**
 
 * **Sequence to graph alignment using gap-sensitive co-linear chaining** <br>
 G Chandra, <u>C Jain</u>. _RECOMB (accepted)_
