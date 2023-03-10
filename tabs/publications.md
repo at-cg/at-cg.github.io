@@ -24,10 +24,10 @@ type: archives
 #### **2023**
 
 * **Coverage-preserving sparsification of overlap graphs for long-read assembly** <br>
-<u>C Jain</u>. _Bioinformatics (in press)_
+<u>C Jain</u>. _Bioinformatics_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://doi.org/10.1101/2022.03.17.484715" style="all: unset; color: inherit">Preprint</a>
+<a href="https://doi.org/10.1093/bioinformatics/btad124" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/containX" style="all: unset; color: inherit">Code</a>
