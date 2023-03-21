@@ -27,7 +27,7 @@ type: archives
 <u>C Jain</u>. _Bioinformatics_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://doi.org/10.1093/bioinformatics/btad124" style="all: unset; color: inherit">Paper</a>
+<a href="https://drive.google.com/file/d/1XHOIbJ95gRpp7Hf-los8QNdxw73br9do/view?usp=sharing" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/containX" style="all: unset; color: inherit">Code</a>
