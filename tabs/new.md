@@ -30,7 +30,7 @@ type: news
 ## **2022**
 
 > Dec
->> - Kushagra wins 2nd place Best Poster Award at [HiPC Student Research Symposium](https://hipc.org/srs/)
+>> - Kushagra wins [2nd place Best Poster Award](https://drive.google.com/file/d/1Sec5usq7kGxh4DVpXT9-nA3epCF6ezOb/view?usp=sharing) at [HiPC Student Research Symposium](https://hipc.org/srs/)
 >> - NERSC awards allocation on [Perlmutter](https://en.wikipedia.org/wiki/Perlmutter_(supercomputer)) supercomputer to our group
 
 > Nov
