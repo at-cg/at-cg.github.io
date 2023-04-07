@@ -37,10 +37,10 @@ type: archives
 </button>
 
 * **Sequence to graph alignment using gap-sensitive co-linear chaining** <br>
-G Chandra, <u>C Jain</u>. _RECOMB (accepted)_
+G Chandra, <u>C Jain</u>. _RECOMB_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://doi.org/10.1101/2022.08.29.505691" style="all: unset; color: inherit">Preprint</a>
+<a href="https://drive.google.com/file/d/16j5OTcscJMEd1_8fldd8GOrq6SWhpUVT/view?usp=sharing" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/minichain" style="all: unset; color: inherit">Code</a>
