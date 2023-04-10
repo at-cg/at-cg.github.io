@@ -22,8 +22,8 @@ type: news
 ## **2023**
 
 > Apr
->> - Ghanshyam and Chirag will give talks at [RECOMB](http://recomb2023.bilkent.edu.tr/program.html) and [RECOMB-seq](https://recomb-seq.github.io/program/) respectively.
->> - [NSM](https://nsmindia.in/) awards research funding to our group.
+>> - Ghanshyam and Chirag will give talks at [RECOMB](http://recomb2023.bilkent.edu.tr/program.html) and [RECOMB-seq](https://recomb-seq.github.io/program/)
+>> - [NSM](https://nsmindia.in/) awards research funding to our group
 >> - Ghanshyam presented his work on pangenome graphs at [EECS 2023 Symposium](https://eecs.iisc.ac.in/EECS2023/)
 
 
