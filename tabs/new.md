@@ -21,10 +21,15 @@ type: news
 
 ## **2023**
 
+> Apr
+>> - Ghanshyam and Chirag will give talks at [RECOMB](http://recomb2023.bilkent.edu.tr/program.html) and [RECOMB-seq](https://recomb-seq.github.io/program/) respectively.
+>> [NSM](https://nsmindia.in/) awards research funding to our group.
+>> Ghanshyam presented his work on pangenome graphs at [EECS 2023 Symposium](https://eecs.iisc.ac.in/EECS2023/)
+
+
 > Mar
 >> - Vidushi, Dyotana and Jyotshna win [1st place prize](https://drive.google.com/file/d/1euE1gl9Li9gQQDqQZaqqF3UxHY2-yldR/view?usp=sharing) at Genomics Hackathon at [Centre for Brain Research IISc](https://www.cbr.iisc.ac.in/)
 >> - Ghanshyam receives research funding through EMPOWER program from [Kotak IISc AI-ML Centre (KIAC)](https://kiac.iisc.ac.in)
->> - We look forward to presentating our recent works at [RECOMB](http://recomb2023.bilkent.edu.tr/program.html) and [RECOMB-seq](https://recomb-seq.github.io/program/) in Istanbul.
 >> - Chirag gives a talk on "Graph representation of human genomes" at the NTU-IISc Symposium on Health and Life Sciences. Slides [here](https://drive.google.com/file/d/1wbGa03oCTV4FVv_N43khkywZkUCzqHx-/view?usp=sharing).
 
 ## **2022**
