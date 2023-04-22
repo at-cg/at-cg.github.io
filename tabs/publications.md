@@ -45,6 +45,10 @@ G Chandra, <u>C Jain</u>. _RECOMB_
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/minichain" style="all: unset; color: inherit">Code</a>
 </button>
+</button>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://drive.google.com/file/d/1_EcyeHWv4wuOQ8ikgIV3TOvsFFCufQCr/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
+</button>
 
 #### **2022**
 
