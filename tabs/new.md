@@ -21,6 +21,9 @@ type: news
 
 ## **2023**
 
+> May
+>> - Co-organizing [Symposium on Big Data Algorithms for Biology (BDBIO)](https://www.bdbio2023.in)
+
 > Apr
 >> - Ghanshyam and Chirag will give talks at [RECOMB](http://recomb2023.bilkent.edu.tr/program.html) and [RECOMB-seq](https://recomb-seq.github.io/program/)
 >> - [NSM](https://nsmindia.in/) awards research funding to our group
