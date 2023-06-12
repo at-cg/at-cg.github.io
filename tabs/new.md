@@ -21,7 +21,7 @@ type: news
 
 ## **2023**
 
-> June
+> Jun
 >> - Jyotshna's work on the first practical chaining algorithm on cyclic pangenome graphs is accepted at [WABI](https://acm-bcb.org/WABI/2023/).
 
 > May
