@@ -23,6 +23,16 @@ type: archives
 
 #### **2023**
 
+* **Co-linear Chaining on Pangenome Graphs** <br>
+J Rajput, G Chandra, <u>C Jain</u>. _WABI_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://www.biorxiv.org/content/10.1101/2023.06.21.545871v1" style="all: unset; color: inherit">Preprint</a>
+</button> 
+<button type="button" class="btn btn-outline-secondary btn-sm">
+<a href="https://github.com/at-cg/PanAligner" style="all: unset; color: inherit">Code</a>
+</button>
+
 * **Coverage-preserving sparsification of overlap graphs for long-read assembly** <br>
 <u>C Jain</u>. _Bioinformatics_
 <br>
