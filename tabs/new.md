@@ -22,7 +22,7 @@ type: news
 ## **2023**
 
 > Jun
->> - Jyotshna's work on the first practical chaining algorithm on cyclic pangenome graphs is accepted at [WABI](https://acm-bcb.org/WABI/2023/)
+>> - Jyotshna's project work on the first practical [chaining algorithm for cyclic pangenome graphs](https://www.biorxiv.org/content/10.1101/2023.06.21.545871v1) is accepted at [WABI](https://acm-bcb.org/WABI/2023/)
 
 > May
 >> - Co-organizing [Symposium on Big Data Algorithms for Biology (BDBIO)](https://www.bdbio2023.in)
