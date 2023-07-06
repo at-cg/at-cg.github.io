@@ -151,7 +151,7 @@ type: teams
                                     <img src="./../assets/img/Manasa.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
                                 </div>
                                 <div class="user-content">
-                                    <h5 class="text-capitalize user-name">Sai Manasa C</h5>
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/sai-manasa-chadalavada-621b1810a/">Sai Manasa C</a></h5>
                                 </div>
                             </div>
                         </div>
