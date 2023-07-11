@@ -58,8 +58,8 @@ G Chandra, <u>C Jain</u>. _RECOMB_
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/1_EcyeHWv4wuOQ8ikgIV3TOvsFFCufQCr/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
 </button>
-<button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://drive.google.com/file/d/1bAsSXERodKTtxMSLEXV4fP4afj2j57qN/view?usp=sharing" style="all: unset; color: inherit">Poster</a>
+<button type="button" class="btn btn-outline-secondary btn-sm">
+<a href="https://youtu.be/uaBsyvePt3w" style="all: unset; color: inherit">Video</a>
 </button>
 
 #### **2022**
