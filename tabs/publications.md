@@ -45,6 +45,9 @@ J Rajput, G Chandra, <u>C Jain</u>. _WABI_
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/1GfNyDX2e-oEsUjBza9w111mzdHUVhmy8/view?usp=share_link" style="all: unset; color: inherit">Slides</a>
 </button>
+<button type="button" class="btn btn-outline-secondary btn-sm">
+<a href="https://youtu.be/wolP6MzsGfo" style="all: unset; color: inherit">Video</a>
+</button>
 
 * **Sequence to graph alignment using gap-sensitive co-linear chaining** <br>
 G Chandra, <u>C Jain</u>. _RECOMB_
