@@ -23,6 +23,7 @@ type: news
 
 > July
 >> - Chirag gives an invited talk in Scalable Computational Genomics Session at [CiE 2023](https://www.viam.science.tsu.ge/cie2023). Slides [here](https://drive.google.com/file/d/1GfNyDX2e-oEsUjBza9w111mzdHUVhmy8/view?usp=share_link)
+>> - Co-organizing [CDS Resesarch Expo](https://cds.iisc.ac.in/news/cds-research-expo-2023) 
 
 > Jun
 >> - Jyotshna's project work on the first practical [chaining algorithm for cyclic pangenome graphs](https://www.biorxiv.org/content/10.1101/2023.06.21.545871v1) is accepted at [WABI](https://acm-bcb.org/WABI/2023/)
