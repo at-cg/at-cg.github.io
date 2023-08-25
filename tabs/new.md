@@ -22,7 +22,7 @@ type: news
 ## **2023**
 
 >Aug
->> - Ghanshyam is awarded Intel Research Fellowship (2023-24)
+>> - Ghanshyam receives Intel Research Fellowship (2023-24)
 >> - Parvesh Barak begins his M.Tech. research program in the lab. Welcome!
 
 > July
