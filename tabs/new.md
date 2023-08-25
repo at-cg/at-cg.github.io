@@ -21,6 +21,10 @@ type: news
 
 ## **2023**
 
+>Aug
+>> - Ghanshyam is awarded Intel Research Fellowship (2023-24)
+>> - Parvesh Barak begins his M.Tech. research program in the lab. Welcome!
+
 > July
 >> - Chirag gives an invited talk in Scalable Computational Genomics Session at [CiE 2023](https://www.viam.science.tsu.ge/cie2023). Slides [here](https://drive.google.com/file/d/1GfNyDX2e-oEsUjBza9w111mzdHUVhmy8/view?usp=share_link)
 >> - Co-organizing [CDS Resesarch Expo](https://cds.iisc.ac.in/news/cds-research-expo-2023) 
