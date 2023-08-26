@@ -23,11 +23,11 @@ type: archives
 
 #### **2023**
 
-* **Co-linear Chaining on Pangenome Graphs** <br>
+* **Co-linear chaining on pangenome graphs** <br>
 J Rajput, G Chandra, <u>C Jain</u>. _WABI_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://www.biorxiv.org/content/10.1101/2023.06.21.545871v1" style="all: unset; color: inherit">Preprint</a>
+<a href="https://drive.google.com/file/d/108us_oFqCFUTarTaJCeXaPB5WTKDMbAf/view?usp=sharing" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/PanAligner" style="all: unset; color: inherit">Code</a>
