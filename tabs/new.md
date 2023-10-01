@@ -21,6 +21,9 @@ type: news
 
 ## **2023**
 
+>Sept
+>> - Ajeya's and Manasa's work on building high-performance compression pipeline for raw genome sequencing data is accepted at [HiPC'23](https://hipc.org) (acceptance rate=24%)
+
 >Aug
 >> - Ghanshyam receives Intel Research Fellowship (2023-24)
 >> - Parvesh Barak begins his M.Tech. research program in the lab. Welcome!
