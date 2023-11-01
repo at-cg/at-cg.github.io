@@ -21,6 +21,9 @@ type: news
 
 ## **2023**
 
+>Nov
+>> - Jyotshna receives [ACM-W Scholarhip Award](https://women.acm.org/scholarships/)
+
 >Sept
 >> - Ajeya's and Manasa's work on building high-performance compression pipeline for raw genome sequencing data is accepted at [HiPC'23](https://hipc.org) (acceptance rate=24%)
 
