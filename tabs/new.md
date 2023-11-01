@@ -25,7 +25,7 @@ type: news
 >> - Jyotshna receives [ACM-W Scholarhip Award](https://women.acm.org/scholarships/)
 
 >Sept
->> - Ajeya's and Manasa's work on compression of GenomeIndia sequencing data is accepted at [HiPC'23](https://hipc.org) (acceptance rate=24%)
+>> - Ajeya's and Manasa's work on compression of [GenomeIndia](https://cbr.iisc.ac.in/research/flagship-projects/genomeindia/) sequencing data is accepted at [HiPC'23](https://hipc.org) (acceptance rate=24%)
 
 >Aug
 >> - Ghanshyam receives Intel Research Fellowship (2023-24)
