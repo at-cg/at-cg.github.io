@@ -77,6 +77,7 @@ type: teams
                                 <div class="user-content">
                                 <!-- Replace # with hyperlink of the user website or any link -->
                                     <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/sauma-suvra-majumdar-a5583a193/">Sauma S Majumdar</a></h5>
+                                    <h6>(jointly supervised with <a target="_blank" href="https://cbr.iisc.ac.in/people/bratati-kahali/">Bratati Kahali</a>)</h6>
                                 </div>
                             </div>
                         </div>
