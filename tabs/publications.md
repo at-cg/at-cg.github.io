@@ -31,7 +31,7 @@ G Chandra, <u>C Jain</u>. _BioRxiv_
 </button>
 
 * **Telomere-to-telomere assembly by preserving contained reads** <br>
-S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
+S S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://doi.org/10.1101/2023.11.07.565066" style="all: unset; color: inherit">Preprint</a>
@@ -44,7 +44,7 @@ S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
 #### **2023**
 
 * **Lossless compression of petabyte-scale sequencing data** <br>
-A Bhat, S Chadalavada, N Jammula, <u>C Jain</u>, Y Simmhan. _IEEE HiPC_ (accepted)
+A Bhat, S M Chadalavada, N Jammula, <u>C Jain</u>, Y Simmhan. _IEEE HiPC_ (accepted)
 
 * **Co-linear chaining on pangenome graphs** <br>
 J Rajput, G Chandra, <u>C Jain</u>. _WABI_
