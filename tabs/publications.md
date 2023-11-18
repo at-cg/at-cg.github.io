@@ -18,10 +18,33 @@ type: archives
 
 ### Citation statistics can be accessed using [Google Scholar](https://scholar.google.com/citations?user=Y2UmkF0AAAAJ&hl=en)
 
-<!--- #### **Preprints** --->
+#### **Preprints**
+
+* **Haplotype-aware sequence-to-graph alignment** <br>
+G Chandra, <u>C Jain</u>. _BioRxiv_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://doi.org/10.1101/2023.11.15.566493" style="all: unset; color: inherit">Preprint</a>
+</button> 
+<button type="button" class="btn btn-outline-secondary btn-sm">
+<a href="https://github.com/at-cg/minichain" style="all: unset; color: inherit">Code</a>
+</button>
+
+* **Telomere-to-telomere assembly by preserving contained reads** <br>
+S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://doi.org/10.1101/2023.11.07.565066" style="all: unset; color: inherit">Preprint</a>
+</button> 
+<button type="button" class="btn btn-outline-secondary btn-sm">
+<a href="https://github.com/at-cg/RAFT" style="all: unset; color: inherit">Code</a>
+</button>
 
 
 #### **2023**
+
+* **Lossless compression of petabyte-scale sequencing data** <br>
+A Bhat, S Chadalavada, N Jammula, <u>C Jain</u>, Y Simmhan. _IEEE HiPC_ (in press)
 
 * **Co-linear chaining on pangenome graphs** <br>
 J Rajput, G Chandra, <u>C Jain</u>. _WABI_
