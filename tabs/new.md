@@ -22,8 +22,8 @@ type: news
 ## **2023**
 
 >Nov
->> - Preprint ["Haplotype-aware sequence-to-graph alignment"](https://doi.org/10.1101/2023.11.15.566493) is posted online (project led by Ghanshyam)
->> - Preprint ["Telomere-to-telomere assembly by preserving contained reads"](https://doi.org/10.1101/2023.11.07.565066) is posted online (project led by Sudhanva and Mehak)
+>> - Preprint ["Haplotype-aware sequence-to-graph alignment"](https://doi.org/10.1101/2023.11.15.566493) is now online (project led by Ghanshyam)
+>> - Preprint ["Telomere-to-telomere assembly by preserving contained reads"](https://doi.org/10.1101/2023.11.07.565066) is now online (project led by Sudhanva and Mehak)
 >> - Jyotshna receives [ACM-W Scholarhip Award](https://women.acm.org/scholarships/)
 
 >Sept
