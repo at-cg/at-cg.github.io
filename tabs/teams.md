@@ -72,6 +72,27 @@ type: teams
                                 <div class="user-picture">
                                 <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
                                 url code will be like: ./../assets/img/xyz.jpg -->
+                                    <img src="./../assets/img/Sauma.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                </div>
+                                <div class="user-content">
+                                <!-- Replace # with hyperlink of the user website or any link -->
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/sauma-suvra-majumdar-a5583a193/">Sauma S Majumdar</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD -->
+
+                </div>
+
+                <div class="row">
+                    <!-- BEGIN CARD -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="user-picture">
+                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
+                                url code will be like: ./../assets/img/xyz.jpg -->
                                     <img src="./../assets/img/Sudhanva.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
                                 </div>
                                 <div class="user-content">
