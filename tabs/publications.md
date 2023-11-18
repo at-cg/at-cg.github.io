@@ -44,7 +44,7 @@ S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
 #### **2023**
 
 * **Lossless compression of petabyte-scale sequencing data** <br>
-A Bhat, S Chadalavada, N Jammula, <u>C Jain</u>, Y Simmhan. _IEEE HiPC_ (in press)
+A Bhat, S Chadalavada, N Jammula, <u>C Jain</u>, Y Simmhan. _IEEE HiPC_ (accepted)
 
 * **Co-linear chaining on pangenome graphs** <br>
 J Rajput, G Chandra, <u>C Jain</u>. _WABI_
