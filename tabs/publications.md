@@ -75,11 +75,11 @@ J Rajput, G Chandra, <u>C Jain</u>. _WABI_
 <a href="https://youtu.be/wolP6MzsGfo" style="all: unset; color: inherit">Video</a>
 </button>
 
-* **Sequence to graph alignment using gap-sensitive co-linear chaining** <br>
-G Chandra, <u>C Jain</u>. _RECOMB_
+* **Gap-sensitive colinear chaining algorithms for acyclic pangenome graphs** <br>
+G Chandra, <u>C Jain</u>. _JCB (extended abstract appeared in RECOMB'23)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://drive.google.com/file/d/16j5OTcscJMEd1_8fldd8GOrq6SWhpUVT/view?usp=sharing" style="all: unset; color: inherit">Paper</a>
+<a href="https://drive.google.com/file/d/1j6mrQTVSi8Td_yvzwIFgBLFHOT_GQwfi/view?usp=share_link" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/minichain" style="all: unset; color: inherit">Code</a>
