@@ -22,7 +22,7 @@ type: news
 ## **2023**
 
 >Dec
->> - Serving in the PC of [RECOMB](https://recomb.org/recomb2024/index.html) and [RECOMB-seq](https://recomb-seq.github.io)
+>> - Serving as PC member of [RECOMB](https://recomb.org/recomb2024/index.html) and [RECOMB-seq](https://recomb-seq.github.io)
 
 >Nov
 >> - Preprint ["Haplotype-aware sequence-to-graph alignment"](https://doi.org/10.1101/2023.11.15.566493) is now online (project led by Ghanshyam)
