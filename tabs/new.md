@@ -28,7 +28,7 @@ type: news
 >Nov
 >> - Preprint ["Haplotype-aware sequence-to-graph alignment"](https://doi.org/10.1101/2023.11.15.566493) is now online (project led by Ghanshyam)
 >> - Preprint ["Telomere-to-telomere assembly by preserving contained reads"](https://doi.org/10.1101/2023.11.07.565066) is now online (project led by Sudhanva and Mehak)
->> - Jyotshna receives [ACM-W Scholarhip Award](https://women.acm.org/scholarships/)
+>> - Jyotshna receives [ACM-W Scholarhip](https://women.acm.org/scholarships/)
 
 >Sept
 >> - Ajeya's and Manasa's work on compression of [GenomeIndia](https://cbr.iisc.ac.in/research/flagship-projects/genomeindia/) sequencing data is accepted at [HiPC'23](https://hipc.org) (acceptance rate=24%)
