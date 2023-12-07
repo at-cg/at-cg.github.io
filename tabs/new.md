@@ -22,6 +22,7 @@ type: news
 ## **2023**
 
 >Dec
+>> - Jyotshna presents her work at the Genome Informatics Conference in New York. Slides [here](https://drive.google.com/file/d/1pETs5E8DwiAPkw-F_qubjfY4TLnqwGQg/view?usp=share_link)
 >> - Serving as PC member of [RECOMB](https://recomb.org/recomb2024/index.html) and [RECOMB-seq](https://recomb-seq.github.io)
 
 >Nov
