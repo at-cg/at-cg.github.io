@@ -56,7 +56,7 @@ J Rajput, G Chandra, <u>C Jain</u>. _WABI_
 <a href="https://github.com/at-cg/PanAligner" style="all: unset; color: inherit">Code</a>
 </button>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://drive.google.com/file/d/1vk-2eqoBpQspytp-8C3eWSAc-2nZwCsF/view?usp=share_link" style="all: unset; color: inherit">Slides</a>
+<a href="https://drive.google.com/file/d/1pETs5E8DwiAPkw-F_qubjfY4TLnqwGQg/view?usp=share_link" style="all: unset; color: inherit">Slides</a>
 </button>
 
 * **Coverage-preserving sparsification of overlap graphs for long-read assembly** <br>
