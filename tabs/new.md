@@ -22,13 +22,14 @@ type: news
 ## **2023**
 
 >Dec
->> - Jyotshna presents her work at the Genome Informatics Conference in New York. Slides [here](https://drive.google.com/file/d/1pETs5E8DwiAPkw-F_qubjfY4TLnqwGQg/view?usp=share_link)
+>> - Chirag is invited speaker at [Genomics India Conference](https://genomicsindia.co.in)
+>> - Jyotshna presents her work at the [Genome Informatics](https://meetings.cshl.edu/meetings.aspx?meet=info&year=23) meeting in New York. Slides [here](https://drive.google.com/file/d/1pETs5E8DwiAPkw-F_qubjfY4TLnqwGQg/view?usp=share_link)
 >> - Serving as PC member of [RECOMB](https://recomb.org/recomb2024/index.html) and [RECOMB-seq](https://recomb-seq.github.io)
 
 >Nov
 >> - Preprint ["Haplotype-aware sequence-to-graph alignment"](https://doi.org/10.1101/2023.11.15.566493) is now online (project led by Ghanshyam)
 >> - Preprint ["Telomere-to-telomere assembly by preserving contained reads"](https://doi.org/10.1101/2023.11.07.565066) is now online (project led by Sudhanva and Mehak)
->> - Jyotshna receives [ACM-W Scholarhip](https://women.acm.org/scholarships/)
+>> - Jyotshna receives [ACM-W Scholarship](https://women.acm.org/scholarships/)
 
 >Sept
 >> - Ajeya's and Manasa's work on compression of [GenomeIndia](https://cbr.iisc.ac.in/research/flagship-projects/genomeindia/) sequencing data is accepted at [HiPC'23](https://hipc.org) (acceptance rate=24%)
