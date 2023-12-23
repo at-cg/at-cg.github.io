@@ -22,6 +22,7 @@ type: news
 ## **2023**
 
 >Dec
+>> - Ghanshyam's [paper](https://doi.org/10.1101/2023.11.15.566493) is accepted at RECOMB (acceptance rate = 16%) 
 >> - Chirag is invited speaker at [Genomics India Conference](https://genomicsindia.co.in)
 >> - Jyotshna presents her work at the [Genome Informatics](https://meetings.cshl.edu/meetings.aspx?meet=info&year=23) meeting in New York. Slides [here](https://drive.google.com/file/d/1pETs5E8DwiAPkw-F_qubjfY4TLnqwGQg/view?usp=share_link)
 >> - Serving as PC member of [RECOMB](https://recomb.org/recomb2024/index.html) and [RECOMB-seq](https://recomb-seq.github.io)
