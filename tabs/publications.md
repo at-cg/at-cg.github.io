@@ -20,16 +20,6 @@ type: archives
 
 #### **Preprints**
 
-* **Haplotype-aware sequence-to-graph alignment** <br>
-G Chandra, <u>C Jain</u>. _BioRxiv_
-<br>
-<button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://doi.org/10.1101/2023.11.15.566493" style="all: unset; color: inherit">Preprint</a>
-</button> 
-<button type="button" class="btn btn-outline-secondary btn-sm">
-<a href="https://github.com/at-cg/minichain" style="all: unset; color: inherit">Code</a>
-</button>
-
 * **Telomere-to-telomere assembly by preserving contained reads** <br>
 S S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
 <br>
@@ -40,11 +30,26 @@ S S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
 <a href="https://github.com/at-cg/RAFT" style="all: unset; color: inherit">Code</a>
 </button>
 
+#### **2024**
+* **Haplotype-aware sequence-to-graph alignment** <br>
+G Chandra, <u>C Jain</u>. _RECOMB_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://doi.org/10.1101/2023.11.15.566493" style="all: unset; color: inherit">Preprint</a>
+</button> 
+<button type="button" class="btn btn-outline-secondary btn-sm">
+<a href="https://github.com/at-cg/minichain" style="all: unset; color: inherit">Code</a>
+</button>
 
 #### **2023**
 
 * **Lossless compression of petabyte-scale sequencing data** <br>
-A Bhat, S M Chadalavada, N Jammula, <u>C Jain</u>, Y Simmhan. _IEEE HiPC_ (accepted)
+A Bhat, S M Chadalavada, N Jammula, <u>C Jain</u>, Y Simmhan. _IEEE HiPC_
+<br>
+</button>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://drive.google.com/file/d/1wUiWWlXTu0M4TQ-syLNyWAKfrGB1ZYoA/view?usp=share_link" style="all: unset; color: inherit">Slides</a>
+</button>
 
 * **Co-linear chaining on pangenome graphs** <br>
 J Rajput, G Chandra, <u>C Jain</u>. _WABI_
