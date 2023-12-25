@@ -46,7 +46,6 @@ G Chandra, <u>C Jain</u>. _RECOMB_
 * **Lossless compression of petabyte-scale sequencing data** <br>
 A Bhat, S M Chadalavada, N Jammula, <u>C Jain</u>, Y Simmhan. _IEEE HiPC_
 <br>
-</button>
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/1wUiWWlXTu0M4TQ-syLNyWAKfrGB1ZYoA/view?usp=share_link" style="all: unset; color: inherit">Slides</a>
 </button>
