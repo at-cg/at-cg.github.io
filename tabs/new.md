@@ -19,10 +19,12 @@ type: news
 
 # **News**
 
-## **2023**
+## **2024**
 
->Dec
+>Jan
 >> - Chirag is awarded [India Alliance Intermediate Fellowship](https://www.indiaalliance.org/fellowshiptype/basic-biomedical-research-fellowships)
+
+## **2023**
 
 >Dec
 >> - Ghanshyam's [paper](https://doi.org/10.1101/2023.11.15.566493) is accepted at [RECOMB](https://recomb.org/recomb2024/) (acceptance rate = 16%) 
