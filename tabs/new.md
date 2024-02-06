@@ -22,6 +22,7 @@ type: news
 ## **2024**
 
 >Jan
+>> - The [BDBio 2024](https://www.bdbio.in) symposium will be held in IISc on May 31-June 1
 >> - Chirag is awarded [India Alliance Intermediate Fellowship](https://www.indiaalliance.org/fellowshiptype/basic-biomedical-research-fellowships)
 
 ## **2023**
