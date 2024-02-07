@@ -23,13 +23,13 @@ type: news
 
 >Jan
 >> - The [BDBio 2024](https://www.bdbio.in) symposium will be held in IISc on May 31-June 1
+>> - Chirag is invited speaker at [Genomics India Conference](https://genomicsindia.co.in). Slides [here](https://drive.google.com/file/d/1XcCHBMTw-YN7ROxq7tEnditT6i90YEvF/view?usp=share_link)
 >> - Chirag is awarded [India Alliance Intermediate Fellowship](https://www.indiaalliance.org/fellowshiptype/basic-biomedical-research-fellowships)
 
 ## **2023**
 
 >Dec
 >> - Ghanshyam's [paper](https://doi.org/10.1101/2023.11.15.566493) is accepted at [RECOMB](https://recomb.org/recomb2024/) (acceptance rate = 16%) 
->> - Chirag is invited speaker at [Genomics India Conference](https://genomicsindia.co.in)
 >> - Jyotshna presents her work at the [Genome Informatics](https://meetings.cshl.edu/meetings.aspx?meet=info&year=23) meeting in New York. Slides [here](https://drive.google.com/file/d/1pETs5E8DwiAPkw-F_qubjfY4TLnqwGQg/view?usp=share_link)
 >> - Ajeya presents his work at [HiPC conference](https://hipc.org) held in Goa. Slides [here](https://drive.google.com/file/d/1wUiWWlXTu0M4TQ-syLNyWAKfrGB1ZYoA/view?usp=share_link)
 >> - Serving as PC member of [RECOMB](https://recomb.org/recomb2024/index.html) and [RECOMB-seq](https://recomb-seq.github.io)
