@@ -31,7 +31,7 @@ S S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
 </button>
 
 #### **2024**
-* **Haplotype-aware sequence-to-graph alignment** <br>
+* **Haplotype-aware sequence alignment to pangenome graphs** <br>
 G Chandra, D Gibney, <u>C Jain</u>. _RECOMB_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
