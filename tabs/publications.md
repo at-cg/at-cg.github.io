@@ -32,7 +32,7 @@ S S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
 
 #### **2024**
 * **Haplotype-aware sequence-to-graph alignment** <br>
-G Chandra, <u>C Jain</u>. _RECOMB_
+G Chandra, D Gibney, <u>C Jain</u>. _RECOMB_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://doi.org/10.1101/2023.11.15.566493" style="all: unset; color: inherit">Preprint</a>
