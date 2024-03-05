@@ -21,6 +21,9 @@ type: news
 
 ## **2024**
 
+>Feb
+>> - Lab members [showcase their research](https://drive.google.com/file/d/1S2oPNqlyjuusSpeGJqlSxmBdaS-PzFta/view?usp=share_link) to the general public at [IISc Open Day](https://openday.iisc.ac.in)
+
 >Jan
 >> - The [BDBio 2024](https://www.bdbio.in) symposium will be held in IISc on May 31-June 1
 >> - Chirag is invited speaker at [Genomics India Conference](https://genomicsindia.co.in). Slides [here](https://drive.google.com/file/d/1XcCHBMTw-YN7ROxq7tEnditT6i90YEvF/view?usp=share_link)
