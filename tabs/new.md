@@ -22,8 +22,8 @@ type: news
 ## **2024**
 
 >Apr
->> Sudhanva receives Best Student Presentation Award at the [EECS 2024 Symposium](https://eecs.iisc.ac.in/EECS2024/)
->> Ghanshyam presents his work at the [EECS 2024 Symposium](https://eecs.iisc.ac.in/EECS2024/)
+>> - Sudhanva receives Best Student Presentation Award at the [EECS 2024 Symposium](https://eecs.iisc.ac.in/EECS2024/)
+>> - Ghanshyam presents his work at the [EECS 2024 Symposium](https://eecs.iisc.ac.in/EECS2024/)
 
 >Feb
 >> - Lab members [showcase their research](https://drive.google.com/file/d/1S2oPNqlyjuusSpeGJqlSxmBdaS-PzFta/view?usp=share_link) to the general public at [IISc Open Day](https://openday.iisc.ac.in)
@@ -39,7 +39,7 @@ type: news
 >> - Ghanshyam's [paper](https://doi.org/10.1101/2023.11.15.566493) is accepted at [RECOMB](https://recomb.org/recomb2024/) (acceptance rate = 16%) 
 >> - Jyotshna presents her work at the [Genome Informatics](https://meetings.cshl.edu/meetings.aspx?meet=info&year=23) meeting in New York. Slides [here](https://drive.google.com/file/d/1pETs5E8DwiAPkw-F_qubjfY4TLnqwGQg/view?usp=share_link)
 >> - Ajeya presents his work at [HiPC conference](https://hipc.org) held in Goa. Slides [here](https://drive.google.com/file/d/1wUiWWlXTu0M4TQ-syLNyWAKfrGB1ZYoA/view?usp=share_link)
->> - Serving as PC member of [RECOMB](https://recomb.org/recomb2024/index.html) and [RECOMB-seq](https://recomb-seq.github.io)
+>> - Serving as PC member of [RECOMB](https://recomb.org/recomb2024/index.html),  [RECOMB-seq](https://recomb-seq.github.io) and [ISMB](https://www.iscb.org/ismb2024/home)
 
 >Nov
 >> - Preprint ["Haplotype-aware sequence-to-graph alignment"](https://doi.org/10.1101/2023.11.15.566493) is now online (project led by Ghanshyam)
