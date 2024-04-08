@@ -21,6 +21,10 @@ type: news
 
 ## **2024**
 
+>Apr
+>> Sudhanva receives Best Student Presentation Award at the [EECS 2024 Symposium](https://eecs.iisc.ac.in/EECS2024/)
+>> Ghanshyam presents his work at the [EECS 2024 Symposium](https://eecs.iisc.ac.in/EECS2024/)
+
 >Feb
 >> - Lab members [showcase their research](https://drive.google.com/file/d/1S2oPNqlyjuusSpeGJqlSxmBdaS-PzFta/view?usp=share_link) to the general public at [IISc Open Day](https://openday.iisc.ac.in)
 
