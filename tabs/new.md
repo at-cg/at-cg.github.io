@@ -22,6 +22,7 @@ type: news
 ## **2024**
 
 >Apr
+>> - Daanish's paper "On the Coverage Required for Diploid Genome Assembly" is accepted at [ISIT 2024](https://2024.ieee-isit.org/home)
 >> - Sudhanva receives Best Student Presentation Award at the [EECS 2024 Symposium](https://eecs.iisc.ac.in/EECS2024/)
 >> - Ghanshyam presents his work at the [EECS 2024 Symposium](https://eecs.iisc.ac.in/EECS2024/)
 
