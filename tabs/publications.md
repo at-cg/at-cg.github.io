@@ -29,6 +29,9 @@ S S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/RAFT" style="all: unset; color: inherit">Code</a>
 </button>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://drive.google.com/file/d/1AszEgV-AHVCWE1pKTGl3GxYuABl1F5Jc/view?usp=share_link" style="all: unset; color: inherit">Poster</a>
+</button>
 
 #### **2024**
 * **Haplotype-aware sequence alignment to pangenome graphs** <br>
