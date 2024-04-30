@@ -43,6 +43,9 @@ G Chandra, D Gibney, <u>C Jain</u>. _RECOMB_
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/minichain" style="all: unset; color: inherit">Code</a>
 </button>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://drive.google.com/file/d/1oHYstBPAdMaGXaMRtNVG4yPpGE5uoc2r/view?usp=share_link" style="all: unset; color: inherit">Slides</a>
+</button>
 
 * **Co-linear chaining on pangenome graphs** <br>
 J Rajput, G Chandra, <u>C Jain</u>. _AMB (extended abstract appeared in WABI'23)_
