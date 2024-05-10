@@ -23,7 +23,7 @@ type: news
 
 >May
 >> - Our lab is organizing the 2-day [BDBio 2024](https://www.bdbio.in) symposium in IISc
->> - Ghanshyam presents his research at RECOMB'24 conference held at MIT. Slides [here](https://drive.google.com/file/d/1oHYstBPAdMaGXaMRtNVG4yPpGE5uoc2r/view?usp=share_link) and [here](https://drive.google.com/file/d/17eilPJHS2vWEgGxenZlOU9EKdQ1Np_Kr/view?usp=share_link)
+>> - Ghanshyam presents his research at [RECOMB'24 conference](https://recomb.org/recomb2024/) held at MIT. Slides [here](https://drive.google.com/file/d/1oHYstBPAdMaGXaMRtNVG4yPpGE5uoc2r/view?usp=share_link) and [here](https://drive.google.com/file/d/17eilPJHS2vWEgGxenZlOU9EKdQ1Np_Kr/view?usp=share_link)
 
 >Apr
 >> - Daanish's paper "On the Coverage Required for Diploid Genome Assembly" is accepted at [ISIT 2024](https://2024.ieee-isit.org/home)
