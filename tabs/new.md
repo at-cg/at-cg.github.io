@@ -34,7 +34,7 @@ type: news
 
 >Jan
 >> - Chirag is invited speaker at [Genomics India Conference](https://genomicsindia.co.in). Slides [here](https://drive.google.com/file/d/1XcCHBMTw-YN7ROxq7tEnditT6i90YEvF/view?usp=share_link)
->> - Chirag is awarded [India Alliance Intermediate Fellowship](https://www.indiaalliance.org/fellowshiptype/basic-biomedical-research-fellowships)
+>> - Chirag is awarded [India Alliance Intermediate Fellowship](https://www.indiaalliance.org/news/intermediate-fellows)
 
 ## **2023**
 
