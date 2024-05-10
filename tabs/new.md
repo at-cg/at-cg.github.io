@@ -21,16 +21,18 @@ type: news
 
 ## **2024**
 
+>May
+>> - Our lab is organizing the 2-day [BDBio 2024](https://www.bdbio.in) symposium in IISc
+>> - Ghanshyam presents his research at RECOMB'24 conference held at MIT. Slides [here](https://drive.google.com/file/d/1oHYstBPAdMaGXaMRtNVG4yPpGE5uoc2r/view?usp=share_link) and [here](https://drive.google.com/file/d/17eilPJHS2vWEgGxenZlOU9EKdQ1Np_Kr/view?usp=share_link)
+
 >Apr
 >> - Daanish's paper "On the Coverage Required for Diploid Genome Assembly" is accepted at [ISIT 2024](https://2024.ieee-isit.org/home)
->> - Sudhanva receives Best Student Presentation Award at the [EECS 2024 Symposium](https://eecs.iisc.ac.in/EECS2024/)
->> - Ghanshyam presents his work at the [EECS 2024 Symposium](https://eecs.iisc.ac.in/EECS2024/)
+>> - Sudhanva receives Best Student Presentation Award at the [EECS 2024 Symposium](https://eecs.iisc.ac.in/EECS2024/). Slides [here](https://drive.google.com/file/d/1Cx9EsOmKIZ_XflNqWpgPL2dwgw9eyU9C/view?usp=share_link)
 
 >Feb
 >> - Lab members [showcase their research](https://drive.google.com/file/d/1S2oPNqlyjuusSpeGJqlSxmBdaS-PzFta/view?usp=share_link) to the general public at [IISc Open Day](https://openday.iisc.ac.in)
 
 >Jan
->> - The [BDBio 2024](https://www.bdbio.in) symposium will be held in IISc on May 31-June 1
 >> - Chirag is invited speaker at [Genomics India Conference](https://genomicsindia.co.in). Slides [here](https://drive.google.com/file/d/1XcCHBMTw-YN7ROxq7tEnditT6i90YEvF/view?usp=share_link)
 >> - Chirag is awarded [India Alliance Intermediate Fellowship](https://www.indiaalliance.org/fellowshiptype/basic-biomedical-research-fellowships)
 
