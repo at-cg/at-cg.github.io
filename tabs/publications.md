@@ -34,6 +34,13 @@ S S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
 </button>
 
 #### **2024**
+* **On the coverage required for diploid genome assembly** <br>
+D Mahajan, <u>C Jain</u>, N Kashyap. _ISIT_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://arxiv.org/abs/2405.05734" style="all: unset; color: inherit">Preprint</a>
+</button>
+
 * **Haplotype-aware sequence alignment to pangenome graphs** <br>
 G Chandra, D Gibney, <u>C Jain</u>. _RECOMB_
 <br>
