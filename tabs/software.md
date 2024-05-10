@@ -19,6 +19,15 @@ title: Software
 
 Here is the list of open-source documented software hosted on GitHub that my lab developed or co-developed. Some of these are being actively maintained and used by 1000+ users.
 
+- [RAFT](https://github.com/at-cg/RAFT) - Improves long read assembly by proper treatment of contained reads <br>
+[![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/at-cg/RAFT)
+
+- [Minichain](https://github.com/at-cg/minichain) - Long-read aligner to pangenome graphs <br>
+[![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/at-cg/minichain)
+
+- [PanAligner](https://github.com/at-cg/PanAligner) - Long-read aligner to cyclic pangenome graphs <br>
+[![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/at-cg/PanAligner)
+
 - [Winnowmap](https://github.com/marbl/Winnowmap) - Long read (ONT/PacBio) mapper using weighted minimizer sampling technique <br>
 [![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/marbl/Winnowmap)
 
