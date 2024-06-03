@@ -69,7 +69,7 @@ J Rajput, G Chandra, <u>C Jain</u>. _AMB (extended abstract appeared in WABI'23)
 
 #### **2023**
 
-* ** A lossless compression pipeline for petabyte-scale whole-genome sequencing data** <br>
+* **A lossless compression pipeline for petabyte-scale whole-genome sequencing data** <br>
 A Bhat, S M Chadalavada, N Jammula, <u>C Jain</u>, Y Simmhan. _IEEE HiPC_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
