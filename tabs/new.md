@@ -20,6 +20,8 @@ type: news
 # **News**
 
 ## **2024**
+>June
+>> - Parvesh receives [Reliance Foundation Postgraduate Scholarship (2023-24)](https://www.scholarships.reliancefoundation.org/PG_Scholarship.aspx)
 
 >May
 >> - Our lab is organizing the 2-day [BDBio 2024](https://www.bdbio.in) symposium in IISc
