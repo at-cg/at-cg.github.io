@@ -35,7 +35,7 @@ S S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
 
 #### **2024**
 * **On the coverage required for diploid genome assembly** <br>
-D Mahajan, <u>C Jain</u>, N Kashyap. _ISIT_
+D Mahajan, <u>C Jain</u>, N Kashyap. _IEEE ISIT_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://arxiv.org/abs/2405.05734" style="all: unset; color: inherit">Preprint</a>
@@ -55,7 +55,7 @@ G Chandra, D Gibney, <u>C Jain</u>. _RECOMB_
 </button>
 
 * **Co-linear chaining on pangenome graphs** <br>
-J Rajput, G Chandra, <u>C Jain</u>. _AMB (extended abstract appeared in WABI'23)_
+J Rajput, G Chandra, <u>C Jain</u>. _Algorithms for Molecular Biology (extended abstract appeared in WABI'23)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/1uw7VfX6-9x9-jdr4apZz5qP0fgeu1OlI/view?usp=share_link" style="all: unset; color: inherit">Paper</a>
@@ -96,7 +96,7 @@ A Bhat, S M Chadalavada, N Jammula, <u>C Jain</u>, Y Simmhan. _IEEE HiPC_
 </button>
 
 * **Gap-sensitive colinear chaining algorithms for acyclic pangenome graphs** <br>
-G Chandra, <u>C Jain</u>. _JCB (extended abstract appeared in RECOMB'23)_
+G Chandra, <u>C Jain</u>. _Journal of Computational Biology (extended abstract appeared in RECOMB'23)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/1j6mrQTVSi8Td_yvzwIFgBLFHOT_GQwfi/view?usp=share_link" style="all: unset; color: inherit">Paper</a>
@@ -138,7 +138,7 @@ S Kalikar, <u>C Jain</u>, V Md, S Misra. _Nature Computational Science_
 </button>
 
 * **Co-linear chaining with overlaps and gap costs** <br>
-<u>C Jain</u>, D Gibney, SV Thankachan. _JCB (extended abstract appeared in RECOMB'22)_
+<u>C Jain</u>, D Gibney, SV Thankachan. _Journal of Computational Biology (extended abstract appeared in RECOMB'22)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/10B0WIXyIawZTpcLDTAo3fo0Q35_8IKBI/view?usp=sharing" style="all: unset; color: inherit">Paper</a>
@@ -201,7 +201,7 @@ H Zhang, <u>C Jain</u>, S Aluru. _BMC Genomics_
 <button type="button" class="btn btn-outline-secondary btn-sm"><a href="https://github.com/haowenz/LRECE" style="all: unset; color: inherit">Code</a></button> 
 
 * **On the complexity of sequence to graph alignment** <br>
-<u>C Jain</u>, ⇔ H Zhang, Yu Gao, S Aluru. _JCB (extended abstract appeared in RECOMB'19)_
+<u>C Jain</u>, ⇔ H Zhang, Yu Gao, S Aluru. _Journal of Computational Biology (extended abstract appeared in RECOMB'19)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm"><a href="https://drive.google.com/file/d/12SN5wWBLv36frBzVvChoFSVx3by32t7t/view?usp=sharing" style="all: unset; color: inherit">Paper</a></button> 
 <button type="button" class="btn btn-outline-secondary btn-sm"><a href="https://github.com/haowenz/SGA" style="all: unset; color: inherit">Code</a></button> 
@@ -248,7 +248,7 @@ A Dilthey, <u>C Jain</u>, S Koren, A Phillippy. _Nature Comm._
 <button type="button" class="btn btn-outline-info btn-sm"><a href="https://drive.google.com/file/d/1gcBJL64B0Mjj2NlmtBUsz2fzAr1vZsdJ/view?usp=sharing" style="all: unset; color: inherit">Slides</a></button>
 
 * **A fast approximate algorithm for mapping long reads to large reference databases** <br>
-<u>C Jain</u>, A Dilthey, S Koren, S Aluru, A Phillippy. _JCB (extended abstract appeared in RECOMB'17)_
+<u>C Jain</u>, A Dilthey, S Koren, S Aluru, A Phillippy. _Journal of Computational Biology (extended abstract appeared in RECOMB'17)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm"><a href="https://drive.google.com/file/d/1r23RXyXvpSS0_Vcus-Wo747ARHcc0zi1/view?usp=sharing" style="all: unset; color: inherit">Paper</a></button> 
 <button type="button" class="btn btn-outline-secondary btn-sm"><a href="https://github.com/marbl/MashMap" style="all: unset; color: inherit">Code</a></button> 
