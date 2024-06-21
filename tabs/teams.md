@@ -199,11 +199,45 @@ type: teams
 
 
                 <!-- ------------------- -->
-                <!--H2> Project interns </H2-->
+                <H2> Project interns </H2>
                 <!-- cards -->
-                <!-- div class="row">
+                <div class="row">
 
-                </div -->
+                <!-- BEGIN CARD -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="user-picture">
+                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
+                                url code will be like: ./../assets/img/xyz.jpg -->
+                                    <img src="./../assets/img/Anshika.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                </div>
+                                <div class="user-content">
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/anshikaprajapati">Anshika Prajapati</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD -->
+
+                <!-- BEGIN CARD -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="user-picture">
+                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
+                                url code will be like: ./../assets/img/xyz.jpg -->
+                                    <img src="./../assets/img/Shreeharsha.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                </div>
+                                <div class="user-content">
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href=" https://github.com/Shreeharsha-BE21B037">Shreeharsha G Bhat</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD -->
+
+                </div>
                 <!-- ------------------- -->
 
  
