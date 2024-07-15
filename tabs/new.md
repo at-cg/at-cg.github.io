@@ -20,6 +20,11 @@ type: news
 # **News**
 
 ## **2024**
+>July
+>> - Sudhanva presents his work on genome assembly at ISMB. Slides [here](https://drive.google.com/file/d/1n3KDpHUewXJpFEt1e9_BLhCq6puPBvIG/view?usp=sharing)
+>> - Jyotshna defends her MTech thesis titled "Sequence Alignment to Cyclic Pangenome Graphs"
+>> - Chirag is selected for IIT Delhi [Graduate of Last Decade (GOLD)](https://alumni.iitd.ac.in/Graduates-of-Last-Decade-(GOLD)-Award) Award
+
 >June
 >> - Parvesh receives [Reliance Foundation Postgraduate Scholarship (2023-24)](https://www.scholarships.reliancefoundation.org/PG_Scholarship.aspx)
 
