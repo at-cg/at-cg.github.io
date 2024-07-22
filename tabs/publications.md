@@ -32,9 +32,6 @@ S S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/1n3KDpHUewXJpFEt1e9_BLhCq6puPBvIG/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
 </button>
-<button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://drive.google.com/file/d/1AszEgV-AHVCWE1pKTGl3GxYuABl1F5Jc/view?usp=share_link" style="all: unset; color: inherit">Poster</a>
-</button>
 
 #### **2024**
 * **On the coverage required for diploid genome assembly** <br>
@@ -45,10 +42,10 @@ D Mahajan, <u>C Jain</u>, N Kashyap. _IEEE ISIT_
 </button>
 
 * **Haplotype-aware sequence alignment to pangenome graphs** <br>
-G Chandra, D Gibney, <u>C Jain</u>. _Genome Research (in press, extended abstract appeared in RECOMB'24)_
+G Chandra, D Gibney, <u>C Jain</u>. _Genome Research (extended abstract appeared in RECOMB'24)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://doi.org/10.1101/2023.11.15.566493" style="all: unset; color: inherit">Preprint</a>
+<a href="https://drive.google.com/file/d/1FJa-GA1UH2HLRVymstKxtdHYCVW21xIv/view?usp=sharing" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/minichain" style="all: unset; color: inherit">Code</a>
