@@ -20,6 +20,9 @@ type: news
 # **News**
 
 ## **2024**
+>Aug
+>> - Chirag gives invited lecture "Algorithmic challenges and solutions for genome assembly" at Ashoka University, slides [here](https://drive.google.com/file/d/1iiH5Q8Fsj0BaF-8asz4MAKvKbSrrinzx/view?usp=sharing)
+
 >July
 >> - Sudhanva presents his work on genome assembly at ISMB. Slides [here](https://drive.google.com/file/d/1n3KDpHUewXJpFEt1e9_BLhCq6puPBvIG/view?usp=sharing)
 >> - Jyotshna defends her MTech [thesis](https://drive.google.com/file/d/1ui88axqZqOWaOD230Qev9lAZ4A4QFikK/view?usp=sharing) titled "Sequence Alignment to Cyclic Pangenome Graphs"
