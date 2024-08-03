@@ -40,6 +40,9 @@ D Mahajan, <u>C Jain</u>, N Kashyap. _IEEE ISIT_
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://arxiv.org/abs/2405.05734" style="all: unset; color: inherit">Preprint</a>
 </button>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://drive.google.com/file/d/1atsCLKX2dT9XJuCxlRdhYfYa4aZg2HXR/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
+</button>
 
 * **Haplotype-aware sequence alignment to pangenome graphs** <br>
 G Chandra, D Gibney, <u>C Jain</u>. _Genome Research (extended abstract appeared in RECOMB'24)_
