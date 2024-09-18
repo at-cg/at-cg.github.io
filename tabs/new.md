@@ -20,13 +20,17 @@ type: news
 # **News**
 
 ## **2024**
+
+>Sept
+>> - Sudhanva gives a lecture on "Challenges and innovations in genome assembly algorithms" at NITK Surathkal. Slides [here](https://drive.google.com/file/d/1Rnvx4Xaj7WLWk64yVsIgFmaz_-btyQ6b/view?usp=share_link). 
+
 >Aug
 >> - Chirag gives invited lecture "Algorithmic challenges and solutions for genome assembly" at Ashoka University, slides [here](https://drive.google.com/file/d/1iiH5Q8Fsj0BaF-8asz4MAKvKbSrrinzx/view?usp=sharing)
 
 >July
 >> - Sudhanva presents his work on genome assembly at ISMB. Slides [here](https://drive.google.com/file/d/1n3KDpHUewXJpFEt1e9_BLhCq6puPBvIG/view?usp=sharing)
 >> - Jyotshna defends her MTech [thesis](https://drive.google.com/file/d/1ui88axqZqOWaOD230Qev9lAZ4A4QFikK/view?usp=sharing) titled "Sequence Alignment to Cyclic Pangenome Graphs"
->> - Chirag is selected for IIT Delhi [Graduate of Last Decade (GOLD)](https://alumni.iitd.ac.in/Graduates-of-Last-Decade-(GOLD)-Award) Award
+>> - Chirag is selected for IIT Delhi [Graduates of Last Decade (GOLD)](https://alumni.iitd.ac.in/Graduates-of-Last-Decade-(GOLD)-Awards/105) Award
 
 >June
 >> - Parvesh receives [Reliance Foundation Postgraduate Scholarship (2023-24)](https://www.scholarships.reliancefoundation.org/PG_Scholarship.aspx)
