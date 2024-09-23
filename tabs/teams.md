@@ -134,10 +134,6 @@ type: teams
                     </div>
                     <!-- END CARD -->
 
-                </div>
-
-
-                 <div class="row">
                     <!-- BEGIN CARD -->
                     <div class="col-lg-4 col-md-6">
                         <div class="card shadow-sm border-0">
