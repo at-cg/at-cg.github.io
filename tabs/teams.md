@@ -117,42 +117,6 @@ type: teams
                 <!-- cards -->
                 <div class="row">
                   
-                  
-                    <!-- BEGIN CARD -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body">
-                                <div class="user-picture">
-                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
-                                url code will be like: ./../assets/img/xyz.jpg -->
-                                    <img src="./../assets/img/Ajeya.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
-                                </div>
-                                <div class="user-content">
-                                    <h5 class="text-capitalize user-name">Ajeya B S</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END CARD -->
-
-                    <!-- BEGIN CARD -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body">
-                                <div class="user-picture">
-                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
-                                url code will be like: ./../assets/img/xyz.jpg -->
-                                    <img src="./../assets/img/Jyotshna.jpeg" class="shadow-sm rounded-circle" height="130" width="130" />
-                                </div>
-                                <div class="user-content">
-                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/jyotshna-rajput-b5928b1b2">Jyotshna Rajput</a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END CARD -->
-
-
                     <!-- BEGIN CARD -->
                     <div class="col-lg-4 col-md-6">
                         <div class="card shadow-sm border-0">
@@ -253,6 +217,8 @@ type: teams
                 <H2>Group Alumni</H2>
                 <!-- cards -->
                 <ul style="list-style-type:none;">
+                <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/jyotshna-rajput-b5928b1b2">Jyotshna Rajput</a> (MTech Research, 2021-24)</h5></li>
+                <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/ajeya-bhat/">Ajeya B S</a> (MTech, 2023-24)</h5></li>
                 <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/sai-manasa-chadalavada-621b1810a/">Sai Manasa C</a> (Project Intern, 2022-23)</h5></li>
                 <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/mehak-bindra-3b85a0110/">Mehak Bindra</a> (Project Intern, 2022-23)</h5></li>
                 <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/vidushi-dwivedi-9229b5188">Vidushi Dwivedi</a> (MTech, 2022-23)</h5></li>
