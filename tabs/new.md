@@ -22,7 +22,7 @@ type: news
 ## **2024**
 
 >Sept
->> - Sudhanva gives a lecture on "Challenges and innovations in genome assembly algorithms" at NITK Surathkal. Slides [here](https://drive.google.com/file/d/1Rnvx4Xaj7WLWk64yVsIgFmaz_-btyQ6b/view?usp=share_link) 
+>> - Sudhanva presents his research at NITK Surathkal. Slides [here](https://drive.google.com/file/d/1Rnvx4Xaj7WLWk64yVsIgFmaz_-btyQ6b/view?usp=share_link) 
 
 >Aug
 >> - Chirag gives invited lecture "Algorithmic challenges and solutions for genome assembly" at Ashoka University, slides [here](https://drive.google.com/file/d/1iiH5Q8Fsj0BaF-8asz4MAKvKbSrrinzx/view?usp=sharing)
