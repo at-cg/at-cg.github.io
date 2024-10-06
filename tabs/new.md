@@ -21,6 +21,9 @@ type: news
 
 ## **2024**
 
+>Oct
+>> - Chirag will speak at ACM Winter School on _Data Structures and Algorithms for Strings_ in December. [Details](https://docs.google.com/document/d/1NR3BE_NV4kqBF7v5qxFxnm1MP1fMHlyl/edit) and [registration link](https://docs.google.com/forms/d/1Uo-xzpUelEclwUY3VkkWHFsZ9S9QkQUb20uW6c7bQDk/edit)
+
 >Sept
 >> - Sudhanva presents his research at NITK Surathkal. Slides [here](https://drive.google.com/file/d/1Rnvx4Xaj7WLWk64yVsIgFmaz_-btyQ6b/view?usp=share_link) 
 
