@@ -48,7 +48,7 @@ D Mahajan, <u>C Jain</u>, N Kashyap. _IEEE ISIT_
 G Chandra, D Gibney, <u>C Jain</u>. _Genome Research (extended abstract appeared in RECOMB'24)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://drive.google.com/file/d/1FJa-GA1UH2HLRVymstKxtdHYCVW21xIv/view?usp=sharing" style="all: unset; color: inherit">Paper</a>
+<a href="https://drive.google.com/file/d/1hjP-yl7Xl1y-EPKXGhBEyY5A6eiVWMIV/view?usp=share_link" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/minichain" style="all: unset; color: inherit">Code</a>
