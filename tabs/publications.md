@@ -18,13 +18,17 @@ type: archives
 
 ### Citation statistics can be accessed using [Google Scholar](https://scholar.google.com/citations?user=Y2UmkF0AAAAJ&hl=en)
 
-#### **Preprints**
+<!--  #### **Preprints**   -->
+
+
+
+#### **2024**
 
 * **Telomere-to-telomere assembly by preserving contained reads** <br>
-S S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
+S S Kamath, M Bindra, D Pal, <u>C Jain</u>. _Genome Research (Long-read special issue)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://doi.org/10.1101/2023.11.07.565066" style="all: unset; color: inherit">Preprint</a>
+<a href="https://drive.google.com/file/d/1LHvjgekg8kFZHP3BpXqsfrfFOM0ojjMH/view?usp=sharing" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/RAFT" style="all: unset; color: inherit">Code</a>
@@ -33,7 +37,6 @@ S S Kamath, M Bindra, D Pal, <u>C Jain</u>. _BioRxiv_
 <a href="https://drive.google.com/file/d/1n3KDpHUewXJpFEt1e9_BLhCq6puPBvIG/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
 </button>
 
-#### **2024**
 * **On the coverage required for diploid genome assembly** <br>
 D Mahajan, <u>C Jain</u>, N Kashyap. _IEEE ISIT_
 <br>
@@ -45,7 +48,7 @@ D Mahajan, <u>C Jain</u>, N Kashyap. _IEEE ISIT_
 </button>
 
 * **Haplotype-aware sequence alignment to pangenome graphs** <br>
-G Chandra, D Gibney, <u>C Jain</u>. _Genome Research (extended abstract appeared in RECOMB'24)_
+G Chandra, D Gibney, <u>C Jain</u>. _Genome Research (RECOMB'24 special issue)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/1hjP-yl7Xl1y-EPKXGhBEyY5A6eiVWMIV/view?usp=share_link" style="all: unset; color: inherit">Paper</a>
