@@ -22,7 +22,7 @@ type: news
 ## **2025**
 
 >Mar
->> Daanish's [work on genome assembly](https://arxiv.org/abs/2405.05734) is accepted at [RECOMB-seq](https://recomb-seq.github.io) (Overlay track) 
+>> - Daanish's [work on genome assembly](https://arxiv.org/abs/2405.05734) is accepted at [RECOMB-seq](https://recomb-seq.github.io) (Overlay track) 
 >> - Lab members [conduct outreach activities](https://drive.google.com/file/d/1OHKsLBR56OaRMHMhUStqERCgfQ9o5LuB/view?usp=sharing) on [IISc Open Day](https://openday.iisc.ac.in)
 
 >Feb
