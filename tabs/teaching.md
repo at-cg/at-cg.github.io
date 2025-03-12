@@ -51,3 +51,4 @@ A collection of lecture slides on bioinformatics topics:
 >> - [Motivation](https://drive.google.com/file/d/18j92mbDtjnvBXcYJXFZuKkdtgC_JEHfu/view?usp=share_link)
 >> - [Maximal unique matches](https://drive.google.com/file/d/1LUqX5rOkx-8qdaaB6gZe10lMZTBORsBN/view?usp=share_link)
 >> - [Chaining](https://drive.google.com/file/d/16Y6JC-eGz164V_p1KhD_YPSZvx5_pbsI/view?usp=share_link)
+>> - [Chaining with gap cost](https://drive.google.com/file/d/14JC2q0sXCDE3MP03_yhhavUUhBVpFhTI/view?usp=share_link)
