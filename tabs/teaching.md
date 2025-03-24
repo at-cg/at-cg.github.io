@@ -55,3 +55,4 @@ A collection of lecture slides on bioinformatics topics:
 
 >Genome assembly
 >> - [Introduction](https://drive.google.com/file/d/1Av_Y1mqjlj72Q5OjxstoRL-efL3FK56-/view?usp=sharing)
+>> - [Shortest common superstring](https://drive.google.com/file/d/1Z_ZW2qg7qhoE5x5_BjBH-CcOExtdOwOV/view?usp=share_link)
