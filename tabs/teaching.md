@@ -57,3 +57,4 @@ A collection of lecture slides on bioinformatics topics:
 >> - [Introduction](https://drive.google.com/file/d/1Av_Y1mqjlj72Q5OjxstoRL-efL3FK56-/view?usp=sharing)
 >> - [Shortest common superstring](https://drive.google.com/file/d/1Z_ZW2qg7qhoE5x5_BjBH-CcOExtdOwOV/view?usp=share_link)
 >> - [Greedy algorithm](https://drive.google.com/file/d/11huqkatJxtFCx23KLPWJhhOLzZ0vfq8F/view?usp=share_link)
+>> - [Assembly using de Bruijn grahps](https://drive.google.com/file/d/195Giq1dDxn2oXqliDPvo5KGWJR1Iz9vY/view?usp=share_link)
