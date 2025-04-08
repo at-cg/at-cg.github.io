@@ -22,7 +22,7 @@ type: news
 ## **2025**
 
 >Apr
->> - Parvesh and Daanish present their projects at the [EECS Symposium](https://eecs.iisc.ac.in/EECS2025/)
+>> - Parvesh and Daanish present their projects at the IISc [EECS Symposium](https://eecs.iisc.ac.in/EECS2025/)
 
 >Mar
 >> - Daanish's [work on genome assembly](https://arxiv.org/abs/2405.05734) is accepted at [RECOMB-seq](https://recomb-seq.github.io) (Overlay track) 
