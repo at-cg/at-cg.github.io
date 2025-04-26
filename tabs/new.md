@@ -22,6 +22,7 @@ type: news
 ## **2025**
 
 >Apr
+>> - Chirag talks about diploid genome assembly at [RECOMB-seq](https://recomb-seq.github.io), slides [here](https://drive.google.com/file/d/1atsCLKX2dT9XJuCxlRdhYfYa4aZg2HXR/view?usp=share_link)  
 >> - Parvesh and Daanish present their projects at the IISc [EECS Symposium](https://eecs.iisc.ac.in/EECS2025/)
 
 >Mar
