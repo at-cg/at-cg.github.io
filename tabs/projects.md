@@ -39,7 +39,7 @@ As a result, scalable algorithms and software are indispensable components of co
 
    <hr>
 
-2. **Algorithms and data structures for population genomics.** Recent surveys predict availability of >100 million human genomes in near future. Until recently, algorithms for mapping reads have assumed a single reference genome. To account for the extensive genomic variation present across multiple individuals, read mapping and genotyping efforts must shift to a collection of reference genomes compactly represented using a 'pan-genome' graph data structure. This transition requires urgent development of new formats, data structures, algorithms and well-engineered implementations. This project aims to address several related open problems.
+2. **Algorithms and data structures for population genomics.** We expect availability of >100 million human genomes in near future. Until recently, algorithms for mapping reads have assumed a single reference genome. To account for the [extensive genomic variation](https://www.genome.gov/about-genomics/educational-resources/fact-sheets/human-genomic-variation) present across multiple individuals, read mapping and genotyping efforts must shift to a collection of reference genomes compactly represented using a [pangenome graph](https://research.google/blog/building-better-pangenomes-to-improve-the-equity-of-genomics/) data structure. This transition requires urgent development of new formats, data structures, algorithms and well-engineered implementations. This project aims to address several related open problems.
 
    <img class="" style="float: right;" src="./../assets/img/genomegraph.jpg">
 
