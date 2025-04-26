@@ -20,11 +20,11 @@ type: tags
 # **Active Projects**
 
 <br/>
-**Research overview.** We work in the area of computational biology to accelerate scientific discovery by developing new scalable and rigorous algorithms. Forty years ago, it would have taken two years to determine just 24 characters of a DNA molecule. Fast forward to today, a single instrument produces more than a [trillion characters per day](https://www.nature.com/articles/nature24286). Genome sequencing, which used to be a centralised process, is now ubiquitous. For instance, the [GenomeIndia](https://www.genomeindia.in) project alone, plans to generate petabytes of sequencing data. Interpreting DNA molecules from the raw sequencing data is key to understanding genetic mutations associated with diseases such as cancer.
+**Research overview.** We work in the area of computational biology to accelerate scientific discovery by developing new scalable and rigorous algorithms. Forty years ago, it would have taken two years to determine just 24 characters of a DNA molecule. Fast forward to today, a single instrument produces more than a [trillion characters per day](https://www.nature.com/articles/nature24286). Genome sequencing, which used to be a centralised process, is now ubiquitous. For instance, the [GenomeIndia](https://www.genomeindia.in) project alone, generated petabytes of sequencing data. Interpreting DNA molecules from the raw sequencing data is key to understanding genetic mutations associated with diseases such as cancer.
 
    <img class="image" style="float: right;" src="./../assets/img/goals.jpg">
 
-As a result, scalable algorithms and software are indispensable components of computational biology. Our research within this area builds on and extends approximate similarity search, string, geometric and graph algorithms, along with their parallelisation on modern multicore computing platforms. Through interdisciplinary collaborations, we have developed new algorithms and widely-used bioinformatics [software](/software) to accelerate sequence analysis. Our active projects and their corresponding papers from our lab are listed below.
+As a result, scalable algorithms and software are indispensable components of computational biology. Our research within this area builds on and extends approximate similarity search, string, geometric, combinatorial, and graph algorithms. Through interdisciplinary collaborations, we have developed new algorithms and widely-used bioinformatics [software](/software) to improve the accuracy and speed of sequence analysis. Our active projects and their corresponding papers from our lab are listed below.
 <br>
 <br>
    <hr>
@@ -39,15 +39,15 @@ As a result, scalable algorithms and software are indispensable components of co
 
    <hr>
 
-2. **Algorithms and data structures for population genomics.** Recent surveys predict availability of >100 million human genomes by 2025. Until recently, algorithms for mapping reads have assumed a single reference genome. To account for the extensive genomic variation present across multiple individuals, read mapping and genotyping efforts must shift to a collection of reference genomes compactly represented using a 'pan-genome' graph data structure. This transition requires urgent development of new formats, data structures, algorithms and well-engineered implementations. This project aims to address several related open problems.
+2. **Algorithms and data structures for population genomics.** Recent surveys predict availability of >100 million human genomes in near future. Until recently, algorithms for mapping reads have assumed a single reference genome. To account for the extensive genomic variation present across multiple individuals, read mapping and genotyping efforts must shift to a collection of reference genomes compactly represented using a 'pan-genome' graph data structure. This transition requires urgent development of new formats, data structures, algorithms and well-engineered implementations. This project aims to address several related open problems.
 
    <img class="" style="float: right;" src="./../assets/img/genomegraph.jpg">
 
    These include (i) development of theoretically well-founded sequence mapping algorithms and heuristics for genome-graphs, (ii) quantification of the benefit of adopting pan-genome approaches, and (iii) designing algorithms to build pan-genome graphs using millions of genomes as input. In each of the three aims, synergy is desired with downstream biological and clinical applications.
 
-   - [Sequence to graph alignment using gap-sensitive co-linear chaining](https://www.biorxiv.org/content/10.1101/2022.08.29.505691v2.full.pdf) RECOMB 2023
-   - [On the complexity of sequence to graph alignment](http://cds.iisc.ac.in/faculty/chirag/pubs/2020_jain_complexity.pdf) RECOMB 2019
-   - [Validating paired-end read alignments in sequence graphs](http://cds.iisc.ac.in/faculty/chirag/pubs/2019_jain_validating.pdf) WABI 2019
+   - [Integer programming framework for pangenome-based genome inference](https://www.biorxiv.org/content/10.1101/2024.10.27.620212v1) RECOMB 2025
+   -    - [Haplotype-aware sequence alignment to pangenome graphs](https://pmc.ncbi.nlm.nih.gov/articles/PMC11529843/pdf/1265.pdf) RECOMB 2024
+   - [Gap-Sensitive Colinear Chaining Algorithms for Acyclic Pangenome Graphs](https://doi.org/10.1089/cmb.2023.0186) RECOMB 2023
 
    <hr>
 
@@ -82,7 +82,7 @@ Multidisciplinary cooperation is critical in bioinformatics. We enjoy working wi
    <img class="" style="float: right;" src="./../assets/img/collaboration.jpg">
 
 - [Parallel Computing Lab](https://sites.google.com/view/bharat-kaul-intel-labs-pcl/home), Intel, India
+- [Strand Life Sciences](https://strandls.com), India
 - [Environmental Microbial Genomics Lab](http://enve-omics.gatech.edu/), Georgia Tech, USA
 - [Laboratory of AI in Genomics](https://sikic-lab.github.io), Genome Institute of Singapore
 - [University Hospital of Dusseldorf](https://alexanderdilthey.github.io/), Germany
-- [Genome Informatics Section](https://genomeinformatics.github.io/), National Institutes of Health, USA
