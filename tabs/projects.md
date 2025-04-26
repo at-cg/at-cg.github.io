@@ -46,7 +46,7 @@ As a result, scalable algorithms and software are indispensable components of co
    These include (i) development of theoretically well-founded sequence mapping algorithms and heuristics for genome-graphs, (ii) quantification of the benefit of adopting pan-genome approaches, and (iii) designing algorithms to build pan-genome graphs using millions of genomes as input. In each of the three aims, synergy is desired with downstream biological and clinical applications.
 
    - [Integer programming framework for pangenome-based genome inference](https://www.biorxiv.org/content/10.1101/2024.10.27.620212v1) RECOMB 2025
-   -    - [Haplotype-aware sequence alignment to pangenome graphs](https://pmc.ncbi.nlm.nih.gov/articles/PMC11529843/pdf/1265.pdf) RECOMB 2024
+   -  [Haplotype-aware sequence alignment to pangenome graphs](https://pmc.ncbi.nlm.nih.gov/articles/PMC11529843/pdf/1265.pdf) RECOMB 2024
    - [Gap-Sensitive Colinear Chaining Algorithms for Acyclic Pangenome Graphs](https://doi.org/10.1089/cmb.2023.0186) RECOMB 2023
 
    <hr>
