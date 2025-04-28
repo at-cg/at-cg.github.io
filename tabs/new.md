@@ -23,7 +23,7 @@ type: news
 
 >Apr
 >> - Ghanshyam presents his work on pangenome algorithms at [RECOMB](https://recomb.org/recomb2025/). Slides [here](https://drive.google.com/file/d/1tRAhw2F5RmB92TVbVApMtkskgpIWl6z_/view?usp=sharing)
->> - Chirag talks about diploid genome assembly at [RECOMB-seq](https://recomb-seq.github.io), slides [here](https://drive.google.com/file/d/1atsCLKX2dT9XJuCxlRdhYfYa4aZg2HXR/view?usp=share_link)  
+>> - Chirag talks about diploid genome assembly at [RECOMB-seq](https://recomb-seq.github.io). Slides [here](https://drive.google.com/file/d/1atsCLKX2dT9XJuCxlRdhYfYa4aZg2HXR/view?usp=share_link)
 >> - Parvesh and Daanish present their projects at the IISc [EECS Symposium](https://eecs.iisc.ac.in/EECS2025/)
 
 >Mar
