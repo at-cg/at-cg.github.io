@@ -41,6 +41,9 @@ G Chandra, M Hossen, S Scholz, A Dilthey, D Gibney, <u>C Jain</u>. _RECOMB (acce
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/PHI" style="all: unset; color: inherit">Code</a>
 </button>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://drive.google.com/file/d/1tRAhw2F5RmB92TVbVApMtkskgpIWl6z_/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
+</button>
 
 #### **2024**
 
