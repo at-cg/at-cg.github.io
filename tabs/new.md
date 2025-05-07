@@ -22,7 +22,7 @@ type: news
 ## **2025**
 
 >May
->> Co-organizing [BDBio symposium](https://www.bdbio.in) at IISc this month.
+>> - Co-organizing [BDBio symposium](https://www.bdbio.in) at IISc this month.
 
 >Apr
 >> - Ghanshyam presents his work on pangenome algorithms at [RECOMB](https://recomb.org/recomb2025/). Slides [here](https://drive.google.com/file/d/1tRAhw2F5RmB92TVbVApMtkskgpIWl6z_/view?usp=sharing)
