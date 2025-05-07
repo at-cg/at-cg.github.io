@@ -21,6 +21,9 @@ type: news
 
 ## **2025**
 
+>May
+>> Co-organizing [BDBio symposium](https://www.bdbio.in) at IISc this month.
+
 >Apr
 >> - Ghanshyam presents his work on pangenome algorithms at [RECOMB](https://recomb.org/recomb2025/). Slides [here](https://drive.google.com/file/d/1tRAhw2F5RmB92TVbVApMtkskgpIWl6z_/view?usp=sharing)
 >> - Chirag talks about diploid genome assembly at [RECOMB-seq](https://recomb-seq.github.io). Slides [here](https://drive.google.com/file/d/1atsCLKX2dT9XJuCxlRdhYfYa4aZg2HXR/view?usp=share_link)
