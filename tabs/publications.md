@@ -45,7 +45,7 @@ G Chandra, M Hossen, S Scholz, A Dilthey, D Gibney, <u>C Jain</u>. _RECOMB_
 <a href="https://drive.google.com/file/d/1tRAhw2F5RmB92TVbVApMtkskgpIWl6z_/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
 </button>
 
-* **FastAAI: efficient estimation of genome average amino acid identity and phylum-level relationships using tetramers of universal proteins**
+* **FastAAI: efficient estimation of genome average amino acid identity and phylum-level relationships using tetramers of universal proteins** <br>
 K Gerhardt, C Perez, et al. _Nucleic Acids Research_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
@@ -54,6 +54,13 @@ K Gerhardt, C Perez, et al. _Nucleic Acids Research_
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/cruizperez/FastAAI" style="all: unset; color: inherit">Code</a>
 </button>
+
+* **Mapping genetic diversity with the GenomeIndia project** <br>
+Bhattacharyya, C., Subramanian, K., Uppili, B. et al. _ Nature Genetics
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://doi.org/10.1038/s41588-025-02153-x" style="all: unset; color: inherit">Paper</a>
+</button> 
 
 #### **2024**
 
