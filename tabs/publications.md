@@ -56,7 +56,7 @@ K Gerhardt, C Perez, et al. _Nucleic Acids Research_
 </button>
 
 * **Mapping genetic diversity with the GenomeIndia project** <br>
-Bhattacharyya, C., Subramanian, K., Uppili, B. et al. _ Nature Genetics
+Bhattacharyya, C., Subramanian, K., Uppili, B. et al. _Nature Genetics_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://doi.org/10.1038/s41588-025-02153-x" style="all: unset; color: inherit">Paper</a>
