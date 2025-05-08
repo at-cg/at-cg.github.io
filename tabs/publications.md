@@ -256,7 +256,7 @@ H Zhang, <u>C Jain</u>, S Aluru. _BMC Genomics_
 #### **2019**
 
 * **Strain-level metagenomic assignment and compositional estimation for long reads with MetaMaps** <br>
-A Dilthey, <u>C Jain</u>, S Koren, A Phillippy. _Nature Comm._
+A Dilthey, <u>C Jain</u>, S Koren, A Phillippy. _Nature Communications_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm"><a href="https://drive.google.com/file/d/1D7ACvwyOwPusfNcyvz1xyTznZIoHHHo4/view?usp=sharing" style="all: unset; color: inherit">Paper</a></button> 
 <button type="button" class="btn btn-outline-secondary btn-sm"><a href="https://github.com/DiltheyLab/MetaMaps" style="all: unset; color: inherit">Code</a></button> 
@@ -280,7 +280,7 @@ A Dilthey, <u>C Jain</u>, S Koren, A Phillippy. _Nature Comm._
 #### **2018**
 
 * **High throughput ANI analysis of 90K prokaryotic genomes reveals clear species boundaries** <br>
-<u>C Jain</u>, L Rodriguez, A Phillippy, K Konstantinidis, S Aluru. _Nature Comm._  
+<u>C Jain</u>, L Rodriguez, A Phillippy, K Konstantinidis, S Aluru. _Nature Communications_  
 <button type="button" class="btn btn-outline-info btn-sm"><a href="https://drive.google.com/file/d/1u6j7PN0QZPRMfaIr6GtU7Hxu5yVR3MgA/view?usp=sharing" style="all: unset; color: inherit">Paper</a></button> 
 <button type="button" class="btn btn-outline-secondary btn-sm"><a href="https://github.com/ParBLiSS/FastANI" style="all: unset; color: inherit">Code</a></button> 
 <button type="button" class="btn btn-outline-info btn-sm"><a href="https://drive.google.com/file/d/1kYS13Yu41llbM7QEbDBdLD094PtpqOPW/view?usp=sharing" style="all: unset; color: inherit">Poster</a></button>
