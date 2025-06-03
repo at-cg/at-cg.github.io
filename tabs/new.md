@@ -21,6 +21,9 @@ type: news
 
 ## **2025**
 
+>June
+>> - Ghanshyam defends his PhD dissertation on [Algorithmic Approaches to Pangenome Graph Problems](https://drive.google.com/file/d/1ACilLETIv9w-3xa6DSVGagd2vJFlzvNR/view?usp=share_link). Slides [here](https://drive.google.com/file/d/1J-OWPtzMBNeUF0ZWWq-Wy-0oV8KhqlM5/view?usp=share_link)
+
 >May
 >> - Co-organizing [BDBio symposium](https://www.bdbio.in) at IISc this month.
 
