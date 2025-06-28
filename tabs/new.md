@@ -23,7 +23,7 @@ type: news
 
 >June
 >> - Ghanshyam defends his PhD dissertation on [Algorithmic Approaches to Pangenome Graph Problems](https://drive.google.com/file/d/1ACilLETIv9w-3xa6DSVGagd2vJFlzvNR/view?usp=share_link). Slides [here](https://drive.google.com/file/d/1J-OWPtzMBNeUF0ZWWq-Wy-0oV8KhqlM5/view?usp=share_link)
->> - Parvesh's manuscript on long-read error correction is accepted at [WABI](https://www.wabi-conference.org)
+>> - Parvesh's [manuscript on long-read error correction](https://doi.org/10.1101/2025.06.23.661108) is accepted at [WABI](https://www.wabi-conference.org)
 >> - Chirag serving as Area Chair for [ACM BCB](https://acm-bcb.org)
 >> - Lab [hosted](https://drive.google.com/file/d/1a0A1HL_p8RluJYV8pJqoDx6n1-QHTSJX/view?usp=share_link) Paul Medvedev as part of [IISc-Penn State collaboration](https://www.psu.edu/news/global-programs/story/penn-state-indian-institute-science-award-joint-research-seed-grants)
 
