@@ -32,6 +32,16 @@ G Chandra, M Vasimuddin, S Misra, <u>C Jain</u>. _bioRxiv_
 
 #### **2025**
 
+* **Haplotype-aware long-read error correction** <br>
+P Barak, D Gibney, <u>C Jain</u>. _WABI_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://doi.org/10.1101/2025.06.23.661108" style="all: unset; color: inherit">Preprint</a>
+</button> 
+<button type="button" class="btn btn-outline-secondary btn-sm">
+<a href="https://github.com/at-cg/HALE" style="all: unset; color: inherit">Code</a>
+</button>
+
 * **Integer programming framework for pangenome-based genome inference** <br>
 G Chandra, M Hossen, S Scholz, A Dilthey, D Gibney, <u>C Jain</u>. _RECOMB_
 <br>
