@@ -21,6 +21,9 @@ type: news
 
 ## **2025**
 
+>July
+>> - Daanish's work on [analysing coverage requirements for diploid genome assembly](https://arxiv.org/abs/2405.05734) is accepted in [IEEE TCBB](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=10723156)
+
 >June
 >> - Ghanshyam defends his PhD dissertation on [Algorithmic Approaches to Pangenome Graph Problems](https://drive.google.com/file/d/1ACilLETIv9w-3xa6DSVGagd2vJFlzvNR/view?usp=share_link). Slides [here](https://drive.google.com/file/d/1J-OWPtzMBNeUF0ZWWq-Wy-0oV8KhqlM5/view?usp=share_link)
 >> - Parvesh's [manuscript on long-read error correction](https://doi.org/10.1101/2025.06.23.661108) is accepted at [WABI](https://www.wabi-conference.org)
