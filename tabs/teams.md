@@ -195,6 +195,7 @@ type: teams
                 <H2>Group Alumni</H2>
                 <!-- cards -->
                 <ul style="list-style-type:none;">
+                <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/sai-venkat-01060620a">Sai Venkat</a> (MTech, 2024-25)</h5></li>  
                 <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://gsc74.github.io">Ghanshyam Chandra</a> (PhD, 2021-25)</h5></li>  
                 <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/rajarshi-mondal/">Rajarshi Mondal</a> (Project Intern, 2025)</h5></li>              
                 <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/anshikaprajapati">Anshika Prajapati</a> (Project Intern, 2024)</h5></li>
