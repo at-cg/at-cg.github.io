@@ -64,23 +64,6 @@ type: teams
                         </div>
                     </div>
                     <!-- END CARD -->
-
-                    <!-- BEGIN CARD -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body">
-                                <div class="user-picture">
-                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
-                                url code will be like: ./../assets/img/xyz.jpg -->
-                                    <img src="./../assets/img/Ghanshyam.jpeg" class="shadow-sm rounded-circle" height="130" width="130" />
-                                </div>
-                                <div class="user-content">
-                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://gsc74.github.io">Ghanshyam Chandra</a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END CARD -->
                 </div>
 
                 <div class="row">
@@ -151,24 +134,6 @@ type: teams
                     </div>
                     <!-- END CARD -->
 
-                    <!-- BEGIN CARD -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body">
-                                <div class="user-picture">
-                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
-                                url code will be like: ./../assets/img/xyz.jpg -->
-                                    <img src="./../assets/img/Sai_Venkat.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
-                                </div>
-                                <div class="user-content">
-                                <!-- Replace # with hyperlink of the user website or any link -->
-                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/sai-venkat-01060620a">Sai Venkat</a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END CARD -->
-
                 </div>
 
                 <!-- ------------------- -->
@@ -179,23 +144,6 @@ type: teams
                 <H2> Project interns </H2>
                 <!-- cards -->
                 <div class="row">
-
-                 <!-- BEGIN CARD -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body">
-                                <div class="user-picture">
-                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
-                                url code will be like: ./../assets/img/xyz.jpg -->
-                                    <img src="./../assets/img/Rajarshi.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
-                                </div>
-                                <div class="user-content">
-                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/rajarshi-mondal/">Rajarshi Mondal</a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END CARD -->
 
                  <!-- BEGIN CARD -->
                     <div class="col-lg-4 col-md-6">
@@ -247,6 +195,8 @@ type: teams
                 <H2>Group Alumni</H2>
                 <!-- cards -->
                 <ul style="list-style-type:none;">
+                <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://gsc74.github.io">Ghanshyam Chandra</a> (PhD, 2021-25)</h5></li>  
+                <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/rajarshi-mondal/">Rajarshi Mondal</a> (Project Intern, 2025)</h5></li>              
                 <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/anshikaprajapati">Anshika Prajapati</a> (Project Intern, 2024)</h5></li>
                 <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/jyotshna-rajput-b5928b1b2">Jyotshna Rajput</a> (MTech Research, 2021-24)</h5></li>
                 <li><h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/ajeya-bhat/">Ajeya B S</a> (MTech, 2023-24)</h5></li>
