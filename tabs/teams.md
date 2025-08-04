@@ -145,7 +145,7 @@ type: teams
                                     <img src="./../assets/img/SoumiSharma.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
                                 </div>
                                 <div class="user-content">
-                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://github.com/parveshbarak">Soumi Sharma</a></h5>
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/soumi-sharma-458143278/">Soumi Sharma</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -162,7 +162,7 @@ type: teams
                                     <img src="./../assets/img/SuhasPuli.jpeg" class="shadow-sm rounded-circle" height="130" width="130" />
                                 </div>
                                 <div class="user-content">
-                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://github.com/parveshbarak">Suhas Puli</a></h5>
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://in.linkedin.com/in/suhas-reddy-puli-a592191ab">Suhas Puli</a></h5>
                                 </div>
                             </div>
                         </div>
