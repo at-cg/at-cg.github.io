@@ -35,7 +35,7 @@ type: news
 >> - Lab [hosted](https://drive.google.com/file/d/1a0A1HL_p8RluJYV8pJqoDx6n1-QHTSJX/view?usp=share_link) Paul Medvedev as part of [IISc-Penn State collaboration](https://www.psu.edu/news/global-programs/story/penn-state-indian-institute-science-award-joint-research-seed-grants)
 
 >May
->> - Co-organizing [BDBio symposium](https://www.bdbio.in) at IISc this month.
+>> - Co-organizing [BDBio symposium](https://www.bdbio.in) at IISc
 
 >Apr
 >> - Ghanshyam presents his work on pangenome algorithms at [RECOMB](https://recomb.org/recomb2025/). Slides [here](https://drive.google.com/file/d/1tRAhw2F5RmB92TVbVApMtkskgpIWl6z_/view?usp=sharing)
