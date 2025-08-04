@@ -64,6 +64,24 @@ type: teams
                         </div>
                     </div>
                     <!-- END CARD -->
+
+                    
+                    <!-- BEGIN CARD -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="user-picture">
+                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
+                                url code will be like: ./../assets/img/xyz.jpg -->
+                                    <img src="./../assets/img/Parvesh.jpeg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                </div>
+                                <div class="user-content">
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://github.com/parveshbarak">Parvesh Barak</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD -->
                 </div>
 
                 <div class="row">
@@ -124,10 +142,27 @@ type: teams
                                 <div class="user-picture">
                                 <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
                                 url code will be like: ./../assets/img/xyz.jpg -->
-                                    <img src="./../assets/img/Parvesh.jpeg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                    <img src="./../assets/img/SoumiSharma.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
                                 </div>
                                 <div class="user-content">
-                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://github.com/parveshbarak">Parvesh Barak</a></h5>
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://github.com/parveshbarak">Soumi Sharma</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD -->
+
+                    <!-- BEGIN CARD -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="user-picture">
+                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
+                                url code will be like: ./../assets/img/xyz.jpg -->
+                                    <img src="./../assets/img/SuhasPuli.jpeg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                </div>
+                                <div class="user-content">
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://github.com/parveshbarak">Suhas Puli</a></h5>
                                 </div>
                             </div>
                         </div>
