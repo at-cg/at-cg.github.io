@@ -21,8 +21,12 @@ type: news
 
 ## **2025**
 
+>Aug
+>> - Soumi Sharma begins her M.Tech. research program in the lab. Welcome!
+
 >July
->> - Daanish's work on [analysing coverage requirements for diploid genome assembly](https://arxiv.org/abs/2405.05734) is accepted in [IEEE TCBB](https://www.computer.org/csdl/journal/bb)
+>> - Daanish's work on [analysing coverage requirements for diploid genome assembly](https://ieeexplore.ieee.org/document/11106418) is accepted in TCBB
+>> - Ghanshyam's work on pangenome-based genome inference is accepted in Genome Research's special issue of RECOMB papers
 
 >June
 >> - Ghanshyam defends his PhD dissertation on [Algorithmic Approaches to Pangenome Graph Problems](https://drive.google.com/file/d/1ACilLETIv9w-3xa6DSVGagd2vJFlzvNR/view?usp=share_link). Slides [here](https://drive.google.com/file/d/1J-OWPtzMBNeUF0ZWWq-Wy-0oV8KhqlM5/view?usp=share_link)
