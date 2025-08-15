@@ -22,8 +22,9 @@ type: news
 ## **2025**
 
 >Aug
+>> - Parvesh receives Best Poster Award (3rd Prize) at [Genomics India Conference](https://genomicsindia.co.in)
 >> - Soumi Sharma begins her M.Tech. research program in the lab. Welcome!
->> - Chirag gives invited talk at NIBMG on pangenome-based genome inference. Slides [here](https://drive.google.com/file/d/1QsdA60MWzhOSo2IbNxTIib3xuZaZ_n4O/view?usp=share_link)
+>> - Chirag gives invited talks at NIBMG and Genomics India Conference on pangenome-based genome inference. Slides [here](https://drive.google.com/file/d/1QsdA60MWzhOSo2IbNxTIib3xuZaZ_n4O/view?usp=share_link)
 
 >July
 >> - Daanish's work on [analysing coverage requirements for diploid genome assembly](https://ieeexplore.ieee.org/document/11106418) is accepted in TCBB
