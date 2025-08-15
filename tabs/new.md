@@ -22,7 +22,7 @@ type: news
 ## **2025**
 
 >Aug
->> - Parvesh receives Best Poster Award (3rd Prize) at [Genomics India Conference](https://genomicsindia.co.in)
+>> - Parvesh receives [Best Poster Award (3rd Prize)](https://drive.google.com/file/d/1C3Sh2GGLloSq3oC-W2Yzc1j_UxUh9dgn/view?usp=sharing) at the [Genomics India Conference](https://genomicsindia.co.in)
 >> - Soumi Sharma begins her M.Tech. research program in the lab. Welcome!
 >> - Chirag gives invited talks at NIBMG and Genomics India Conference on pangenome-based genome inference. Slides [here](https://drive.google.com/file/d/1QsdA60MWzhOSo2IbNxTIib3xuZaZ_n4O/view?usp=share_link)
 
