@@ -57,7 +57,7 @@ P Barak, D Gibney, <u>C Jain</u>. _WABI_
 <button type="button" class="btn btn-outline-info btn-sm">
 <a href="https://drive.google.com/file/d/1_B4TRyMWiXkO_zdLBSgso0IYa4pFz76H/view?usp=share_link" style="all: unset; color: inherit">Slides</a>
 </button>
-<button type="button" class="btn btn-outline-info btn-sm"><a href="https://drive.google.com/file/d/1AbQOAB4-umwtHiTifc3mQIS1VHv8gzqA/view?usp=share_link" style="all: unset; color: inherit">Poster</a></button>
+<button type="button" class="btn btn-outline-secondary btn-sm"><a href="https://drive.google.com/file/d/1AbQOAB4-umwtHiTifc3mQIS1VHv8gzqA/view?usp=share_link" style="all: unset; color: inherit">Poster</a></button>
 
 * **Integer programming framework for pangenome-based genome inference** <br>
 G Chandra, M Hossen, S Scholz, A Dilthey, D Gibney, <u>C Jain</u>. _RECOMB_
