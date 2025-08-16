@@ -49,7 +49,7 @@ D Mahajan, <u>C Jain</u>, N Kashyap. _IEEE TCBB (extended abstract appeared in I
 P Barak, D Gibney, <u>C Jain</u>. _WABI_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://doi.org/10.1101/2025.06.23.661108" style="all: unset; color: inherit">Preprint</a>
+<a href="https://doi.org/10.4230/LIPIcs.WABI.2025.4" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/HALE" style="all: unset; color: inherit">Code</a>
