@@ -60,10 +60,10 @@ P Barak, D Gibney, <u>C Jain</u>. _WABI_
 <button type="button" class="btn btn-outline-secondary btn-sm"><a href="https://drive.google.com/file/d/1AbQOAB4-umwtHiTifc3mQIS1VHv8gzqA/view?usp=share_link" style="all: unset; color: inherit">Poster</a></button>
 
 * **Integer programming framework for pangenome-based genome inference** <br>
-G Chandra, M Hossen, S Scholz, A Dilthey, D Gibney, <u>C Jain</u>. _RECOMB_
+G Chandra, M Hossen, S Scholz, A Dilthey, D Gibney, <u>C Jain</u>. _Genome Research (extended abstract appeared in RECOMB'25)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://doi.org/10.1101/2024.10.27.620212" style="all: unset; color: inherit">Preprint</a>
+<a href="https://genome.cshlp.org/content/early/2025/08/21/gr.280567.125.abstract" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/PHI" style="all: unset; color: inherit">Code</a>
