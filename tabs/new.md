@@ -28,7 +28,7 @@ type: news
 
 >July
 >> - Daanish's work on [analysing coverage requirements for diploid genome assembly](https://ieeexplore.ieee.org/document/11106418) is accepted in TCBB
->> - Ghanshyam's work on pangenome-based genome inference is accepted in Genome Research's special issue of RECOMB papers
+>> - Ghanshyam's work on [pangenome-based genome inference](https://genome.cshlp.org/content/early/2025/08/21/gr.280567.125.abstract) is accepted for Genome Research's RECOMB special issue
 
 >June
 >> - Ghanshyam defends his PhD dissertation on [Algorithmic Approaches to Pangenome Graph Problems](https://drive.google.com/file/d/1ACilLETIv9w-3xa6DSVGagd2vJFlzvNR/view?usp=share_link). Slides [here](https://drive.google.com/file/d/1J-OWPtzMBNeUF0ZWWq-Wy-0oV8KhqlM5/view?usp=share_link)
