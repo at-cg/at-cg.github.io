@@ -22,7 +22,7 @@ type: news
 ## **2025**
 
 >Sept
->> - Parvesh defends his MTech thesis. Slides [here]()
+>> - Parvesh defends his MTech thesis. Slides [here](https://drive.google.com/file/d/1cIedWhCNMb9oJ5UneT93OjF6WhMe5S08/view?usp=share_link)
 >> - Chirag gives invited lecture at [ACM ROCS](https://bmsceacmrocs.vercel.app). Slides [here](https://drive.google.com/file/d/1t34ag6rC6tbyfoZ4jv9SD4Hb-7qYejqE/view?usp=share_link)
 
 >Aug
