@@ -21,6 +21,10 @@ type: news
 
 ## **2025**
 
+>Sept
+>> - Parvesh defends his MTech thesis. Slides [here]()
+>> - Chirag gives invited lecture at [ACM ROCS](https://bmsceacmrocs.vercel.app). Slides [here](https://drive.google.com/file/d/1t34ag6rC6tbyfoZ4jv9SD4Hb-7qYejqE/view?usp=share_link)
+
 >Aug
 >> - Parvesh receives [Best Poster Award (3rd Prize)](https://drive.google.com/file/d/1C3Sh2GGLloSq3oC-W2Yzc1j_UxUh9dgn/view?usp=sharing) at the [Genomics India Conference](https://genomicsindia.co.in)
 >> - Soumi Sharma begins her M.Tech. research program in the lab. Welcome!
