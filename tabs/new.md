@@ -21,6 +21,10 @@ type: news
 
 ## **2025**
 
+>Nov
+>> - Check out [new preprint](https://doi.org/10.1101/2025.11.21.689636) on detecting bubbles in pangenome graphs by Shreeharsha and Daanish
+>> - Chirag gives talks at Penn State and CSHL Genome Informatics. Slides [here](https://drive.google.com/file/d/1er3J_uM_BPEtnvfBXbmUVpX6D-HhQ9Dq/view?usp=sharing)
+
 >Sept
 >> - Parvesh defends his MTech thesis. Slides [here](https://drive.google.com/file/d/1cIedWhCNMb9oJ5UneT93OjF6WhMe5S08/view?usp=share_link)
 >> - Chirag gives invited lecture at [ACM ROCS](https://bmsceacmrocs.vercel.app). Slides [here](https://drive.google.com/file/d/1t34ag6rC6tbyfoZ4jv9SD4Hb-7qYejqE/view?usp=share_link)
