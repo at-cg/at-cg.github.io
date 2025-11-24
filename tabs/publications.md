@@ -20,6 +20,16 @@ type: archives
 
 #### **Preprints**
 
+* **Billi: Provably accurate and scalable bubble detection in pangenome graphs** <br>
+S Bhat, D Mahajan, <u>C Jain</u>. _bioRxiv_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://doi.org/10.1101/2025.11.21.689636" style="all: unset; color: inherit">Preprint</a>
+</button> 
+<button type="button" class="btn btn-outline-secondary btn-sm">
+<a href="https://github.com/at-cg/billi" style="all: unset; color: inherit">Code</a>
+</button>
+
 * **Accelerating whole-genome alignment in the age of complete genome assemblies** <br>
 G Chandra, M Vasimuddin, S Misra, <u>C Jain</u>. _bioRxiv_
 <br>
