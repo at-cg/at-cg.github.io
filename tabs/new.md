@@ -21,6 +21,10 @@ type: news
 
 ## **2025**
 
+>Dec
+>> - Ghanshyam's [paper](https://drive.google.com/file/d/1SMyF3zkxSGIa8mxQWGRSAlv-7T7T0Um0/view?usp=share_link) is featured [on the cover](https://genome.cshlp.org/content/35/12.cover-expansion) of Genome Research
+>> - Chirag is invited speaker at the [AICBIO 2025](https://indiabioscience.org/events/aicbio-2025) meeting in Amrita University
+
 >Nov
 >> - Check out [new preprint](https://doi.org/10.1101/2025.11.21.689636) on detecting bubbles in pangenome graphs by Shreeharsha and Daanish
 >> - Chirag gives talks at Penn State and CSHL Genome Informatics. Slides [here](https://drive.google.com/file/d/1er3J_uM_BPEtnvfBXbmUVpX6D-HhQ9Dq/view?usp=sharing)
