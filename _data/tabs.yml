@@ -26,10 +26,6 @@
   icon: "fa fa-desktop"
   path: tabs
   url: software
-- name: "Blogs"
-  icon: "fas fa-blog"
-  path: tabs
-  url: blog
 - name: "Team"
   icon: "fas fa-users"
   path: tabs
