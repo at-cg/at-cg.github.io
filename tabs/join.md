@@ -16,7 +16,7 @@ We are actively on the lookout for bright students and post-docs to join our gro
 Masters and PhD admissions happen based on the [procedures setup by IISc](https://iisc.ac.in/admissions/). This process also involves interview with the [Computational and Data Sciences department](https://cds.iisc.ac.in/admissions/). Occasionally, we also recruit PhD students through the [Interdisciplinary Mathematical Sciences](https://imi.iisc.ac.in) program. You can also view the [presentation slides](https://drive.google.com/file/d/1lTSxFdvYa_Nsq4ut1abqUMDvxdkfF3pt/view?usp=share_link) which we used to introduce our lab to prospective students in Aug 2025. If you have any questions about the admission process, or our lab in general, you can [email the PI](mailto:chirag@iisc.ac.in).
 
 ### **Prospective research staff or post-doctoral researchers**
-Please write to the [PI](mailto:chirag@iisc.ac.in) to discuss possibilities. In your email, please specify your background, specific papers or projects that interest you, and a timeline (e.g., ideal start date, intended period of stay). We typically expect commitment to work of **at least one year**. Applications for either remote work or summer or winter internships are not considered.
+Please email to discuss possibilities. In your email, specify your background, specific papers or projects that interest you, and a timeline (e.g., ideal start date, intended period of stay). We typically expect commitment to work of **at least one year**. Applications for either remote work or summer or winter internships are not considered.
 
 ### **Fellowship opportunities**
 A number of fellowship opportunities regularly open up for students and postdocs. See a few examples below:
