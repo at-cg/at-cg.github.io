@@ -73,7 +73,7 @@ P Barak, D Gibney, <u>C Jain</u>. _WABI_
 G Chandra, M Hossen, S Scholz, A Dilthey, D Gibney, <u>C Jain</u>. _Genome Research (extended abstract appeared in RECOMB'25)_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://genome.cshlp.org/content/early/2025/08/21/gr.280567.125.abstract" style="all: unset; color: inherit">Paper</a>
+<a href="https://genome.cshlp.org/content/35/12/2661.abstract" style="all: unset; color: inherit">Paper</a>
 </button> 
 <button type="button" class="btn btn-outline-secondary btn-sm">
 <a href="https://github.com/at-cg/PHI" style="all: unset; color: inherit">Code</a>
