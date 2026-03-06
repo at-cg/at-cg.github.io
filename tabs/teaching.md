@@ -13,11 +13,11 @@ type: teaching
 # Teaching
 
 Courses taught at the Indian Institute of Science:
-- Jan (2025 - 2021), Algorithmic Foundations of Big Data Biology
-- Aug (2022 - 2021): Introduction to Scalable Systems (with Sathish Vadhiyar, Matthew Jacob)
+- Jan (2026 - 2021), Algorithmic Foundations of Big Data Biology
+- Aug (2025, 2022 - 2021): Introduction to Scalable Systems (with Sathish Vadhiyar)
 
 Courses taught on NPTEL:
-- Jan 2025, Algorithms in Computational Biology and Sequence Analysis
+- Jan (2026-2025), Algorithms in Computational Biology and Sequence Analysis
 
 ---
 
@@ -57,4 +57,4 @@ A collection of lecture slides on bioinformatics topics:
 >> - [Introduction](https://drive.google.com/file/d/1Av_Y1mqjlj72Q5OjxstoRL-efL3FK56-/view?usp=sharing)
 >> - [Shortest common superstring](https://drive.google.com/file/d/1Z_ZW2qg7qhoE5x5_BjBH-CcOExtdOwOV/view?usp=share_link)
 >> - [Greedy algorithm](https://drive.google.com/file/d/11huqkatJxtFCx23KLPWJhhOLzZ0vfq8F/view?usp=share_link)
->> - [Assembly using de Bruijn grahps](https://drive.google.com/file/d/195Giq1dDxn2oXqliDPvo5KGWJR1Iz9vY/view?usp=share_link)
+>> - [Assembly using de Bruijn graphs](https://drive.google.com/file/d/195Giq1dDxn2oXqliDPvo5KGWJR1Iz9vY/view?usp=share_link)
