@@ -19,6 +19,19 @@ type: news
 
 # **News**
 
+## **2026**
+
+>Mar
+>> - Daanish presents his work on nanopore adaptive sampling method at the PMRF Annual Symposium, IIT Guwahati
+>> - Lab members conduct outreach activities on IISc Open Day ([Pic1](https://drive.google.com/file/d/1RnC39fRB4WuSH0WuFJ6nvUD3nSbO-ry8/view?usp=sharing), [Pic2](https://drive.google.com/file/d/1kwoqprSxSuRks2C3Cl1e6uNI_HGA-8l3/view?usp=sharing))
+>> - Chirag is invited speaker at Center for Human Genetics, Bangalore
+>> - Serving as Area Chair for [ACM BCB](https://acm-bcb.org)
+
+>Feb
+>> - Ghanshyam's [work on accelerating genome alignment](https://doi.org/10.1093/bioinformatics/btag083) is accepted in Bioinformatics
+>> - Chirag gives invited talk at [comp-bio conference](https://asamallab.github.io/organisation/modtackbio26/index.html) in IMSc, Chennai
+>> - Lab members participated in the [Undiagnosed Hackathon](https://undiagnosedhackathon.org/home) at CDFD, Hyderabad
+
 ## **2025**
 
 >Dec
