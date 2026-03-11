@@ -58,3 +58,7 @@ A collection of lecture slides on bioinformatics topics:
 >> - [Shortest common superstring](https://drive.google.com/file/d/1Z_ZW2qg7qhoE5x5_BjBH-CcOExtdOwOV/view?usp=share_link)
 >> - [Greedy algorithm](https://drive.google.com/file/d/11huqkatJxtFCx23KLPWJhhOLzZ0vfq8F/view?usp=share_link)
 >> - [Assembly using de Bruijn graphs](https://drive.google.com/file/d/195Giq1dDxn2oXqliDPvo5KGWJR1Iz9vY/view?usp=share_link)
+
+>Demos on real data
+>> - [Indexing of 400,000 SARS-CoV-2 genomes](https://github.com/at-cg/Hands-On-Tutorials/tree/main/Demo%201%20)
+>> - [Genome resequencing](https://github.com/at-cg/Hands-On-Tutorials/tree/main/Demo%202)
