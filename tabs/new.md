@@ -21,6 +21,14 @@ type: news
 
 ## **2026**
 
+>July
+>> - [Hands-on workshop on genomics](https://cospi.iiserpune.ac.in/workshop2026.html) in IISER Pune. Sudhanva and Chirag will discuss the *de novo* genome assembly topic.
+
+>June
+>> - Parvesh's [method for long-read error correction](https://doi.org/10.1186/s13015-026-00302-3) is published in _Algorithms for Molecular Biology_
+>> - Samarth, Anandita, Sudhanva, and Shreeharsha present research posters at [BDBio](https://www.bdbio.in)
+>> - Chirag is invited speaker at [Genome Informatics, UK](https://coursesandconferences.wellcomeconnectingscience.org/event/genome-informatics-20261202/) (December 2-4, 2026)
+
 >Mar
 >> - Daanish presents his work on nanopore adaptive sampling method at the PMRF Annual Symposium, IIT Guwahati
 >> - Lab members conduct outreach activities on IISc Open Day ([Pic1](https://drive.google.com/file/d/1RnC39fRB4WuSH0WuFJ6nvUD3nSbO-ry8/view?usp=sharing), [Pic2](https://drive.google.com/file/d/1kwoqprSxSuRks2C3Cl1e6uNI_HGA-8l3/view?usp=sharing))
