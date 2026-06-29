@@ -71,20 +71,6 @@ D Mahajan, <u>C Jain</u>, N Kashyap. _IEEE TCBB (extended abstract appeared in I
 <a href="https://drive.google.com/file/d/1atsCLKX2dT9XJuCxlRdhYfYa4aZg2HXR/view?usp=sharing" style="all: unset; color: inherit">Slides</a>
 </button>
 
-* **Haplotype-aware long-read error correction** <br>
-P Barak, D Gibney, <u>C Jain</u>. _WABI_
-<br>
-<button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://doi.org/10.4230/LIPIcs.WABI.2025.4" style="all: unset; color: inherit">Paper</a>
-</button> 
-<button type="button" class="btn btn-outline-secondary btn-sm">
-<a href="https://github.com/at-cg/HALE" style="all: unset; color: inherit">Code</a>
-</button>
-<button type="button" class="btn btn-outline-info btn-sm">
-<a href="https://drive.google.com/file/d/1_B4TRyMWiXkO_zdLBSgso0IYa4pFz76H/view?usp=share_link" style="all: unset; color: inherit">Slides</a>
-</button>
-<button type="button" class="btn btn-outline-secondary btn-sm"><a href="https://drive.google.com/file/d/1AbQOAB4-umwtHiTifc3mQIS1VHv8gzqA/view?usp=share_link" style="all: unset; color: inherit">Poster</a></button>
-
 * **Integer programming framework for pangenome-based genome inference** <br>
 G Chandra, M Hossen, S Scholz, A Dilthey, D Gibney, <u>C Jain</u>. _Genome Research (extended abstract appeared in RECOMB'25)_
 <br>
