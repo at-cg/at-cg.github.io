@@ -32,6 +32,20 @@ S Bhat, D Mahajan, <u>C Jain</u>. _bioRxiv_
 
 #### **2026**
 
+* **Haplotype-aware long-read error correction** <br>
+P Barak, D Gibney, <u>C Jain</u>. _Algorithms for Molecular Biology (extended abstract appeared in WABI'25)_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://doi.org/10.1186/s13015-026-00302-3" style="all: unset; color: inherit">Paper</a>
+</button> 
+<button type="button" class="btn btn-outline-secondary btn-sm">
+<a href="https://github.com/at-cg/HALE" style="all: unset; color: inherit">Code</a>
+</button>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://drive.google.com/file/d/1_B4TRyMWiXkO_zdLBSgso0IYa4pFz76H/view?usp=share_link" style="all: unset; color: inherit">Slides</a>
+</button>
+<button type="button" class="btn btn-outline-secondary btn-sm"><a href="https://drive.google.com/file/d/1AbQOAB4-umwtHiTifc3mQIS1VHv8gzqA/view?usp=share_link" style="all: unset; color: inherit">Poster</a></button>
+
 * **Accelerating minimap2 for whole-genome alignment** <br>
 G Chandra, M Vasimuddin, S Misra, <u>C Jain</u>. _Bioinformatics_
 <br>
