@@ -134,6 +134,23 @@ type: teams
                 <H2> MTech students </H2>
                 <!-- cards -->
                 <div class="row">
+
+                    <!-- BEGIN CARD -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="user-picture">
+                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
+                                url code will be like: ./../assets/img/xyz.jpg -->
+                                    <img src="./../assets/img/Atrayee.jpeg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                </div>
+                                <div class="user-content">
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://in.linkedin.com/in/atrayee-samanta-504445234">Atrayee Samanta</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD -->
                   
                     <!-- BEGIN CARD -->
                     <div class="col-lg-4 col-md-6">
@@ -152,6 +169,7 @@ type: teams
                     </div>
                     <!-- END CARD -->
 
+
                     <!-- BEGIN CARD -->
                     <div class="col-lg-4 col-md-6">
                         <div class="card shadow-sm border-0">
@@ -159,10 +177,10 @@ type: teams
                                 <div class="user-picture">
                                 <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
                                 url code will be like: ./../assets/img/xyz.jpg -->
-                                    <img src="./../assets/img/SuhasPuli.jpeg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                    <img src="./../assets/img/Tataumesh.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
                                 </div>
                                 <div class="user-content">
-                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://in.linkedin.com/in/suhas-reddy-puli-a592191ab">Suhas Puli</a></h5>
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/tata-umesh/">Tata Umesh</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -180,6 +198,23 @@ type: teams
                 <!-- cards -->
                 <div class="row">
 
+                  <!-- BEGIN CARD -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="user-picture">
+                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
+                                url code will be like: ./../assets/img/xyz.jpg -->
+                                    <img src="./../assets/img/AdarshAmit.png" class="shadow-sm rounded-circle" height="130" width="130" />
+                                </div>
+                                <div class="user-content">
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/adarsh-amit-1001code/">Adarsh Amit</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD -->
+
                     <!-- BEGIN CARD -->
                     <div class="col-lg-4 col-md-6">
                         <div class="card shadow-sm border-0">
@@ -196,8 +231,46 @@ type: teams
                         </div>
                     </div>
                     <!-- END CARD -->
+                    
 
-                 <!-- BEGIN CARD -->
+                    <!-- BEGIN CARD -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="user-picture">
+                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
+                                url code will be like: ./../assets/img/xyz.jpg -->
+                                    <img src="./../assets/img/AtharvaSreekar.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                </div>
+                                <div class="user-content">
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/atharvasreekar/">Atharva Sreekar</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END CARD -->
+                </div>
+                    
+                <!-- div class="row">
+                <!-- BEGIN CARD -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body">
+                                <div class="user-picture">
+                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
+                                url code will be like: ./../assets/img/xyz.jpg -->
+                                    <img src="./../assets/img/JyotshnaRajput.jpeg" class="shadow-sm rounded-circle" height="130" width="130" />
+                                </div>
+                                <div class="user-content">
+                                    <h5 class="text-capitalize user-name"><a target="_blank" href=" https://www.linkedin.com/in/jyotshna-rajput-b5928b1b2">Jyotshna Rajput</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!-- END CARD -->
+
+                
+                <!-- BEGIN CARD -->
                     <div class="col-lg-4 col-md-6">
                         <div class="card shadow-sm border-0">
                             <div class="card-body">
@@ -208,23 +281,6 @@ type: teams
                                 </div>
                                 <div class="user-content">
                                     <h5 class="text-capitalize user-name"><a target="_blank" href="https://www.linkedin.com/in/samarth-bh/">Samarth Bhandary</a></h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- END CARD -->
-
-                <!-- BEGIN CARD -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card shadow-sm border-0">
-                            <div class="card-body">
-                                <div class="user-picture">
-                                <!-- Add Url to the photo here, photo will be saved under /tabs/assets/img, 
-                                url code will be like: ./../assets/img/xyz.jpg -->
-                                    <img src="./../assets/img/Shreeharsha.jpg" class="shadow-sm rounded-circle" height="130" width="130" />
-                                </div>
-                                <div class="user-content">
-                                    <h5 class="text-capitalize user-name"><a target="_blank" href=" https://github.com/Shreeharsha-BE21B037">Shreeharsha G Bhat</a></h5>
                                 </div>
                             </div>
                         </div>
