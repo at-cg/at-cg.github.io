@@ -10,14 +10,14 @@ type: {filename}
 
 # **Hop On**
 
-We are always looking for talented and motivated students and postdoctoral researchers to join our group, with opportunities available throughout the year. Applicants should have (i) a strong foundation in computer science, particularly algorithms, data structures, and discrete mathematics; and (ii) extensive programming and software engineering experience. Prior research experience and demonstrated contributions to challenging problems in computer science, computational biology, or data science, is a plus.
+We are always looking for talented and motivated students and postdoctoral researchers to join our group, with opportunities available throughout the year. Applicants should have (i) a strong foundation in computer science, particularly algorithms, data structures, and discrete mathematics; and (ii) extensive programming and software engineering experience. Prior research experience and demonstrated contributions to a challenging problem in computer science, computational biology, or data science, is a plus.
 
 ### **Prospective graduate students**
 Masters and PhD admissions happen based on the [procedures setup by IISc](https://iisc.ac.in/admissions/). This process also involves interview with the [Computational and Data Sciences department](https://cds.iisc.ac.in/admissions/research-degrees/). Occasionally, we also recruit PhD students through the [Interdisciplinary Mathematical Sciences](https://imi.iisc.ac.in) program. You can also view the [presentation slides](https://drive.google.com/file/d/1lTSxFdvYa_Nsq4ut1abqUMDvxdkfF3pt/view?usp=share_link) which we used to introduce our lab to prospective students in Aug 2026. If you have any questions about the admission process, or our lab in general, you can [email the PI](mailto:chirag@iisc.ac.in).
 
 ### **Prospective research staff or post-doctoral researchers**
-Please email us to discuss potential opportunities. In your email, briefly describe your background and scientific contributions, highlight specific papers or projects that interest you, and provide your anticipated timeline, including your preferred start date and intended duration of stay.
-We expect a commitment to **at least one year of full-time research**. Direct email inquiries for remote work or short-term summer or winter internships will not be considered.
+Please email us to discuss potential opportunities. In your email, briefly describe your background and scientific contributions, highlight specific papers from our lab that interest you, and provide your anticipated timeline, including your preferred start date and intended duration of stay.
+We expect a commitment to **at least one year of full-time research**. Direct email inquiries for remote work or short-term summer or winter internships are not considered.
 
 ### **Fellowship opportunities**
 A number of fellowship opportunities regularly open up for students and postdocs. See a few examples below:

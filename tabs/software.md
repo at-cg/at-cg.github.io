@@ -19,6 +19,15 @@ title: Software
 
 Here is the list of open-source documented software hosted on GitHub that my lab developed or co-developed. Some of these are being actively maintained and used by 1000+ users.
 
+- [Billi](https://github.com/at-cg/billi) - Enumerating bubbles in pangenome graphs <br>
+[![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/at-cg/billi)
+
+- [mm2-plus](https://github.com/at-cg/mm2-plus) - Fast long-read mapper and whole-genome aligner <br>
+[![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/at-cg/mm2-plus)
+
+- [HALE](https://github.com/at-cg/HALE) - Error correction of long reads <br>
+[![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/at-cg/HALE)
+
 - [RAFT](https://github.com/at-cg/RAFT) - Improves long read assembly by proper treatment of contained reads <br>
 [![Code](https://img.shields.io/badge/Source-Code-blue)](https://github.com/at-cg/RAFT)
 
