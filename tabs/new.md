@@ -21,8 +21,14 @@ type: news
 
 ## **2026**
 
+>Sept
+>> - Jahar [recognized with an Honorable Mention by IKDD](https://drive.google.com/file/d/1M4VsfxDruOA7Wqt9tKvUYvjDTg21CqR9/view?usp=sharing) for his [Uplink](https://ikdd.acm.org/uplink.php) end-of-internship presentation 
+>> - Anandita, Sudhanva present posters at [GIC 2026](https://genomicsindia.co.in)
+>> - Chirag gives invited talk at the [PCCM Biobanking Symposium](https://pccmannualbreastsummit.ctcr.in/pccmbwas2026/)
+
 >July
->> - [Hands-on workshop on genomics](https://cospi.iiserpune.ac.in/workshop2026.html) in IISER Pune. Sudhanva and Chirag will discuss the *de novo* genome assembly topic.
+>> - [Hands-on workshop on genomics](https://cospi.iiserpune.ac.in/workshop2026.html) in IISER Pune. Sudhanva and Chirag cover the *de novo* genome assembly topic.
+>> - Chirag gives invited talk at the India Alliance Annual Conclave 
 
 >June
 >> - Parvesh's [method for long-read error correction](https://doi.org/10.1186/s13015-026-00302-3) is published in _Algorithms for Molecular Biology_

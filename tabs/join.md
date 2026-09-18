@@ -10,13 +10,14 @@ type: {filename}
 
 # **Hop On**
 
-We are actively on the lookout for bright students and post-docs to join our group and always have open positions! For joining the lab, pre-requisites are (i) strong background in computer science algorithms, data structures, and (ii) programming experience. Prior experience in multi-disciplinary research is a plus. 
+We are always looking for talented and motivated students and postdoctoral researchers to join our group, with opportunities available throughout the year. Applicants should have (i) a strong foundation in computer science, particularly algorithms, data structures, and discrete mathematics; and (ii) extensive programming and software engineering experience. Prior research experience and demonstrated contributions to challenging problems in computer science, computational biology, or data science, is a plus.
 
 ### **Prospective graduate students**
 Masters and PhD admissions happen based on the [procedures setup by IISc](https://iisc.ac.in/admissions/). This process also involves interview with the [Computational and Data Sciences department](https://cds.iisc.ac.in/admissions/research-degrees/). Occasionally, we also recruit PhD students through the [Interdisciplinary Mathematical Sciences](https://imi.iisc.ac.in) program. You can also view the [presentation slides](https://drive.google.com/file/d/1lTSxFdvYa_Nsq4ut1abqUMDvxdkfF3pt/view?usp=share_link) which we used to introduce our lab to prospective students in Aug 2026. If you have any questions about the admission process, or our lab in general, you can [email the PI](mailto:chirag@iisc.ac.in).
 
 ### **Prospective research staff or post-doctoral researchers**
-Please email to discuss possibilities. In your email, specify your background, specific papers or projects that interest you, and a timeline (e.g., ideal start date, intended period of stay). We typically expect commitment to work of **at least one year**. Applications for either remote work or summer or winter internships are not considered.
+Please email us to discuss potential opportunities. In your email, briefly describe your background and scientific contributions, highlight specific papers or projects that interest you, and provide your anticipated timeline, including your preferred start date and intended duration of stay.
+We expect a commitment to **at least one year of full-time research**. Direct email inquiries for remote work or short-term summer or winter internships will not be considered.
 
 ### **Fellowship opportunities**
 A number of fellowship opportunities regularly open up for students and postdocs. See a few examples below:
@@ -27,3 +28,5 @@ A number of fellowship opportunities regularly open up for students and postdocs
 - [Prime Minister's Research Fellowship for PhD students](https://www.iisc.ac.in/pmrf/)
 - [Prime Minister's Fellowship for Doctoral Research](https://www.primeministerfellowshipscheme.in)
 - [Industry-sponsored fellowships for CDS students](https://cds.iisc.ac.in/resources/fellowships/)
+- [NPTEL Predoctoral Fellowships](https://nptel.ac.in/predocfellowship)
+- [ACM IKDD Uplink Research Internship Program](https://ikdd.acm.org/uplink.php)
