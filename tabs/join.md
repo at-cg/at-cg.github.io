@@ -17,7 +17,9 @@ Masters and PhD admissions happen based on the [procedures setup by IISc](https:
 
 ### **Prospective research staff or post-doctoral researchers**
 Please email us to discuss potential opportunities. In your email, briefly describe your background and scientific contributions, highlight specific papers from our lab that interest you, and provide your anticipated timeline, including your preferred start date and intended duration of stay.
-We expect a commitment to **at least one year of full-time research**. Direct email inquiries for remote work or short-term summer or winter internships are not considered.
+We expect a commitment to **at least one year of full-time research**. 
+
+*Please do not email regarding remote work, short-term summer/winter internships, or six-month dissertation projects. Such inquiries will not be considered.*
 
 ### **Fellowship opportunities**
 A number of fellowship opportunities regularly open up for students and postdocs. See a few examples below:
