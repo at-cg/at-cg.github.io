@@ -20,6 +20,17 @@ type: archives
 
 #### **Preprints**
 
+
+* **DiGi: An Integer Programming Formulation for Diploid Genome Inference Using a Pangenome Reference** <br>
+A Mishra, A Dilthey, C Jain. _bioRxiv_
+<br>
+<button type="button" class="btn btn-outline-info btn-sm">
+<a href="https://doi.org/10.64898/2026.11.15.766871" style="all: unset; color: inherit">Preprint</a>
+</button> 
+<button type="button" class="btn btn-outline-secondary btn-sm">
+<a href="https://github.com/at-cg/DiGi" style="all: unset; color: inherit">Code</a>
+</button>
+
 * **Billi: Provably accurate and scalable bubble detection in pangenome graphs** <br>
 S Bhat, D Mahajan, C Jain. _bioRxiv_
 <br>
