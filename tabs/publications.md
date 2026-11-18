@@ -21,7 +21,7 @@ type: archives
 #### **Preprints**
 
 
-* **DiGi: An Integer Programming Formulation for Diploid Genome Inference Using a Pangenome Reference** <br>
+* **DiGi: An integer programming formulation for diploid genome inference using a pangenome reference** <br>
 A Mishra, A Dilthey, C Jain. _bioRxiv_
 <br>
 <button type="button" class="btn btn-outline-info btn-sm">
